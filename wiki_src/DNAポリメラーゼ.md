@@ -29,6 +29,8 @@ G-Cの間には3つの水素結合が、A-Tの間には２つの水素結合が�
 
 [PngNote ページ1](https://karino2.github.io/ImageGallery/MolecularBiology728x.html#lg=1&slide=0)
 
+外に出ている二重結合に着目すると塩基の区別がしやすい。
+
 ### 幾何構造とbase stacking
 
 1周で10塩基ペア。ペア内の水素結合の他に、隣のペアとの間にも結合があり、これをbase stackingと呼ぶ。pi-pi 相互作用。
@@ -94,3 +96,32 @@ DNAポリメラーゼのbinding pocketは4つのdNTPすべてにaffinityがあ�
 ペアがあっていると、3'のOH基がアルファ-リン酸基にSN2のnucleophilic attackする。（SN2って何？）
 
 正しいbase pairはどのペアも同じdimension (距離とか配置とか）になるので、同じ機構で触媒出来る。
+
+### DNAポリメラーゼの構造
+
+右手の構造になぞらえて部位に名前がついている。fingers, thumb, palmの部位からなる。
+
+- fingersが動いて、thumbはあまり動かない。
+- palmはPTJと新しく合成したDNAに結合する
+  - テンプレート側はマッチしてない所の一つ先で45度曲がっている
+    - テンプレート側でアクティブサイトのそばにあるヌクレオチドは、マッチしていない最初の一つだけ
+  - palmは並列によらない形で結合する
+     - バックボーンのphosphateと結合
+     - Minor grooveの水素結合、これは配列の種類には依存しないが、ワトソン・クリック型のペアである事には依存する（後述）
+- dNTPとの結合はベースペアが仲介し、2価の金属カティオン(だいたいはMg+2)とも結合する
+- fingerドメインが結合したdNTPの上に閉じる
+  - fingerドメインの中のO-helix (α helixの名前）、
+
+### grooveの種類と水素結合のdonor、acceptorの配置
+
+酸素、窒素はacceptor、窒素や酸素につながったHはdonor、それ以外のHやメチル基はどちらでも無い、として、BPの一番外側の原子を見ていく。
+
+[PngNote ページ2](https://karino2.github.io/ImageGallery/MolecularBiology728x.html#lg=2&slide=0)
+
+- major grooveでは、水素結合のdonorとacceptorの配置が、base pairの種類によって変わる。
+- minor grooveでは、ADAかAHAで（Hはどちらでも無い）、両端はいつも一致する。＞ワトソンクリック型でさえあれば良い
+   - これに結合する事で、正しくマッチングしたペアだと判定出来る！
+
+### dNTPとの結合
+
+ベースペアの所で水素結合されると同時に、3リン酸の方では2つのMg+2イオンと合成している鎖の先端の3'のOHとが結合する。
