@@ -1,46 +1,3 @@
-## DNAの構造
-
-- proliferate 急速に増殖する
-
-最初の動画は復習という感じでガンガン進むね。クイズには動画に軽くしか触れられていない事もどんどん出てくる。
-
-二重らせんの状態をdsDNA(double stranded)、またはB-form DNAと呼ぶ。
-
-### ヌクレオチド (nucleotide)
-
-ヌクレオチドは3つの構成要素から出来ている
-
-- 5炭糖
-- リン酸基
-- 塩基
-
-塩基は糖の1'-炭素につながっている。リン酸基は5'。隣のリン酸基とは3'でつながっている。
-
-ヌクレオチドのリン酸基ははphosphodiester結合でつながっている。
-
-なお、図ではしばしば酸素は赤、窒素は青でカラーリングされている。
-
-[[ヌクレオチド]]
-
-### 塩基
-
-- A, Gは２つの環から出来ている。purinesと呼ばれる
-- T, Cは一つの環から出来ている。pyrimidinesと呼ばれる
-
-G-Cの間には3つの水素結合が、A-Tの間には２つの水素結合がある。
-
-[PngNote ページ1](https://karino2.github.io/ImageGallery/MolecularBiology728x.html#lg=1&slide=0)
-
-外に出ている二重結合に着目すると塩基の区別がしやすい。
-
-### 幾何構造とbase stacking
-
-1周で10塩基ペア。ペア内の水素結合の他に、隣のペアとの間にも結合があり、これをbase stackingと呼ぶ。pi-pi 相互作用。
-
-バックボーンの間があいているmajor grooveと、詰まっているminor grooveが交互にやってくる。
-これらのgrooveがタンパク質とのbinding siteを提供する。
-major grooveが塩基関連の情報を、minor grooveが非塩基関連の情報を持つ。
-
 ## DNAの複製
 
 - Braille 点字（ルイ・ブライユが発明したからこう呼ばれるらしい）
@@ -55,6 +12,8 @@ major grooveが塩基関連の情報を、minor grooveが非塩基関連の情�
 E.coliは`5*10^6 bp`で出来ている。1000個体に一つ程度のミス。E. coliは単細胞の原核生物、いわゆる大腸菌。
 
 人間のゲノムは`3*10^9 bp`。3回の細胞分裂で一回ミスする。細胞一つに1mのDNAが入っている。体全体で90 millionマイルで太陽に届き、一生で光年のオーダーになる。
+
+[[ゲノムのオーダー]]
 
 ### 化学的な側面
 
@@ -167,3 +126,33 @@ tautomer formationのせいで起こる。
 - enolやイミノはすぐに元の状態に戻るので、二本鎖がちゃんとよじらない状態になる。
 - そうするとminor grooveの性質が保たれず、DNAポリメラーゼは動作を停止する
 - proofreading exonucleaseによるproofreadingの機構が修正
+
+## Proofreading Exonucleaseによる修正
+
+ミスマッチが起こると、Proofreading exonucleaseという酵素（だいたいはポリメラーゼに含まれている）による修正機構が働く。
+
+### ExonucleaseとProofreading Exonuclease
+
+- ExonucleaseはDNAの片端からdegrade（分解）する
+    - 制限酵素であるendonucleaseがDNAの途中の部分をカットするのに対し、exonucleaseはDNAの端をカットする
+- Proofreading exonucleaseは3'ー＞5'の方向に機能する
+
+通常このexonucleaseはポリメラーゼと同じポリペプチド内に存在する
+
+### Proofreading Exonucleaseの動作機構
+
+- frayed/non BPな 終端のDNAはポリメラーゼのactive siteとlow affinity
+- ssDNAで3'OH終端側のPrimerの終端はexonucleaseのactive siteとhigh affinity（合成側のだいたい10倍）
+- exonucleaseのアクティブサイトはpalmのドメインにある（事が多い）
+
+ミスマッチが起こると手のひら側に移動して、ここで1〜3つのヌクレオチドが切断される。
+だいたいの生物機構と同様に、ちょっと多めにカットしてやり直す。
+
+### この修正機構による改善度合い
+
+proofreadingにより、だいたい100倍くらいのオーダーで正確になる＞ `10^7bp`に一回程度の誤りになる
+
+残りの`10^3`は別の修正機構で達成されている。
+[[ゲノムのオーダー]]も参照。
+
+このproofreadingは端にしか機能しないので、ひとたび誤った状態で合成が進んでしまうと、もうこのproofreadingは機能せず合成が進んでしまう。
