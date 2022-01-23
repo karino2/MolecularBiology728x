@@ -35,15 +35,14 @@ E.coliは`5*10^6 bp`で出来ている。1000個体に一つ程度のミス。E.
 4. テンプレートとペアになるdNTPだけが触媒される
 5. 3'のOHが伸ばされていく
 
-1と2をあわせてprimer template junction、PTJと呼ぶ。
+1と2をあわせてprimer:template junction、PTJと呼ぶ。
 
-2は良く意味がわからなかったので訳さずそのまま書いたが、
-primerとtemplateをあわせたもの、という事は、2はテンプレートの事かな。
-ほどいてsingle strandedになったテンプレートのDNA鎖の事か。
+2は最初良く意味がわからなかったので英語のまま書いたが、
+annealedとはbase pairがちゃんとマッチしている状態で二本鎖が結合していることを言うらしい。
 
 [Nucleic acid thermodynamics - Wikipedia](https://en.wikipedia.org/wiki/Nucleic_acid_thermodynamics#Annealing)
 
-annealedの意味が生物だと通常と違いそうだ。ようするに２つの鎖がペアとなってくっついている事をannealedと呼ぶようだ。
+ということで2はほどいてsingle strandedの状態になったテンプレートに対して正しくペアがマッチした形でprimerを結合させる、という意味だろう。
 
 5は、5'から3'方向に伸ばされていくという事だが、テンプレートとプライマーのどっちかが曖昧なのでこう覚える方が良いとのこと、なるほど。
 

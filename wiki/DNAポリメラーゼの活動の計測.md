@@ -5,12 +5,14 @@
 - assay 分析、検査
 - incorporate 取り入れる、組み込む
 - sequester 隔離する
+- smear シミ
 
 ## DNAポリメラーゼの合成活動の計測(assay)
 
 DNAポリメラーゼの活動の計測には以下のような手法がある
 
 - Incorporation assay
+- Primer extension assay
 
 ## Incorporation assay
 
@@ -69,6 +71,7 @@ NHのHをトリチウム（三重水素）にしたものや、リン酸基をP3
 幾つか方法がある。
 
 - Filter Binding (古いやり方) 
+- Gel Electrophoresis
 
 ### Filter Binding
 
@@ -98,3 +101,105 @@ DNAとdNTPを分離するのに使われる、古くからあるやり方。
 - デメリット: 長さの情報が無い　(10 bpが1000本出来たのか、1000 bpが10本出来たのかが区別出来ない）
 
 これらの性質から、とりあえずポリメラーゼがどこにあるのかを確認するのに使われたりする。
+
+### Gel Electrophoresis（ゲル電気泳動）
+
+長さの情報が欲しい時はゲル電気泳動。
+
+通常ゲル電気泳動ではゲルとしては寒天(agarose)かアクリルアミド(acrylamide)が使われるが、
+合成したDNAを分離したい時は、テンプレートとくっつかないように分離してしかもまっすぐにしないといけないので、
+
+- NaOH (寒天の場合) 
+- 尿素(アクリルアミドの場合） 
+
+を加える必要がある。これらを加えたゲルで、95度くらいに熱してtemplateから分離すると、
+NaOHや尿素がふたたびannealすることを防いでくれるので、生成物だけを分離することが出来る。
+
+これらを加えたゲルを denaturing gel、これらを加えたゲルを使った電気泳動をdenaturing gel electrophoresisというらしい。
+
+電気泳動をする時は、ラベルを識別するか、ethidium bromideで着色する。
+ethidium bromideはDNAならなんでも着色出来る物質。
+
+- メリット: 生成物の長さの情報が得られる
+- デメリット: より遅い (使うゲルに依るが、20分〜数時間）
+- デメリット: 定量的な情報が得られにくい（ゲルの中のバンドの定量情報は得られにくい）
+
+## Primer extension assay
+
+Incorporation assayではProcessivityなどが計測出来ない。
+Processivityを計測したい場合はPrimer extension assayというのを使う必要がある。
+
+Primer extension assayの特徴は以下。
+
+- primerをラベリング
+- dNTPsやテンプレートにはラベリングしない
+- ゲル電気泳動で分離して計測
+
+このようなassay全般をPrimer extension assayと言う。Template challenge assayはその亜種。
+
+具体的にどう実験を設計するかは何を測るか次第だが、その前にProcessivityの定義を見ておく。
+
+### Processivity
+
+Processivityとは、一般にポリマーを合成する酵素に対して使われる概念で、以下が定義。
+
+```
+Number of Enzyme cycles/Polymer binding
+```
+
+DNAポリメラーゼの場合は以下になる。
+
+```
+追加されたdNTPの数/PTJ binding event
+```
+
+動画を見た感じだと、ようするに一度primerにポリメラーゼが結合した後にどこまでそのまま合成が進むか、という概念の模様。
+
+つまり、一度外れてまた別のポリメラーゼが続きを合成する、みたいなものは除外して、
+一回結合したらどこまで連続で合成出来るか、というものを測る指標がProcessivityというらしい。
+
+これを測る為にはなんらかの Primer extension assayが使われる。
+
+ProcessivityはDNAポリメラーゼの種類によって大きく異る。
+
+- DNA Repairポリメラーゼの場合：  10〜20 bp /PTJ Binding
+- ゲノムDNA複製ポリメラーゼの場合: 50000 bp /PTJ Binding以上
+  - 計測不能なくらい長い。 50000bのPTJを合成して使うと、 50000 bp /PTJ Binding を達成出来ることが知られている。
+
+よってこれらの数値を計測出来れば、そのポリメラーゼが何に使われるかの情報を得ることが出来る。
+
+### Processivityの意味を具体的な数字で考える
+
+以下の２つの数字を考える。
+
+1. DNAポリメラーゼがPTJに結合するのに1秒かかる
+2. DNAポリメラーゼがPTJに結合したら、dNTPを一つ付加するのに1 msかかる
+
+1は拡散によって支配される過程の話で、2はDNAポリメラーゼの合成の速さを表すと考えられる。
+
+結合するのに掛かる時間で1000個のdNTPを付加出来るので、もしたくさんのDNAを合成したいなら、高いProcessivityのポリメラーゼを使う方が良いと考えられる。結合には多くの時間が掛かるので、一度結合したら長く合成出来る方がいいからだ。
+
+### Template challenge assay
+
+Primer extension assayの一種で、processivityを測るのに行われる分析。
+
+1. ラベルづけされてるPTJ (P*TJと呼称）とされていない普通のPTJ の２種類のPTJを作成
+2. P*TJに、その２倍のDNAポリメラーゼを加える
+   - 例えばP*TJが2 pico molの時、DNAポリメラーゼは4 pico mol加える
+   - 全部のP*TJにDNAポリメラーゼがくっついていると期待出来る
+3. バッファなど、反応に必要なものを(dNTP以外）すべて加える
+4. ラベル無しのdNTPと、P*TJの1000倍の量のPTJを加えるー＞反応開始
+5. 全テンプレート(5000bpとか)の合成に十分な時間だけ待つ
+   - 早いDNAポリメラーゼなら1secで1000bp合成出来るので、この場合は5sec待つ
+   - 普通はもっと合成が遅いので、30secとかくらい待つ
+6. 反応を止めてdenaturing gelで生成物を分離
+
+一度P*TJから外れたら、次に結合する相手は、999/1000はラベル無しのPTJになるので、
+だいたいはそうでないと期待出来る。
+
+追加されるラベル無しのテンプレートをchallenged templateと呼ぶらしい。挑戦相手って意味かね。
+
+## シークエンスの最初の問題を解き直す
+
+おー、ちゃんと全部分かるぜ。一問間違えたが、間違えたあとに選択肢を見直したらどれが正解かちゃんとわかった。
+このシークエンスの内容はちゃんと消化出来た模様。
