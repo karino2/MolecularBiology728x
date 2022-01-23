@@ -1,3 +1,7 @@
+これは、705xのProtein Purificationと似た話になっている。＞[ProteinPurification - Biochemistry 705x](https://karino2.github.io/Biochemistry705x/ProteinPurification)
+
+## 単語
+
 - assay 分析、検査
 - incorporate 取り入れる、組み込む
 - sequester 隔離する
