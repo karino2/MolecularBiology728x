@@ -118,7 +118,7 @@ NaOHや尿素がふたたびannealすることを防いでくれるので、生�
 これらを加えたゲルを denaturing gel、これらを加えたゲルを使った電気泳動をdenaturing gel electrophoresisというらしい。
 
 電気泳動をする時は、ラベルを識別するか、ethidium bromideで着色する。
-ethidium bromideはDNAならなんでも着色出来る物質。
+ethidium bromideはDNAならなんでも着色出来る物質。EtBrと略されることも。
 
 - メリット: 生成物の長さの情報が得られる
 - デメリット: より遅い (使うゲルに依るが、20分〜数時間）
