@@ -1,5 +1,7 @@
 edXの728x、[Molecular Biology - Part 1: DNA Replication and Repair](https://www.edx.org/course/molecular-biology-part-1-dna-replication-and-repair)のノート用サブWiki。たぶんPart 2とPart 3もここに書くと思う。
 
+[PngNoteのノート](https://karino2.github.io/ImageGallery/MolecularBiology728x.html)
+
 ## イントロダクション
 
 [[イントロダクション]]
@@ -18,4 +20,4 @@ edXの728x、[Molecular Biology - Part 1: DNA Replication and Repair](https://ww
 
 ## Unit: DNA Replication: The Other Players
 
-DNAヘリカーゼとか。
+- [[複製フォーク]]  DNAヘリカーゼ、Single Stranded Binding Proteinなど。
