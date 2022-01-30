@@ -134,7 +134,7 @@ tautomer formationのせいで起こる。
 ### ExonucleaseとProofreading Exonuclease
 
 - ExonucleaseはDNAの片端からdegrade（分解）する
-    - 制限酵素であるendonucleaseがDNAの途中の部分をカットするのに対し、exonucleaseはDNAの端をカットする
+    - 制限酵素である[[endonuclease]]がDNAの途中の部分をカットするのに対し、exonucleaseはDNAの端をカットする
 - Proofreading exonucleaseは3'ー＞5'の方向に機能する
 
 通常このexonucleaseはポリメラーゼと同じポリペプチド内に存在する
