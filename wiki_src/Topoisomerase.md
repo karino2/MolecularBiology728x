@@ -43,7 +43,9 @@ topoisomeraseはネックピローみたいな形で、２つの手がある。
 そして切り離して、反対側の鎖を長縄跳びのように一回越えて再結合する。
 
 飛び越える向きによって、
-linking number (DNAのturnの数）を1増やすか減らすかする操作となる。
+linking number (DNAの巻きの数で、twist+writheが定義）を1増やすか減らすかする操作となる。
+
+通常Type IはATPやNADHなどのエネルギーを必要としない。
 
 ### Type II Topoisomerase
 
@@ -56,3 +58,54 @@ linking numberは2変わるらしい。
 Type II Topoisomeraseがcatenaneを切り離して２つのバラバラのリングに出来る。
 
 ちなみに逆、つまり２つのリングを持ってきて、catenateすることも出来るらしい。
+
+Type IIはATPやNADHなどのエネルギーが必要。
+
+## GyraseとAnti-Gyrase
+
+通常のTopoisomeraseは基本的にはよりリラックスな状態にDNAの巻きを調整するが、幾つかのバクテリアにはGyrase（ジャイレースっぽく発音する）と呼ばれるtopoisomeraseが存在し、
+これはATPを使ってnegative supercoil側にunderwindする。種別としてはTopoisomerase IIの一種。
+
+これは二重らせんをほどくのを容易にすると考えられる。これは複製や翻訳を助けるためと考えられている。
+
+また、Thermophilesでは、anti-gyraseと呼ばれる、positive supercoil側に巻くtopoisomeraseも知られている。
+これは95度のような極端な環境でDNAがほどけてしまわないようにする為と考えられている。
+これもATPかNADHのエネルギー源を必要とする。
+
+## DNAトポロジー
+
+unstrained、またはrelaxed DNAとは、10.4 bp/turnの状態を言う。
+
+DNAの構造を表す指標の一つにlinking numberがあるが、これはtwistとwrithe（よじれ）の和と定義される。
+
+twistはDNAの片方の鎖が、もう片方を何周しているか、で定義される。
+
+writheは二重らせんが何回自分自身と交差するか、と定義される。
+正負は上のstrandがrightからleftへ向かっている時に正と定義される。
+右とか左はややこしいが、交差しているところを見て、上を通る二本鎖が右上から左下に向かっている時は+1、左上から右下に向かっている時は-1の模様。
+
+## Topoisomeraseのassay
+
+- nick 小さな切り傷、小さな刻み目
+
+通常、E. coliに対して、non-denaturing gelでゲル電気泳動すると、2箇所のバンドが観測される。
+これは片方はnegatively supercoiledなDNAで、もう片方はrelaxedなDNA。
+たいていのplasmidからはsupercoiledなDNAが得られる。
+
+supercoiledなのはgyraseのせいだが、
+relaxedなDNAがなぜ出来るかというと、切れ目が入ると自然の力で戻ってしまうから。
+
+supercoiledの方が短いので、ゲルを早く移動する。relaxedが一番遅い。
+円じゃなく線になっているものはその間くらい。
+
+### topoisomeraseをE. coliのDNAに加える
+
+topoisomeraseを加えてゲル電気泳動すると、supercoiledなDNAはだんだんとrelaxed状態になっていくので、
+supercoiledとrelaxedの間にバンドが出来、時間とともに下側のバンドが上に移動していく感じになる。
+
+### Type IとIIの違いを観測するassay
+
+Crithidiaという生物は、kDNAと呼ばれる、大量にcatenatedされたplasmidを持つ。
+
+Type Iではこのcatenateを分離しないのでゲルの移動は遅いまま。
+Type IIではこのcatenateを分離するので移動が早くなる。

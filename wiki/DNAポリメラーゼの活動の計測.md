@@ -115,7 +115,8 @@ DNAとdNTPを分離するのに使われる、古くからあるやり方。
 を加える必要がある。これらを加えたゲルで、95度くらいに熱してtemplateから分離すると、
 NaOHや尿素がふたたびannealすることを防いでくれるので、生成物だけを分離することが出来る。
 
-これらを加えたゲルを denaturing gel、これらを加えたゲルを使った電気泳動をdenaturing gel electrophoresisというらしい。
+これらを加えたゲルを denaturing gel、これらを加えたゲルを使った電気泳動をdenaturing gel electrophoresisというらしい。＞
+[DNAのdenaturing](DNAのdenaturing.md)
 
 電気泳動をする時は、ラベルを識別するか、ethidium bromideで着色する。
 ethidium bromideはDNAならなんでも着色出来る物質。EtBrと略されることも。
