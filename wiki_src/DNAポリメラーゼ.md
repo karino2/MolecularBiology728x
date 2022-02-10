@@ -121,7 +121,7 @@ fingersが動いて、thumbはあまり動かない。
 大多数の誤りは、プリンを他のプリンと間違うか、ピリミジンを他のピリミジンを間違えるたぐいの誤り。
 tautomer formationのせいで起こる。
 
-[PngNote ページ3, Tautomer Formation](https://karino2.github.io/ImageGallery/MolecularBiology728x.html#lg=2&slide=1)
+[PngNote ページ3, Tautomer Formation](https://karino2.github.io/ImageGallery/MolecularBiology728x.html#lg=1&slide=2)
 
 - enolやイミノはすぐに元の状態に戻るので、二本鎖がちゃんとよじらない状態になる。
 - そうするとminor grooveの性質が保たれず、DNAポリメラーゼは動作を停止する

@@ -47,38 +47,16 @@ Originは複製の開始位置であって、Replicatorはプロモーターに�
 だいたいはReplicatorの方が広い範囲でOriginはより狭く、オーバーラップしている。
 ものによってはほとんど同じ範囲な事もある。
 
-## 細胞分裂の用語
+## 細胞分裂
 
-細胞生物学の復習。
+[[細胞分裂の復習]]
 
-- [PngNote ページ4, Tautomer Formation](https://karino2.github.io/ImageGallery/MolecularBiology728x.html#lg=3&slide=1)
-- [PngNote ページ5, Tautomer Formation](https://karino2.github.io/ImageGallery/MolecularBiology728x.html#lg=4&slide=1)
+## 様々な生物のOriginの比較
 
-### G1フェーズ
+|生物種|染色体の本数|originの数|ゲノムのサイズ（`10^6`）|
+|-----|-----|----|----|
+| E.coli | 1本 |  1個 | 4.6 |
+|S. cerevisiae(イースト)| 16本 | 350個 | 13 |
+|Drosophilia| 4本 | 1200-2万個 | 80 |
 
-G1フェーズでは、以下のチェックが行われる
-
-- DNAの損傷は無いか
-- 十分な栄養があるか
-- 細胞のサイズは十分か
-
-またG1フェーズで細胞分裂を開始する準備が行われる。originがタンパク質によって識別されたりヘリカーゼが付加されたり。
-
-### Sフェーズ
-
-実際に複製が行われるフェーズ。
-
-### Mフェーズ
-
-MITOSIS。４つのサブフェーズに分けられる。
-
-- prophase: sister chromatidsがcondenseされて核の膜も消える
-- metaphase: microtublesとcentrosomesによって構成されるspindleがsister chromatidsに付加され、細胞の赤道面に並ぶ
-- anaphase: sister chromatidsがスピンドルによって反対極にひっぱられていく
-- telophase: 核膜が復活し２つの核になる
-
-なお、このあとにcytokinesisという細胞が実際に分裂するフェーズがあるが、これは厳密にはmitosisのあとのフェーズと解釈されるらしい。
-
-### CyclinとCDKによる制御
-
-各フェーズの間はcyclinと呼ばれるタンパク質によって制御され、cyclinはCyclin Dependant Kinase、CDKによってactivateされる。
+- 人間: 染色体 22+X/Y、origin 3万個くらい、ゲノムサイズ `3000*10^6`
