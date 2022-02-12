@@ -63,14 +63,23 @@ S-phaseの初期にinitiateされるorigin、中期にinitiateされるorigin、
 
 序盤のoriginからのフォークが何らかの理由で止まっても、後半のoriginが続きを合成出来る。
 
+----
 
-## Nascent strand mapping (High throughput assay)
+## Originを見つける3つのassay
 
-Originを見つけるassayの一つ。
+Originを見つける3つのassay。
 
 - [PngNote ページ6, Origin周辺の図解](https://karino2.github.io/ImageGallery/MolecularBiology728x.html#lg=1&slide=5)
 
 originを見つけるassayは、originと関連する何らかのssDNAを検出するのが基本。
+
+1. Nascent strand mapping
+2. Nascent okazaki fragment mapping
+3. Replication timing assay
+
+## 1. Nascent strand mapping (High throughput assay)
+
+Originを見つけるassayの一つ。フォークのうちleading strandの方が長いのを利用してleading strandを見分ける。
 
 ### Nascent strandの特徴
 
@@ -129,6 +138,10 @@ nascent strand DNAはssDNAだが、シーケンシングは普通dsDNAに対し�
 
 シーケンシング出来れば、あとはゲノム配列全体のどこに対応するかをマッピングすれば、originがどこかが分かる。
 
+### Deep Sequencing
+
+大量のDNA片の短いDNAシーケンスを一気に解読する手法。
+
 ### Nascent strand mappingの長所、短所
 
 - 長所: 前提知識がほとんど要らない（全体のゲノム配列だけ知っていれば十分）
@@ -139,7 +152,7 @@ Drosophilaの例では、200kbのうち10箇所くらいのoriginが見て取れ
 
 なぜlow resolutionかと言えば、nascent strandは割合がすごく少ないから。岡崎フラグメントとつながってしまえば、originの情報は一部失われてしまう。
 
-## Nascent Okazaki Fragment Mapping
+## 2. Nascent Okazaki Fragment Mapping
 
 DNA ligaseの適切なミュータントが必要だが、もし行えれば高い解像度が得られる手法。
 
@@ -178,7 +191,7 @@ strandednessを識別する必要がある（ワトソン側かクリック側�
 30bpは平均して`4^30`ゲノムに一回当たる頻度なので、ほぼ一意。
 現実的には8bpくらいでもだいたいユニーク。
 
-## Replication Timing Assay
+## 3. Replication Timing Assay
 
 originは付近のDNAよりも先に複製されるという事実を利用する。
 
@@ -211,3 +224,81 @@ hybridizeしやすい配列としにくい配列があるが、ratioを比較し
 - 長所：前提知識が要らない
 - 長所：特殊なミュータントを必要とせずどの生物でも使える
 - 短所：解像度はいまいち（1〜3kb）
+
+----
+
+## Replicator Mapping
+
+originと比較すると、replicatorの方が難しい。
+
+1. plasmid based mapping
+2. mutational mapping
+
+### 1. Plasmid Based Mapping
+
+これは単細胞生物でしか実現できていない。理由は良く分からないが、多細胞生物ではプラスミドは不安定だからか？
+
+手順。
+
+1. selectable markerを持つプラスミドからreplicatorを取り除く (EcoRIなどの制限酵素で）
+2. プラスミドを含んでいた生物のゲノムを取り出す
+3. 同じ制限酵素でゲノムをカットする(だいたい4kbサイズになる、6bpカッターなので、`4**6=4096`）
+4. 片っ端からこの断片をプラスミドにligateする
+5. このプラスミドを形質転換（transform）する
+6. selectable mediaで形質転換したホスト細胞を選択（ura3 geneを持つプラスミドなら、uracilの欠けたメディアで培養する）
+7. 生き残った細胞のDNAをシーケンシングする
+
+細胞にプラスミドを加えて、正の電荷のイオンを加えて温めると、DNAが合成される。良くメカニズムはわかっていない。
+8〜10 kbのDNA片が得られる。メガダルトンくらいのサイズ。
+
+コロニー1つでだいたいmillionのオーダーの細胞が居る。
+
+- 長所: 素早くreplicatorを見つける事が出来る
+- 短所: 単細胞生物でしか使えない
+
+### 2. Mutational Mapping
+
+必要な前提条件
+
+- 細胞の特定のDNAをmutagenize出来る必要がある
+- origin function（またはreplicator function）についてのassayが出来る必要がある
+
+実際の手順
+
+1. replicatorの機能を持つと思われるターゲット領域の中の一部を順番に変異させる（plasmid based mappingなどで特定されている領域）
+2. 特定の領域を変異させてoriginのactivityが機能する かを見ていき、機能しなくなる領域の変異を特定する（ここでorigin functionを判定するassayを使う。replicatorでも良い）
+3. 機能しなくなる領域の和が必要な領域と分かる（必要とは分かるがそれだけで十分かは分からない）
+4. 領域の和の範囲を使ってoriginが機能するかを見る（十分な領域の判定）
+
+## 複製に関わるタンパク質とその特定
+
+幾つかの生物ではOriginとReplicatorの特定に成功している。
+
+- SV40 ウィルス (65bp)
+- E. coli （245bp）
+- S. cerevisiae（イースト） (100bp)
+
+これらの生物でわかっている事として、２つ（または3つ）の構成要素がある。
+
+1. Initiator binding site
+2. unwoundしやすいDNAの領域
+3. (Eukaryoticでは三番目の構成要素と思われている要素） nucleosomeが無い領域
+ 
+### 複製に関わるタンパク質の特定方法
+
+- Biochemical fractionation
+- hoge
+
+
+**Biochemical fractionation**
+
+- crude extractから始めて、ion exchange columnなどでfractionationしていく
+- 得られた溶液の組み合わせで複製が実行される組み合わせを探す
+
+fractionationの手順
+
+- anion exchange column (正に帯電したカラム）を使う
+- NaClの濃度を変えて洗い流す（0.1Mで流したA, 0.2Mで流したB、0.5Mで流したC、1.0Mで流したDなど）
+- これらの組み合わせを見て、複製が実際に行える組み合わせを探す（だいたい一つに偶然必要なのが全部入るという事は無い）
+
+これで大雑把な候補は絞れるが、より細かく絞っていくのはキリが無い。
