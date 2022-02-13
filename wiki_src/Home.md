@@ -28,3 +28,9 @@ edXの728x、[Molecular Biology - Part 1: DNA Replication and Repair](https://ww
 ## Unit: DNA Replication and the DNA
 
 - [[OriginとReplicator]]
+- [[Originを見つける3つのassay]]
+- [[ReplicatorMapping]]
+
+## Unit: DNA Replication: Discovery and More Assays
+
+- [[ReplicationGenesとその見つけ方]]
