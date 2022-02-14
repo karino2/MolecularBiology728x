@@ -2,28 +2,13 @@
 
 ## E. coliの様々なDNAポリメラーゼ
 
-- DNA Pol I
-  - exonucleaseは5' to 3'と3' to 5'の両方
-  - subunitは一つ
-  - processivityはlow (10-100)
-  - [[岡崎フラグメントrepair]]用
-- DNA Pol II
-  - exonucleaseは3' to 5'でproofreading用
-  - subunitは一つ
-  - processivity はlow
-  - DNA repair用
-- DNA Pol IV, V
-  - exonucleaseは無し
-  - low processivity
-  - bypass repair用らしい
-- DNA Pol III Core
-  - exonucleaseは3' to 5'
-  - subunitは3つ
-  - processivityはlow (10-100)
-- DNA Pol III Holoenzyme
-  - subunitは10
-  - proessivityはとてもhigh (`10^5`以上)
-  - 染色体複製用
+| ポリメラーゼの種類 | exonuclease | subunit | processivity | 用途 |
+| ---- | ---- | ---- | ---- | ---- |
+| DNA Pol I | 5’ to 3’と3’ to 5’の両方 | 1つ | low (10〜100) | [[岡崎フラグメントrepair]]用 |
+| DNA Pol II | 3’ to 5’ (proofreading用） | 1つ | low | DNA repair用 |
+| DNA Pol IV, V | 無し | 1つ | low | bypass repair用らしい |
+| DNA III Core | 3’ to 5’&nbsp; | 3つ | low (10〜100） | 次を参照 |
+| DNA Pol II Holoenzyme | 3’ to 5' | 10 | とってもhigh (`10^5` 以上) | 染色体複製用 |
 
 最初にArthur Kornbergが見つけたポリメラーゼはDNA Pol I。これは大量にある。
 
@@ -61,6 +46,8 @@ Holoenzymeは複数のタンパク質の集合体で、複数の酵素が関連�
 
 ## これまで登場したタンパク質をまとめたトロンボーンモデル
 
+以上の構成要素から考えられる複製の時の振る舞いとして、トロンボーンモデルというものが提唱されている。
+
 ### これまで登場したタンパク質の相互作用（バクテリアの場合）
 
 1. ポリメラーゼholoenzymeのタウサブユニットがDNAヘリカーゼの活動を促進する（合成が遅れてヘリカーゼから遅れると、ヘリカーゼの活動が停滞して追いつくのを待つ）
@@ -79,7 +66,12 @@ Holoenzymeは複数のタンパク質の集合体で、複数の酵素が関連�
     - そこには[[複製フォーク]]で述べたSSBが結合してこの単鎖が他にくっついたり自身と折れ曲がってくっつくのを防ぐ
 4. single strandedなDNAがkbくらいの量になると、プライマーゼがヘリカーゼと相互作用してprimerを合成する
 5. PTJが出来たと認識されて、PTJがデルタの所に、Sliding clampがやってきてPTJを覆う、という先の「DNAと結合する時のメカニズム」で述べた事が起こる
-6. 活動していなかったもう一つのDNAポリメラーゼがこのcliding clampとともに合成を始める
+6. 活動していなかったもう一つのDNAポリメラーゼがこのsliding clampとともに合成を始める
+
+なお、岡崎フラグメントの方のsliding clampが外れるメカニズムは、sliding clampはもともと放っておくと勝手に離れていくもので、
+むしろ合成の間なぜ離れないのか？と考えるのが正しい。
+それはポリメラーゼがデルタがあけた所と結合して、もう一度開くのを防いでいるらしい。
+だからポリメラーゼが居なくなるとすぐにまた開いて離れてどこかに行ってしまう。
 
 ### トロンボーンモデルのアニメーション
 

@@ -20,6 +20,10 @@ DNA genesとは、いろいろなものが知られているが、例えばDnaA�
 2. unwoundしやすいDNAの領域
 3. (Eukaryoticでは三番目の構成要素と思われている要素） nucleosomeが無い領域
  
+unboundしやすいDNAの領域はATが豊富な領域。
+
+さて、これらの事実はどうやって知る事が出来るだろうか？
+
 ## Biochemical fractionationとその限界
 
 複製に関わるタンパク質をどう特定するのか？最初に考えられるのはBiochemical fractionation。
@@ -134,4 +138,11 @@ WTを例えばanion exchange column(正に帯電したカラムを通して 濃�
 それが含まれているfractionを探せば良いので、組み合わせが爆発しない。
 単にいつもより細かくfractionを絞り込んでいけるはず。
 
+Specific Activityがそれ以上改善しなくなるまでpurificationを続ける。
+
 Specific Activityは以下を参照の事。 [ProteinPurification #Specific Activityを測る - Biochemistry 705x](https://karino2.github.io/Biochemistry705x/ProteinPurification#specific-activity%E3%82%92%E6%B8%AC%E3%82%8B)
+
+## E. coliにおける、複製の始動
+
+[複製の始動](複製の始動.md)
+

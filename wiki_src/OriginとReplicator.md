@@ -3,12 +3,13 @@
 [[DNAポリメラーゼの種類とトロンボーンモデル]]では主にE. coliの仕組みを見てきた。
 ここではEukaryoticとの比較をする。
 
-| | バクテリア(E. coli) | Eukariotic (イースト菌) |
+| |  バクテリア(E. coli) | Eukariotic (イースト菌) |
 | ---- | ---- | ---- |
-|ポリメラーゼ| DNA Pol III Core | DNA Pol イプシロン(leading), DNA Pol デルタ (lagging)|
-|プライマーゼ| dnaG | DNA Pol α/プライマーゼ |
-|Sliding clamp| β/dnaN | PCNA |
-|Sliding clamp loader| タウcomplex | RF-C (ポリメラーゼと相互作用してなさそうで、仕組みはよくわかっていない） |
+| ポリメラーゼ | DNA Pol III Core | DNA Pol イプシロン(leading), DNA Pol デルタ (lagging) |
+| プライマーゼ | dnaG | DNA Pol α/プライマーゼ |
+| Sliding clamp | β/dnaN | PCNA |
+| Sliding clamp loader | タウcomplex | RF-C (ポリメラーゼと相互作用してなさそうで、仕組みはよくわかっていない） |
+
 
 ## 複製のRepliconモデル
 
