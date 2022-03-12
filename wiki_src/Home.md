@@ -4,8 +4,7 @@ edXの728x、[Molecular Biology - Part 1: DNA Replication and Repair](https://ww
 
 ## イントロダクション
 
-[[イントロダクション]]
-
+- [[イントロダクション]]
 
 ## Unit: DNA Replication: DNA Polymerase
 
@@ -13,6 +12,7 @@ edXの728x、[Molecular Biology - Part 1: DNA Replication and Repair](https://ww
 - [[DNAポリメラーゼ]]
   - [[ヌクレオチド]]
 - [[DNAポリメラーゼの活動の計測]]
+- [[ゲノムのオーダー]]
 - クイズ 92%だった。70%でパスとのことなのでまぁまぁ優秀ではなかろうか。
 
  Journal Club
