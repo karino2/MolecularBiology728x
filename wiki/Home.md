@@ -58,12 +58,6 @@ DNAの損傷には以下の２種類があり、
 このUnitでは主にbaseの損傷についての修復を議論し、double stranded breakとその修復は次のUnitで扱う。
 
 - [DNAの損傷](DNAの損傷.md)
-
-修復のメカニズムには以下のようなものがある。
-
-- direct repair
-- base excision repair
-- nucleotide excision repair
-- translesion synthesis
+- [Baseが損傷したDNAの修復](Baseが損傷したDNAの修復.md)
 
 
