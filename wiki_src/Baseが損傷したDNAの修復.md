@@ -60,3 +60,72 @@ glycosylaseもUの部分をフリップしてactive siteに近づけて反応を
 4. ligateしてつなげる
 
 flapは上に折れて突き出た部分の事か。
+
+## Nucleotide Excision Repair
+
+- lesion ... 損傷
+- adduct ... 付加物
+
+BulkyなDNAのmodificationが起こった部分に作用する（pyrimidine dimerなど）。
+二重らせんが崩れるような大きな損傷で使われる。
+
+### Uvr A, B, C, Dによる修復の例
+
+1. Uvr A/B がA2B2 complexを形成して、DNAをスキャンし続けてBulky adductsを探す
+   - どうやってスキャンが移動していくのかは良く分かってない
+   - 普通のDNAだと比較的早く離れる事くらいは分かってる
+2.  損傷が検出されると、以下が起こる
+    - 結合が強化される
+    - Uvr Aが自身に結合しているATPを加水分解し、UvrA-ADPが離れる
+3. Uvr Bだけが残ると、ヘリカーゼのような挙動でDNAを開く(meltと言っていた）
+4. 損傷している方のstrandのUvr Bが離れる（どちらが損傷しているかが分かるらしい）
+5. 残ってる方のUvr BがUvr Cと結合する
+    - Uvr CはEndonucleaseで、損傷したbaseから 5'側を8bp、3'側を4〜5bpの部分をカットする(つまり12〜13baseが削除される）
+6. Uvr D(またの名をヘリカーゼII）がexcised ssDNAを取り除く（ニックが入った間って意味か）
+7. DNAポリメラーゼとリガーゼが間を合成してシールする
+
+### Transcription Coupled Repairによるコーディングリージョンの優先
+
+RNAポリメラーゼを使ってDNAの損傷を検出する。
+
+RNAポリメラーゼは損傷のあるあたりで良くstallしている。
+これがシグナルとなって、Transcription Coupled Repair Factor、通称TCRFを連れて来る。
+
+TCRFは２つの事をする
+
+1. ATPの加水分解を使ってRNAポリメラーゼを追い出す
+2. Nucleotide excision repair proteinを動員する（例えばE. coliの場合はUvr A）
+
+以後は損傷と結合して通常のNucleotide excision repairのプロセスが始まる。
+
+### E. coliとEukaryoticのNERタンパク質の比較
+
+| 役割 | E. coli | eukaryotic |
+| ---- | ---- | ---- |
+| 損傷の検出 | UvrA | XPC + DDBI/XPE |
+| DNA opening | UvrB | XPA/TFIIH |
+| DNA cleavage | UvrC | XPF (3’)、XPG(5’) |
+| oligo removal | UvrD (Helicase II) | TFIIH |
+| DNA合成 | Pol I | Pol デルタ か Pol イプシロン |
+
+TFIIH (TF2H）は転写で詳しく扱うらしい。
+
+## Translesion Syntesis
+
+Y-familyのポリメラーゼが担当する。
+
+1. 通常のポリメラーゼがstallする（ポリメラーゼIIIとか）
+2. Sliding Clampは残るがポリメラーゼは離れる（横についている）
+3. translesion DNA ポリメラーゼが代わりにはまる（ポリメラーゼスイッチング）
+ 4. baseを適当に合成していく（processivityはpoorで2とか3baseとか）
+
+Aが多めらしい。
+
+### labeled primerとテンプレートにpyrimidine dimerのあるものを使ってassayする
+
+labeled primerを使って通常のprimer extension assayと同じ手順で、
+テンプレートの方にpyrimidine dimerを作れば良い。
+
+E. coliだとポリメラーゼI, II, IIIではpyrimidine dimerまでしか伸びないが、
+translesion polymeraseであるポリメラーゼIVかVを加えておけば端まで合成が続くので長さの違いで検出出来る。
+
