@@ -14,6 +14,8 @@ DNAポリメラーゼの活動の計測には以下のような手法がある
 - Incorporation assay
 - Primer extension assay
 
+[Assays](Assays.md)
+
 ## Incorporation assay
 
 - ポリマー（この場合はDNA）とビルディングブロック(この場合はdNTPs)を分離出来る必要がある
@@ -33,7 +35,7 @@ M13というファージを使う。
 
 ssDNAは一本でも塩基同士の水素結合で折り曲がるらしい。熱するのはこの水素結合をほどいてannealeしやすくする為らしい。
 
-### 2. BUFFERとDMAポリメラーゼを追加
+### 2. BUFFERとDNAポリメラーゼを追加
 
 バッファは以下のようなもの
 

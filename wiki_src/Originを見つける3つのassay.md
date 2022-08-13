@@ -159,3 +159,6 @@ hybridizeしやすい配列としにくい配列があるが、ratioを比較し
 - 長所：特殊なミュータントを必要とせずどの生物でも使える
 - 短所：解像度はいまいち（1〜3kb）
 
+## 次：ReplicatorMapping
+
+[[ReplicatorMapping]]

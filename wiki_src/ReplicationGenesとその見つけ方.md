@@ -24,9 +24,9 @@ unboundしやすいDNAの領域はATが豊富な領域。
 
 さて、これらの事実はどうやって知る事が出来るだろうか？
 
-## Biochemical fractionationとその限界
+## Biochemical Fractionationとその限界
 
-複製に関わるタンパク質をどう特定するのか？最初に考えられるのはBiochemical fractionation。
+複製に関わるタンパク質をどう特定するのか？最初に考えられるのはBiochemical Fractionation。
 単純には以下のような事が考えられる。
 
 - crude extractから始めて、ion exchange columnなどでfractionationしていく
@@ -39,6 +39,8 @@ fractionationの手順
 - これらの組み合わせを見て、複製が実際に行える組み合わせを探す（だいたい一つに偶然必要なのが全部入るという事は無い）
 
 これで大雑把な候補は絞れるが、より細かく絞っていくのはキリが無い。
+
+[[Assays]]
 
 ## DNA複製に関わるタンパク質のGenetic screenに求められる事
 

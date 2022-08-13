@@ -1,3 +1,4 @@
+前: [Originを見つける3つのassay](Originを見つける3つのassay.md)
 
 originと比較すると、replicatorの方が難しい。
 
