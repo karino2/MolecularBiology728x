@@ -1,12 +1,16 @@
-edXの728x、[Molecular Biology - Part 1: DNA Replication and Repair](https://www.edx.org/course/molecular-biology-part-1-dna-replication-and-repair)のノート用サブWiki。たぶんPart 2とPart 3もここに書くと思う。
+edXの728xのノート用サブWiki。
 
-[PngNoteのノート](https://karino2.github.io/ImageGallery/MolecularBiology728x.html)
 
-## イントロダクション
+## Part1: DNA Replication and Repair
+
+- [Molecular Biology - Part 1: DNA Replication and Repair](https://www.edx.org/course/molecular-biology-part-1-dna-replication-and-repair)
+- [PngNoteのノート](https://karino2.github.io/ImageGallery/MolecularBiology728x.html)
+
+### イントロダクション
 
 - [[イントロダクション]]
 
-## Unit: DNA Replication: DNA Polymerase
+### Unit: DNA Replication: DNA Polymerase
 
 - [[DNAの構造]]
 - [[DNAポリメラーゼ]]
@@ -18,38 +22,38 @@ edXの728x、[Molecular Biology - Part 1: DNA Replication and Repair](https://ww
  Journal Club
 - [DNA synthesis by a polymerase provides the driving force to accelerate DNA unwinding by a helicase](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1563444/)
 
-## Unit: DNA Replication: The Other Players
+### Unit: DNA Replication: The Other Players
 
 - [[複製フォーク]]  DNAヘリカーゼ、Single Stranded Binding Proteinなど。
 - [[Topoisomerase]]
 - [[岡崎フラグメントrepair]]
 - [[DNAポリメラーゼの種類とトロンボーンモデル]]
 
-## Unit: DNA Replication and the DNA
+### Unit: DNA Replication and the DNA
 
 - [[OriginとReplicator]]
   - [[細胞分裂の復習]]
 - [[Originを見つける3つのassay]]
 - [[ReplicatorMapping]]
 
-## Unit: DNA Replication: Discovery and More Assays
+### Unit: DNA Replication: Discovery and More Assays
 
 - [[ReplicationGenesとその見つけ方]]
 - [[複製の始動]]
 - [[複製の開始に関わるassay達]]
 
-## Unit: DNA Replication: Initiation
+### Unit: DNA Replication: Initiation
 
 - [[真核生物の複製の始動]]
 - [[テロメアとテロメラーゼ]]
 - [[クロマチン、ヒストン、ヌクレオソーム]]
 
-## Unit: Mismatch Repair
+### Unit: Mismatch Repair
 
 - [[MismatchRepairのメカニズム]]
 - [[MismatchRepairのassay]]
 
-## Unit: DNA Damage, DNA Repair, and DNA Damage Tolerance
+### Unit: DNA Damage, DNA Repair, and DNA Damage Tolerance
 
 DNAの損傷には以下の２種類があり、
 
@@ -61,7 +65,15 @@ DNAの損傷には以下の２種類があり、
 - [[DNAの損傷]]
 - [[Baseが損傷したDNAの修復]]
 
-## Unit: Double-Stranded Break Repair
+### Unit: Double-Stranded Break Repair
 
 - [[DSBsの概要とNHEJ]]
 - [[RecombinationalRepair]]
+
+## Part 2: Transcription and Transposition
+
+- [PngNoteのノート](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=0)
+
+### Unit:  Introduction to Bacterial Transcription and Assays
+
+- [[Transcription入門]]
