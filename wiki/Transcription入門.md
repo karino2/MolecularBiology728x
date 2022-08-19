@@ -30,3 +30,30 @@
 | rate | 60-100 nt/sec | 1000 nt/sec |
 | processivity | 4000 nt/binding 以上 | より低い |
 | DNA strandsのコピー | 一方向で、1 strandだけコピー | 両方のstrands |
+
+## Transcriptionを測るassayたち
+
+- incorporation assay
+
+### Incorporation Assay
+
+[DNAポリメラーゼの活動の計測](DNAポリメラーゼの活動の計測.md)と同様のassay。
+ラベルとしてはrNTPのうちrUTPを使う事が多い。
+
+生産物を分離する方法はDNAポリメラーゼの時と同様にFilter BindingかGel Electrophoresisを使う。
+
+Gel Electrophoresisの場合はRNAが折りたたまれてしまう問題に対処する必要があるので、
+denaturing gelを使う事。
+
+denaturing gelとしてはたくさんの尿素をゲルに含めるのが手頃。
+
+また、Transcriptionの結果を分析する場合、initiationはpreciseだがterminationはimprecise（開始地点はいつも同じだが終了場所はばらつきがある、という事か）という事にも気をつける必要がある。
+
+そこで、run-off transcription assayと呼ばれる手法を使う。
+
+[2ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=1)
+
+| メリット | デメリット |
+| ---- | ---- |
+| 早い | Start siteは分からない |
+|定量的| |
