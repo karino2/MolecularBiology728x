@@ -33,7 +33,8 @@
 
 ## Transcriptionを測るassayたち
 
-- incorporation assay
+- Incorporation Assay
+- Primer Extension Assay
 
 ### Incorporation Assay
 
@@ -57,3 +58,24 @@ denaturing gelとしてはたくさんの尿素をゲルに含めるのが手頃
 | ---- | ---- |
 | 早い | Start siteは分からない |
 |定量的| |
+
+### Primer Extension AssayでTSSを調べる
+
+[[DNAポリメラーゼの活動の計測]]と同じようなassayだが、目的も使う道具も違う。今回はTranscription Start Sitesを調べるのに使う。
+
+[3ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=2)
+
+
+- 生成されるRNAを何らかの方法で分離する
+- TSSの下流の部分に対応するRNAの部分に結合するssDNA primerを作り、5'の方にラベルづけする（部位が一意に決まるように25ntとかの長さ）
+- reverse transcriptaseで逆転写する
+- denaturing gelで分離して生成されたRNAの長さを測る（長さを知りたいので分解能の高いacrylamide gelを使う）
+
+結果の長さを測る事で結合した場所から端までの場所が分かり、シーケンスのどこがTSSかを特定する事が出来る。
+
+reverse transcriptaseはテロメアの所でtelomeraseとして登場していた。他にもレトロウィルスなどで出てくる。
+
+| メリット | デメリット |
+| ---- | ---- |
+| 5’末端の正確な情報が得られる | 一度に一つのgeneについての情報しか分からない |
+|   | sensitivityがlow〜medium程度（少量発現するgeneには向かない） |
