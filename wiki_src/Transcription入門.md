@@ -33,8 +33,16 @@
 
 ## Transcriptionを測るassayたち
 
+**Gene by Gene Expression**
+
 - Incorporation Assay
 - Primer Extension Assay
+- RT-PCR
+
+**Global Transcription**
+
+- RNA Seq
+
 
 ### Incorporation Assay
 
@@ -65,7 +73,6 @@ denaturing gelとしてはたくさんの尿素をゲルに含めるのが手頃
 
 [3ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=2)
 
-
 - 生成されるRNAを何らかの方法で分離する
 - TSSの下流の部分に対応するRNAの部分に結合するssDNA primerを作り、5'の方にラベルづけする（部位が一意に決まるように25ntとかの長さ）
 - reverse transcriptaseで逆転写する
@@ -79,3 +86,61 @@ reverse transcriptaseはテロメアの所でtelomeraseとして登場してい�
 | ---- | ---- |
 | 5’末端の正確な情報が得られる | 一度に一つのgeneについての情報しか分からない |
 |   | sensitivityがlow〜medium程度（少量発現するgeneには向かない） |
+
+### RT-PCR
+
+目的のRNAがどれだけ存在しているかを調べるassay。
+
+Reverse Transcriptase PCR。略してRT PCR。ただしこれはReal Time PCRと組み合わせて使う事も多く、その場合は RT RT-PCRになる。
+
+[4ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=3)
+
+手順
+
+1. RNAを分離
+2. 2つのペアになっているDNAプローブを作る。geneの3'末端側をターゲットにする。（3'末端があればtranscriptionが終わっている事が保証出来るから）
+3. RNAに２つのDNAプローブをアニールする（片方だけRNAとはアニールする）
+4. Reverse TranscriptaseでアニールしたDNAをextend
+5. thermophilicなDNAポリメラーゼを使ってPCRする
+6. Non-denaturing gelで分離するか、Real Time PCRでモニターする。
+
+これで目的のRNAが相対的にどのくらい多く存在しているかを確認出来る。
+
+| 利点 | 欠点 |
+| ---- | ---- |
+| とてもsensitive（少量のRNAでも検出出来る） | 一度に一つのgeneしか分からない |
+|  | 5’末端がどこかは分からない |
+
+数十のオーダーのRNA分子でも検出出来るらしい。頑張れば一つも可能と言っているlabもあるとか。
+
+### Real Time PCR
+
+dsDNAの生成物を染めるdyeを使って、生成物が増えていく量を時間とともに観測する手法。
+no template controlも加えてlinearの範囲を過ぎてない事を確認する必要がある。
+少し汚染されてるだけでも大量に増幅するとそれが見えてしまう事があるから。
+
+### RNA-SeqによるGlobal Transcriptionのassay
+
+Deep sequencingを使って細胞全体について調べる。
+
+1. RNAを分離（in-vivo）
+   - mRNAをリボソームRNAやtRNAから分離する
+   - Eukaryotic cellではRNAにたくさんのAのテールがある（poly A tail）ので、oligo dTのカラム（ビーズ）で分離出来る。
+   - Prokaryotic cellsでは5'末端に3リン酸が無いRNAを除去する方法があり、rRNAやtRNAの多くは3リン酸が無いので除去出来る。
+2. mRNAのcDNAを作る（6merのRandom primersとreverse transcriptaseで作る）
+3. cDNAを300〜500bp程度のサイズに切断する
+4. Deep Sequencingする
+
+これで存在しているmRNAの量が測れる。
+
+Deep Sequencingについては[[Originを見つける3つのassay]]の「Nascent Okazaki Fragment Mapping」も参照。
+同じようにbinningしてそのbinの中で開始しているフラグメントの数を数える。
+
+| 利点 | 欠点 |
+| ---- | ---- |
+| 転写された全geneについての情報が得られる | 本質的には定量的では無い（しかしrelative quantitationは出来る） |
+|  | steady stateのRNAレベルを測っている（転写の量では無い） |
+
+- relative quantitationとは２つの異なる種類の細胞に同じ手法を使って、相対的な量の違いを調べる事は出来る。
+- steady stateの情報は、transcriptionのレートだけでは無く、turnoverのレートも影響したものになってしまっている。
+
