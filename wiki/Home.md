@@ -77,3 +77,4 @@ DNAの損傷には以下の２種類があり、
 ### Unit:  Introduction to Bacterial Transcription and Assays
 
 - [Transcription入門](Transcription入門.md)
+- [バクテリアのTranscription入門](バクテリアのTranscription入門.md)

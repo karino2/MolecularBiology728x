@@ -41,10 +41,10 @@
 
 **Global Transcription**
 
-- RNA Seq
+- RNA-Seq
+- GRO-Seq
 
-
-### Incorporation Assay
+## Incorporation Assay
 
 [DNAポリメラーゼの活動の計測](DNAポリメラーゼの活動の計測.md)と同様のassay。
 ラベルとしてはrNTPのうちrUTPを使う事が多い。
@@ -67,7 +67,7 @@ denaturing gelとしてはたくさんの尿素をゲルに含めるのが手頃
 | 早い | Start siteは分からない |
 |定量的| |
 
-### Primer Extension AssayでTSSを調べる
+## Primer Extension AssayでTSSを調べる
 
 [DNAポリメラーゼの活動の計測](DNAポリメラーゼの活動の計測.md)と同じようなassayだが、目的も使う道具も違う。今回はTranscription Start Sitesを調べるのに使う。
 
@@ -87,7 +87,7 @@ reverse transcriptaseはテロメアの所でtelomeraseとして登場してい�
 | 5’末端の正確な情報が得られる | 一度に一つのgeneについての情報しか分からない |
 |   | sensitivityがlow〜medium程度（少量発現するgeneには向かない） |
 
-### RT-PCR
+## RT-PCR
 
 目的のRNAがどれだけ存在しているかを調べるassay。
 
@@ -119,7 +119,7 @@ dsDNAの生成物を染めるdyeを使って、生成物が増えていく量を
 no template controlも加えてlinearの範囲を過ぎてない事を確認する必要がある。
 少し汚染されてるだけでも大量に増幅するとそれが見えてしまう事があるから。
 
-### RNA-SeqによるGlobal Transcriptionのassay
+## RNA-SeqによるGlobal Transcriptionのassay
 
 Deep sequencingを使って細胞全体について調べる。
 
@@ -144,3 +144,42 @@ Deep Sequencingについては[Originを見つける3つのassay](Originを見�
 - relative quantitationとは２つの異なる種類の細胞に同じ手法を使って、相対的な量の違いを調べる事は出来る。
 - steady stateの情報は、transcriptionのレートだけでは無く、turnoverのレートも影響したものになってしまっている。
 
+## GRO-Seq
+
+- striatal cell 線条体細胞
+
+Global Run On Sequencingの略。run onはどんどん進む、進行する、というような意味。
+
+RNA-SeqはあるRNAのstabilityが観測結果に影響を与えるので、Transcriptionについて調べたい時には不都合な面がある。
+GRO-Seqは転写をしているRNAポリメラーゼを捉える事で転写についての直接的な情報が得られる。
+
+手順
+
+1. 核を単離するか細胞をpermeabilizeするかする
+   - 核の外部のrNTPはほとんど無くなる（溶けて薄まってしまってなくなる）
+2. BrUTPとrNTPを加える
+   - RNAポリメラーゼがこのあとに合成をしたものはBrUTPを含む事になる
+   - initiationの所は見ていないが、合成を続けている（run on）RNAポリメラーゼの活動を見ている事になる
+3. RNAを分離
+4. BrUのantibodyを使ってBrUMPを含んだRNAをimmunoprecipitateする。
+5. 3'末端と5'末端で異なるprimerをligateする
+6. Reverse transcriptaseを使ってDNAを作り、出来たssDNAにプライマーをつけて通常のDNAポリメラーゼでdsDNAを作る
+7. Deep Sequencing
+
+BrUTPはBromoのanalogue（PngNoteの5ページも参照）。
+BrUTPを含むRNAを識別するantibodyが作れる。
+
+[5ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=4)
+
+eukaryoticの細胞ではTSSにRNAポリメラーゼがくっついて、そのままとどまっているというケースが凄く多いので、
+進んでいるかどうかの違いは重要。
+
+このassayの利点としては、進行中のtranscriptionの情報が得られる、という事。
+
+このassayで、eukaryoticの細胞ではRNAポリメラーゼがTSSからgeneの側に進むものと、反対側に進むものの両方がある事が判明した。
+ただgeneの反対側に進んで合成されるRNAはとてもunstableですぐに分解されてしまうからRNA-Seqでは見えない。
+eukaryoticの細胞の多くのプロモーターはRNAポリメラーゼを両方に進める模様。
+
+## 次：バクテリアのTranscription入門
+
+[バクテリアのTranscription入門](バクテリアのTranscription入門.md)
