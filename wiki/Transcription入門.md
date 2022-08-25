@@ -113,6 +113,8 @@ Reverse Transcriptase PCR。略してRT PCR。ただしこれはReal Time PCRと
 
 数十のオーダーのRNA分子でも検出出来るらしい。頑張れば一つも可能と言っているlabもあるとか。
 
+[Assays](Assays.md)
+
 ### Real Time PCR
 
 dsDNAの生成物を染めるdyeを使って、生成物が増えていく量を時間とともに観測する手法。

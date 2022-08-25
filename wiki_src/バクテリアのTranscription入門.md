@@ -100,3 +100,34 @@ UP Elementはシグマファクターでは無く、コアRNAPのαサブユニ�
 
 これらの結合による相互作用がRNAPをプロモーターに配置する。
 例えばUP Elementはupstreamにあるから、というだけでは無く、この追加のElementがある場合はより多くのRNAポリメラーゼを動員出来る、という意味でもUPのElementである。
+
+## バクテリアプロモーターのマッピング
+
+やる事は[[ReplicatorMapping]]と似ている。
+
+以下の手順でマッピングする
+
+1. Transcriptの5'末端をマッピング（転写されたRNAの5'末端）  
+ほとんどのプロモーターがTSSの50 bp以内に存在しているのでこの情報が重要。[[Transcription入門]]の「Primer Extension AssayでTSSを調べる」を参照。
+2. Mutational map promoter seq  
+5'末端のupstream。前述のように-10や-35のあたり、その前後、Up elementのあたりなど
+
+Mutationしたものについてのassayとしては、ここまで述べてきたものも使えるが、
+他にpromoter fusion assayと呼ばれるassayも良い。
+
+### Promoter Fusion Assay
+
+プロモーターに簡単に検出出来るgene（タンパク質）をfuseする。
+in vivoで使えるassayらしい。
+（coding regionをこれらのgeneで置き換えるっぽい）
+
+簡単に検出出来るものの例
+
+- GFP
+- LacZ (beta galactosidaseをエンコード）
+- luciferase (ホタルの光る所で使われる酵素、eukaryoticで使われる）
+
+いろいろなプロモーターをこれで調べて比較する。
+同じレポーターを使っている限り、プロモーターの違い以外の要素は同じなので比較可能。
+
+[[Assays]]
