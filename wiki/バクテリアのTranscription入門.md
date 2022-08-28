@@ -32,7 +32,7 @@
 5. NTP チャンネル
    - Active SiteがNTPsにアクセス出来るようにするチャンネル
 
-## RNAPとRNAP Holo Enzyme
+## RNAPとRNAP Holo Enzyme（シグマ）
 
 - confer 話し合う、協議する
 
@@ -124,7 +124,7 @@ in vivoで使えるassayらしい。
 簡単に検出出来るものの例
 
 - GFP
-- LacZ (beta galactosidaseをエンコード）
+- lacZ (beta galactosidaseをエンコード）
 - luciferase (ホタルの光る所で使われる酵素、eukaryoticで使われる）
 
 いろいろなプロモーターをこれで調べて比較する。

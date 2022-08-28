@@ -76,7 +76,7 @@ denaturing gelとしてはたくさんの尿素をゲルに含めるのが手頃
 - 生成されるRNAを何らかの方法で分離する
 - TSSの下流の部分に対応するRNAの部分に結合するssDNA primerを作り、5'の方にラベルづけする（部位が一意に決まるように25ntとかの長さ）
 - reverse transcriptaseで逆転写する
-- denaturing gelで分離して生成されたRNAの長さを測る（長さを知りたいので分解能の高いacrylamide gelを使う）
+- denaturing gelで分離して生成されたDNAの長さを測る（長さを知りたいので分解能の高いacrylamide gelを使う）
 
 結果の長さを測る事で結合した場所から端までの場所が分かり、シーケンスのどこがTSSかを特定する事が出来る。
 
