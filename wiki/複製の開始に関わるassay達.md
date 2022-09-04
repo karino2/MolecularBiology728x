@@ -18,6 +18,8 @@ DnaAが最初にdsDNAに結合するところのassayから見ていく。
 Gel Shift assayとも呼ばれる。
 単にラベルを付与したDNAとタンパク質を混ぜて電気泳動してみるだけ。
 
+[Assays](Assays.md)
+
 ### 手順
 
 1. 分析対象のDNAをラベル付与する（oriCとか）
@@ -72,6 +74,8 @@ EMSAで、ラベル無しのコンペティターを一杯入れて反応が変�
 結果がfootprintっぽいので、footprint assayとも呼ばれる。
 
 ORCというタンパク質の例が出ていた。
+
+[Assays](Assays.md)
 
 ### 手順
 
@@ -138,6 +142,8 @@ SV40の例が出ていた。腫瘍のウィルスでポリオウィルスがこ�
 そしてSV40 large T antigenというタンパク質がこのゲノムに結合するとunwindが起こるとか。
 E. coliと違ってsupercoilの必要無いらしい。
 
+[Assays](Assays.md)
+
 ### 手順
 
 1. DNAの1 strandをラベルづけする
@@ -188,6 +194,8 @@ ssDNA cleaving reagentで処理する事でunwindの所のssDNAに切れ目を�
 
 footprintingは数百bp以上になってくると厳しい。
 gel shiftはタンパク質が多く関わると厳しい。
+
+[Assays](Assays.md)
 
 ### メカニズム
 

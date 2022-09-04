@@ -1,5 +1,6 @@
 edXの728xのノート用サブWiki。
 
+[[Assays]]
 
 ## Part1: DNA Replication and Repair
 
@@ -78,3 +79,7 @@ DNAの損傷には以下の２種類があり、
 
 - [[Transcription入門]]
 - [[バクテリアのTranscription入門]]
+
+### Unit: Bacterial Mechanism of Transcription
+
+- [[バクテリアにおけるTranscriptionのInitiation]]
