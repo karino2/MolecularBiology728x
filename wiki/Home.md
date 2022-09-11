@@ -83,3 +83,4 @@ DNAの損傷には以下の２種類があり、
 ### Unit: Bacterial Mechanism of Transcription
 
 - [バクテリアにおけるTranscriptionのInitiation](バクテリアにおけるTranscriptionのInitiation.md)
+- [バクテリアにおけるTranscriptionのElongation](バクテリアにおけるTranscriptionのElongation.md)

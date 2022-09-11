@@ -9,6 +9,8 @@ Repair(修復)には幾つかのケースがある。
 
 今回は複製エラーについてを見ていく。
 
+[[DNAポリメラーゼ]]の「Proofreading Exonucleaseによる修正」も参照の事。
+
 ### 損傷の修復の一般的な手順
 
 1. 損傷を検出する
@@ -131,7 +133,7 @@ E. coliやサルモネラ菌などの一部の例外を除けば、メチル化�
    - nickはPTJと同様にsliding clampのloadingを推進する
    - sliding clampは合成の進む向きと反対の面で構造が違う（どちらの面かでどっちが合成されるstrandかがわかる）
 
-### EukaryoticなどのMutLの役割 - 特別なEnconucleaseを含み、ATPで制御される
+### EukaryoticなどのMutLの役割 - 特別なEndonucleaseを含み、ATPで制御される
 
 これらの生物（E. coli等の少数の例外を除いた大多数）では、MutL内にendonucleaseがあって、
 このendonucleaseはsliding clampが示す合成鎖の方をカットする。

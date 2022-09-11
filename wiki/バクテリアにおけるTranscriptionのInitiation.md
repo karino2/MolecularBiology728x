@@ -133,11 +133,50 @@ transient excursions modelならば両者は離れるのでFRETしなくなる�
 この場合、-10付近のヌクレオチドとRNAPの結合の強さがpromoter escapeのしやすさに影響を与える事になる。
 CGペアが多い方がRNAPとの結合は弱く、rewindでより多くの力が生まれてescapeしやすい。
 
-## Initiation時に発生するイベントを調べるAssayたち
+## Initiation時に発生するイベントを調べるAssayたち（これまで出てきたの）
 
-- Closed Complex Formation  
+1. Closed Complex Formation  
 様々なDNA Binding Assayたちが使える。Gel Shift Assay, Template Association Assay, DNAse Footprintingなど。
-- Open Complex Formation  
+2. Open Complex Formation  
 DNA unwinding assay（この場合はKMnO4を使う、RNAPのactive siteまで入り込めるような小さな分子じゃないと使えないから）
+3. UTC （Unstable Ternary Complex）から STC（Stable Ternary Complex）への遷移  
+これは難しいので既存の手法ではうまく行かない＞新規のAssayへ
 
 [Assays](Assays.md)を参照
+
+## Initiationを調べるAssay達（新規の）
+
+UTCからSTCへの遷移を調べたい。しかし両者の違いは良く分からないのでこれまでのassayではうまく調べられない。
+
+そこで以下に着目する。
+
+- UTCは8〜10 ntのRNAを合成
+- STCはFull LengthのRNAを合成
+
+そこで合成されるRNAの量と長さを測ると、両者の比率が分かる。
+
+基本的なアイデアとしては、1 round分のIncorporation AssayをしたあとにGel Electrophoresisを行い、 「8〜10 nt 転写 : Full Lengthの転写」 の比を求める。
+そのためには、1 round きっかり測りたい。
+そこで使うのがheparin。
+
+### Heparin
+
+heparinは普通はblod clottingの抑止に使われるものだが、
+
+heparinはPoly Sulfated Poly Sacharide。一方、DNAはPoly Phosphate Poly Sacharide。そこでheparinは塩基の無い疑似ssDNAとしての役割を果たす。
+
+heparinがあると、RNAPホロは、Closed Complex Formationのステップが抑止される。
+でも転写は邪魔しない。ひとたびOpenまで行ったらそこから先はheparinが邪魔する事は出来ず、転写が開始される。
+
+### Heparinを使ったTemplate Challenge AssayのようなAssay
+
+1. まずRNAPホロをDNAのプロモーターに結合させてOpen Complex Formationまで進める。（ここまではrNTP無しで行ける）
+2. rNTPとHeparinを加える
+    - Open Complex FormationのRNAPホロはabortive transcriptionとFull Length Transcriptionを行う
+    - ひとたびFull Length Transcriptionが行われてDNAから離れると、RNAPホロとHeparinが結合し、もう一度Closed Complex Formationを形成するのを妨げる
+3. 合成を行い、結果をDenaturing Gelで分離、測定  
+ここでラベルはrNTPにつけるので、長さによってシグナルの違いがある事に注意。
+
+## 次：バクテリアにおけるTranscriptionのElongation
+
+[バクテリアにおけるTranscriptionのElongation](バクテリアにおけるTranscriptionのElongation.md)
