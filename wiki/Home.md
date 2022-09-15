@@ -84,3 +84,4 @@ DNAの損傷には以下の２種類があり、
 
 - [バクテリアにおけるTranscriptionのInitiation](バクテリアにおけるTranscriptionのInitiation.md)
 - [バクテリアにおけるTranscriptionのElongation](バクテリアにおけるTranscriptionのElongation.md)
+- [バクテリアにおけるTranscriptionのRegulation](バクテリアにおけるTranscriptionのRegulation.md)

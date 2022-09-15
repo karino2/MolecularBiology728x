@@ -97,3 +97,8 @@ Rhoはひとたび結合すると、3'に向かってtranslocateしていき、R
 以後はdsDNAが形成されてintrinsic terminateと同じようにRNAポリメラーゼがリリースされる。
 
 Rho-Dependent Terminationの方がレアで、しかもいつtemrinateするかにラグがある（ヘリカーゼが認識して結合して引き出し終わるまでの時間が影響するから）。
+
+## 次：バクテリアにおけるTranscriptionのRegulation
+
+[[バクテリアにおけるTranscriptionのRegulation]]
+
