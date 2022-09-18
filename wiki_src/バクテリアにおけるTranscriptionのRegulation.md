@@ -13,7 +13,7 @@ helix-turn-helix motifと呼ばれるものがmajor grooveに水素結合して�
 
 ここまで見てきたように、転写は以下のステップで行われて、このどれかがrate limiting stepとなっている。
 
-[9ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=8)
+[10ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=9)
 
 repressorはrate limiting stepを減らすか、新しいrate limiting stepを作る必要がある。（ボトルネック以外を変えても影響は無い）。
 
@@ -53,3 +53,7 @@ MeR activatorはDNAのツイストをきつくする事によって-10と-35を�
 
 この場合、MerRが無くても-35は正常なのでRNAPは結合するが、-10の向きが正しくないのでOpen Complex Formになれない。
 MerRが-10の距離と向きを改善する事で正しくOpen Complex Formが形成されるようになる。
+
+## 次: BiologicalReactionsとRates
+
+[[BiologicalReactionsとRates]]
