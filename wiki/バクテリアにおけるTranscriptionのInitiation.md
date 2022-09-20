@@ -161,7 +161,7 @@ UTCからSTCへの遷移を調べたい。しかし両者の違いは良く分�
 
 ### Heparin
 
-heparinは普通はblod clottingの抑止に使われるものだが、
+heparinは普通はblod clottingの抑止に使われるものだが、このassayでも使われる。
 
 heparinはPoly Sulfated Poly Sacharide。一方、DNAはPoly Phosphate Poly Sacharide。そこでheparinは塩基の無い疑似ssDNAとしての役割を果たす。
 

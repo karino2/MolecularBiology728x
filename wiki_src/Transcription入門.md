@@ -121,7 +121,7 @@ dsDNAの生成物を染めるdyeを使って、生成物が増えていく量を
 no template controlも加えてlinearの範囲を過ぎてない事を確認する必要がある。
 少し汚染されてるだけでも大量に増幅するとそれが見えてしまう事があるから。
 
-## RNA-SeqによるGlobal Transcriptionのassay
+## RNA-SeqによるGlobal Transcriptionのassay(RNA-seqと書かれる事も)
 
 Deep sequencingを使って細胞全体について調べる。
 
