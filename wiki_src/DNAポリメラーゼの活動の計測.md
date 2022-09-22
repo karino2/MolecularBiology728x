@@ -127,10 +127,10 @@ ethidium bromideはDNAならなんでも着色出来る物質。EtBrと略され
 - デメリット: より遅い (使うゲルに依るが、20分〜数時間）
 - デメリット: 定量的な情報が得られにくい（ゲルの中のバンドの定量情報は得られにくい）
 
-## Primer extension assay
+## Primer Extension Assay
 
 Incorporation assayではProcessivityなどが計測出来ない。
-Processivityを計測したい場合はPrimer extension assayというのを使う必要がある。
+Processivityを計測したい場合はprimer extension assayというのを使う必要がある。
 
 Primer extension assayの特徴は以下。
 

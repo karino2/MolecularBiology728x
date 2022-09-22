@@ -1,5 +1,12 @@
 前：[[バクテリアにおけるTranscriptionのElongation]]
 
+クイズの単語はここに書いておく。
+
+- asymptomatically 無症候で
+- pneumonia 肺炎
+- bronchitis 気管支炎
+- meningitis 髄膜炎
+
 ## initiationのレートの制御
 
 1. プロモーター配列の違い  

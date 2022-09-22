@@ -74,7 +74,7 @@ promoter clearanceとは、RNAP holoがpromoterから離れていく事。
 
 UnstableからStableへの移行については、abortive transcriptionがどういうモデルで行われているかに関わっている。
 
-abortive transcriptionには３つのモデルが考えられている。
+abortive transcriptionには３つのモデルが考えられている。（GoogleDriveに保存したMolecularBiologyResourcesも参照）
 
 ### transient excursions model
 
