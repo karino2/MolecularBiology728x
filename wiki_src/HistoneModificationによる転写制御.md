@@ -70,3 +70,79 @@ HATといっても一種類じゃなくてたくさんの種類のHATがあり�
 メカニズムは議論があるにせよ、アセチル化が30nmファイバーの形成を妨げるという事自体は間違いない。
 
 これら２つの直接効果は、クロマチンを開いて、DNAをよりアクセスしやすくする方向に働く。
+
+## Histone Modificationの間接的な影響
+
+先に見た直接的な影響、つまりmodification自体の性質よりも、それが他のタンパク質を引き寄せたりする事で起こる影響の方がずっと多い。
+
+### Small domains
+
+間接的な影響の多くは、特定の場所に結合するsmall domainによって引き起こされる。
+
+アセチル化を識別するドメイン。
+
+- bromodomains ... 特定の場所にあるアセチルlysineを識別する。例えばあるbromodomainはH3K27を認識する、など。
+
+メチル化を識別するdomain。
+
+- chromodomains ... 特定の場所にあるメチルlysinやメチルarginineを識別する
+- TUDOR
+- PHD finger
+- BAH
+
+メチル化の方がそれ自身の影響が少ない分、こうしたよそのタンパク質を動員するケースが多い模様。
+
+これらはHistone Modification readersと呼ばれる。
+なお、writerは当然histone acetyltransferase（HAT）などとなる。
+
+### Histone Modificationを「読む」タンパク質たち
+
+先に述べたsmall domainたちは、より大きなタンパク質やタンパク質complexの一部となっている。
+これらのタンパク質が持っている性質が、間接的なHistone Modificationの影響となる。
+
+多くはHATやHDAc、HMTなどや、ヌクレオソーム remodeling complexなど。Nucleosome Remodeling Complexについては[[EukaryoticTranscriptionとヌクレオソーム]]を参照。
+
+### HDAcの例
+
+例えばあるHDAcにはH3K9のメチル化を読むchromodomainがあるものがある。
+アセチル化されているヒストンのH3のK9がメチル化されるとこのHDAcのchromodomainがそれを検出して、
+周辺のアセチル化されたlysineのアセチル基を取り除いていく。
+
+その結果30nm ファイバーの形成が促進されて、DNAはアクセスしづらくなる。
+
+### HATの例（DNA複製時のヒストンのmodificationを保つメカニズム）
+
+あるHATにはbromodomainがあって、特定のアセチル化を検出するとこのHATがやってきて、周辺のlysine（K）をアセチル化して、
+さらに隣接するヌクレオソームのヒストンまでアセチル化するものがある。
+
+DNAの複製時には、[[クロマチン、ヒストン、ヌクレオソーム]]でも述べたように、H3/H4 tetramerは半分が元のstrandから来たものが使われるが、この時にたくさんアセチル化されている領域を再現する為に使われるメカニズム。
+
+### 転写のactivatorのメカニズムを考える
+
+このbromodomainなどの仕組みは、DNA転写のactivatorやrepressorの仕組みの一部になっていると考えられる。
+
+ヌクレオソームになっているDNAにそのままbind出来るような特殊な性質を持つactivatorが目的のDNAの領域をよりaccessibleにするメカニズムを見てみよう。
+
+1.  activatorがヌクレオソームになっている目的のDNAの領域にattachされる。
+2.  activatorがHATを動員する。
+3.  周辺のヒストンをアセチル化してヌクレオソームを開いてプロモーター領域周辺をアクセス可能にする。
+
+このように、Histone Modificationがactivatorの機能を実現するケースがある。
+
+activatorが皆ヌクレオソームになっている部分に直接結合出来るという訳では無く、クロマチンをなんらかの方法で開いて対象領域をアクセス可能にしないと機能しないactivatorが普通である。
+
+とにかく、このようにプロモーターの近くにあるヒストンをmodifyすると、周辺のDNAの（相対的な）accessibilityを変更出来る。
+
+### 転写に直接関わるタンパク質がbromodomainsやchromodomainsを持つ事も
+
+転写に直接関わるタンパク質、sigma factorにもbromodomainsやchoromodomainsを持つものがある。
+例えばTFIID（IIは2）と呼ばれるfactorは、RNAポリメラーゼIIをlocalizeするタンパク質だが、
+これはbromodomainを持っている。
+つまりアセチル化されている場所を認識する。
+
+sigma factorについては[[バクテリアのTranscription入門]]や[[バクテリアにおけるTranscriptionのRegulation]]を参照。
+
+その他、ヌクレオソーム Remodeling Complexもbromodomainやchromodomainを持つものがある。
+
+このようにbromodomainやchoromodomainは、ヒストンmodificationを行うタンパク質だけでなく実際に転写を行うタンパク質を持ってくる役割も果たしている。
+
