@@ -58,14 +58,15 @@ Eukaryoteでこれに対応するのは3〜6個のファクターが同じ役割
 
 プロモーターはgeneの転写の制御に必要な全配列の事。そのうちのCore Promoterを見ている。
 
-- Core Promoter
-  -  〜60bp
-  - Transcription Start Site (TSS)を取り囲んでいる
-  - 1つから3つの以下の要素を持ち、それぞれがGeneral Transcription Factor（GTF）と結合する
-     - GTFsはすべてのプロモーターの転写に必要なもの
-     - 他方、DNA binding transcription factorsなどは特定のプロモーターだけが必要とする
-  - 転写に必要なminimal sequences
-     - in vitroでは次に述べるproximal promoterで作業する
+### Core Promoter
+
+-  〜60bp
+- Transcription Start Site (TSS)を取り囲んでいる
+- 1つから3つの以下の要素を持ち、それぞれがGeneral Transcription Factor（GTF）と結合する
+   - GTFsはすべてのプロモーターの転写に必要なもの
+   - 他方、DNA binding transcription factorsなどは特定のプロモーターだけが必要とする
+- 転写に必要なminimal sequences
+   - in vitroでは次に述べるProximal Promoter（Core Promoterを含む）で作業する
 
 これらの構成要素の位置はプロモーターによって変わる場合もある。ノートには典型的な位置を書いてある。
 
@@ -96,8 +97,7 @@ TATAが一番良く見られる。
 
 TATAが無いプロモーター、TATA less promoterを理解しようとする試みの中でDownstream Promoter Elementsは見つかった。
 
-
-### Proximal Promoter
+### Proximal Promoter概要
 
 [17ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=16)
 
@@ -108,4 +108,48 @@ TATAが無いプロモーター、TATA less promoterを理解しようとする�
      - これはprokaryoteのプロモーターには見られず、eukaryoteのプロモーターだけの特徴
 - これだけで制御された転写が行われる(Core Promoterの部分はいつも制御されない）
 
+## Full Promoter、Proximal Promoter, Core Promoter
 
+Full Promoterは400bpから10kbp以上のものまで存在する、プロモーター全体。
+その中にProximal Promoterがあり、その中にCore Promoterがある。
+
+Full PromoterのうちProximal Promoter以外の部分には、Long Range Promoter Elementsと呼ばれるものがある。
+
+Long Range Promoter Elementsにはどういったものがあるか？
+
+1. Enhancers
+2. Insulators
+
+### Enhancers
+
+転写のアクティベーター。
+
+- 転写の領域の1kb以上も離れた所にある事が多い（けれど転写領域の中でもintronなどにある場合もある）
+- 配列を逆向きにしても機能する
+- 上流でも下流でも機能する
+- ループなどでプロモーター領域と近接して相互作用している模様？（現在研究中の最前線の話題）
+
+Enhancerは配列specificなDNA binding transcription factorsやgeneral transcription factorsと結合する。
+だから性質としては、付随するコーディング領域を持たないプロモーターのように見える。
+
+そしてEnhancerはeRNAというRNAも生成する。このeRNAを取り除くとEnhancerは機能しなくなるので、どうもこのeRNAはEnhancerの機能に必要な模様。
+
+まだ詳しくは分かってないが、このeRNAがDNAのループを作ってEnhancerとプロモーターを近接させている模様？
+
+このEnhancerはnucleosome remodeling complexやhistone modifiersなどのDNA binding TFsを動員してこれをプロモーターに提供している。
+
+### Insulators
+
+Chromatin Boundariesを形成する。2種類ある。
+
+1. Enhancer Blocking Insulator  
+Enhancerとプロモーターの間にInsulatorがあると、Enhancerがプロモーターに相互作用するのをブロックする。
+2. Barrier Insulators  
+クロマチンの状態が伝播していくのを防ぐ。（ヒストンmodificationなどがここで止まる）
+
+Enhancer Blocking Insulatorは、Enhancerの右と左の両方にプロモーターが存在している時に、片方にだけ相互作用するようにブロックする。
+ブロックのメカニズムはEnhancerとは別の（競合する）ループを作成する事によって、の模様。
+CTCFというタンパク質がInsulator Elementと結合してループを作るのは確からしい。
+
+バリアの方は例えばヒストンのアセチル化を止める場合は、ヒストンの間に十分な長さを設ける場合や、
+Insulator領域にHDAcたちを結合させて伝播を止める場合がある（だいたいは十分な長さの方）。
