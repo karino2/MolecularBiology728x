@@ -1,6 +1,7 @@
 - conjugate ... （非タンパク質と）結合する
 - encompass ... 包む、覆う、取り囲む
 - fathomable ... 推測出来る
+- titrage ... 滴定する
 
 ## EukaryoteのRNAポリメラーゼ
 
@@ -119,6 +120,7 @@ Long Range Promoter Elementsにはどういったものがあるか？
 
 1. Enhancers
 2. Insulators
+3. Locus Control Regions（Super Enhancers)
 
 ### Enhancers
 
@@ -153,3 +155,72 @@ CTCFというタンパク質がInsulator Elementと結合してループを作�
 
 バリアの方は例えばヒストンのアセチル化を止める場合は、ヒストンの間に十分な長さを設ける場合や、
 Insulator領域にHDAcたちを結合させて伝播を止める場合がある（だいたいは十分な長さの方）。
+
+### Locus Control Regions
+
+近接した複数のgeneに作用する。
+
+例として人間のglobin genesを見てみる。
+globin genesを制御するLocus Control Region (LCR)がある。
+
+globinのgeneはいくつかあり（ε, γ0, γ1, δ, β）、
+胎児の時には特定のglobin geneが有効化され、年齢を経ると別のglobin geneが有効化されていく。
+LCRをinactivateすると、全グロビンgeneがinactivateされる。
+
+これはネズミやキツネでも同じような機構がある。
+
+LCRはクロマチンの広い領域をopenする事で機能している。
+LCRがあるか無いかでヒストンmodificationが大きく変わる。
+Histone Modifying EnzymeやNucleosome Remodeling Complex（こちらはたぶんレア）を動員してこれを実現している模様。
+そのほかにもLCRが何かやっているかどうかはまだ分かってない。
+
+LCRは通常のEnhancerよりも大きい傾向にあり、通常のEnhancerより長い距離をまたいで機能する傾向にある。
+
+LCRが複数のgeneのどれを有効にするかなどがどう制御されているかは良く分かっていない。
+ループの形成を制御する何かがあってそれでどのgeneと近接するかが変わるとかか？と思われているが詳細は不明。
+
+## DNase I Sequencing
+
+昔から、制御に関わる領域がDNase Iにとてもsensitiveなのが知られていた。
+おそらくnucleosome-freeなのだろう。
+
+Open Chromatin Statesの場所を調べたいと思えば、核を持ってきて、DNase Iを加えれば良い。
+だがあまり加えすぎるとnucleosomesの中もカットしてしまうので、
+滴定してちょうど良い量だけ加える。
+
+そしてgel purificationしてDNAの小さい断片を分離して、ヌクレオソームを含む150bp程度の群と小さい群をDeep Sequenceする。
+そしてゲノムにマップすれば、小さい断片はorigins, enhancers, promotersなどの領域となっている。
+
+小さい断片の領域がどの役割なのかを知るのは難しい。transcriptionのサイトのすぐ前ならプロモーターだろうとはわかるが、Enhancerやoriginは分からない。
+
+だが、DNaseから守られた領域が特定のTFで守られたおかげかどうかを調べたければ、ChIP-seqした結果と突き合わせれば良い。
+
+### MNase Seqとの使い分け
+
+DNaseは[[endonuclease]]で、MNaseはendonucleaseかつexonuclease。MNaseの方がヌクレオソームギリギリまでDNAを分解していくので、
+ヌクレオソームの位置を調べるのに向いている。一方DNaseはもっと小さなタンパク質 binding siteを調べる事が出来る。
+
+## Chromosome Conformation Capture (3C)
+
+Chromosomeの異なる領域同士がどう相互作用するかを調べるassay。
+特に 3C Deep Seq（HiCとも呼ばれる） を見ていく。
+
+大きく離れた（2kbとか20kbとか50kbとか）領域が、タンパク質を媒介して結合しているという仮説のもとに考えられた手法。
+
+[17ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=16)
+
+1. 生きた細胞にformaldehydeでタンパク質とDNAの間にクロスリンクを形成する（細胞は死ぬ）
+2. 細胞を開いてDNAを分離
+3. DNAを制限酵素で切断、この時、制限酵素は3'-recessed endを作る必要がある  
+recesseは奥まったとか凹所とかいう意味らしいので3'側が少し多く削られたendという事、これはポリメラーゼが次のステップでbiotinヌクレオチドで伸長するのに必要
+4. biotinを付加したヌクレオチドを加えて、そのへこんだ3'末端側を埋めるまで待つ
+5. とても薄めた状態でligateする（薄める事で近接したDNA同士だけがligateされるようにする、つまりこれはタンパク質で繋がれた末端同士だけがligateされるようにする）
+6. 68度で6〜8時間保ちクロスリンクされたタンパク質を分離する
+7. phenol chloroform extractionを行いDNAからタンパク質を取り除く（フェノールクロロホルム抽出）
+8. 切断してbiotinをマグネットで引き寄せて分離しDeep Seqする
+
+これで接続された場所を知る事が出来る。
+
+7に関しては以下を参照。
+
+[【解決】「フェノール・クロロホルム抽出」の原理とは？](https://lifescience-study.com/1-dna-or-rna-extraction-from-cells-and-tissues/)
