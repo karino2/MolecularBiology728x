@@ -2,6 +2,7 @@
 - encompass ... 包む、覆う、取り囲む
 - fathomable ... 推測出来る
 - titrage ... 滴定する
+- distal ... 末梢の、遠位部の
 
 ## EukaryoteのRNAポリメラーゼ
 
@@ -203,7 +204,7 @@ DNaseは[[endonuclease]]で、MNaseはendonucleaseかつexonuclease。MNaseの�
 ## Chromosome Conformation Capture (3C)
 
 Chromosomeの異なる領域同士がどう相互作用するかを調べるassay。
-特に 3C Deep Seq（HiCとも呼ばれる） を見ていく。
+特に 3C Deep Seq（Hi-Cとも呼ばれる） を見ていく。
 
 大きく離れた（2kbとか20kbとか50kbとか）領域が、タンパク質を媒介して結合しているという仮説のもとに考えられた手法。
 
@@ -224,3 +225,23 @@ recesseは奥まったとか凹所とかいう意味らしいので3'側が少�
 7に関しては以下を参照。
 
 [【解決】「フェノール・クロロホルム抽出」の原理とは？](https://lifescience-study.com/1-dna-or-rna-extraction-from-cells-and-tissues/)
+
+## Hi-Cデータの解釈
+
+[18ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=17)
+
+junctionの位置を特定する為には、両側に20bp以上が必要。
+これをシーケンスして、相互作用のある領域をグラフにプロットする。
+すると以下のFig. 1のようになる。
+
+[Comprehensive mapping of long-range interactions reveals folding principles of the human genome - PubMed](https://pubmed.ncbi.nlm.nih.gov/19815776/)
+
+対角線の領域は単に一本のDNAが切断されてreligateされただけと思われる。
+白い領域は相互作用が見られない領域。
+対角線から離れているが赤い所がループを形成していると疑われる所。
+
+また、違う可視化の方法として、上記グラフの片方の座標を何らかの場所、
+例えば興味のあるTSSなどに固定して、そこからの距離を横軸に、interactionの数を縦軸に取ってみる。（ノート18ページの図）
+
+近くとはたくさんreligateされるが、少し離れたら単なるreligateの頻度はほとんど無くなるはず。
+だからそこから大きく離れたとこにに相互作用が観測されたら、そこがdistal enhancerと思われる。
