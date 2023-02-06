@@ -25,7 +25,10 @@
 
 [Transcription入門](Transcription入門.md)より
 
-- RT-PCR
+- RT-PCR ２つのDNAプローブを使ってReverse TranscriptaseしたあとPCRする事で目的のRNAがどれだけあるかを測る
+- RealTIme RT-PCR (RTRT-PCR) 
+- RNA-Seq 全mRNAのcDNAを作ってDeep Seqする事で相対的なmRNAの量を調べる
+- GRO-Seq 転写途中のRNAポリメラーゼに、BrUTPを合成させる事でその時点で転写が進行中のmRNAを調べる
 
 [バクテリアのTranscription入門](バクテリアのTranscription入門.md)のTranscriptionのプロモーターのマッピングより
 

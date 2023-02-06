@@ -113,6 +113,10 @@ Reverse Transcriptase PCR。略してRT PCR。ただしこれはReal Time PCRと
 
 数十のオーダーのRNA分子でも検出出来るらしい。頑張れば一つも可能と言っているlabもあるとか。
 
+少しノートがわかりにくかったので補足。2つのDNAプローブは、ノートの一番上に書いてある、目的の配列を含む左から右と右から左の２つのDNA片。
+これでReverse Transcriptaseでどちらか片方のDNA片がextend出来てcDNAが作れて、このcDNAをもう片方のDNAをprimerとしてPCR出来る。
+
+
 [Assays](Assays.md)
 
 ### Real Time PCR
@@ -181,6 +185,11 @@ eukaryoticの細胞ではTSSにRNAポリメラーゼがくっついて、その�
 このassayで、eukaryoticの細胞ではRNAポリメラーゼがTSSからgeneの側に進むものと、反対側に進むものの両方がある事が判明した。
 ただgeneの反対側に進んで合成されるRNAはとてもunstableですぐに分解されてしまうからRNA-Seqでは見えない。
 eukaryoticの細胞の多くのプロモーターはRNAポリメラーゼを両方に進める模様。
+
+追記: 新しくRNA Polymeraseが合成を開始してしまうのはsarkosylというので防ぐらしい。
+
+- [Nuclear run-on - Wikipedia](https://en.wikipedia.org/wiki/Nuclear_run-on)
+- [Global Run-On sequencing (GRO-seq) - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5880289/)
 
 ## 次：バクテリアのTranscription入門
 

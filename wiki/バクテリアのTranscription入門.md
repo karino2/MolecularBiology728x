@@ -131,3 +131,7 @@ in vivoで使えるassayらしい。
 同じレポーターを使っている限り、プロモーターの違い以外の要素は同じなので比較可能。
 
 [Assays](Assays.md)
+
+## 次: バクテリアにおけるTranscriptionのInitiation
+
+[バクテリアにおけるTranscriptionのInitiation](バクテリアにおけるTranscriptionのInitiation.md)

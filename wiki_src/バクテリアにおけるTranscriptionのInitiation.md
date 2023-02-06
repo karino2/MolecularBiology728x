@@ -1,3 +1,5 @@
+前:  [[バクテリアのTranscription入門]]
+
 - intercalate 挿入する、（うるう日を）入れる
 
 

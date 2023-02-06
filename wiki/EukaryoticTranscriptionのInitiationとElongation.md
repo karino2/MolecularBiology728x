@@ -1,5 +1,7 @@
 前: [EukaryoteのDNAElements](EukaryoteのDNAElements.md)
 
+Initiationは[バクテリアにおけるTranscriptionのInitiation](バクテリアにおけるTranscriptionのInitiation.md)も参照のこと。
+
 ## 転写のGTFs
 
 RNA Polymeraseはプロモーターを識別するのにGTFsが必要だった。
@@ -39,3 +41,98 @@ TF II Hは２つの重要な役割がある。
 
 - ds translocaseでありATPase。ds DNAをTSS側に押し出す。これがTSSのあたりのDNAをオープンする。
 - TF II HにあるCyclin TI/Cdk9 と言われるキナーゼドメインが、RNA Pol IIのC-terminal domainをリン酸化する
+
+## RNA Pol IIのCTD (C-Terminal Domain)
+
+TF II Hがリン酸化するCTDについて見ていく。
+
+### CTDの簡単な特徴
+
+- RNA Pol IIの一番大きなサブユニット
+- (N側)YSPTSPS(C側)の複数回のリピートからなる
+   - イースト 26反復
+   - 人間 52反復
+- Extended/Unstructured な領域（RNAポリメラーゼのしっぽのような形状）
+
+これがリン酸化されていない時とされている時でどのような役割を果たすかを以下に見ていく。
+
+[21ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=20)
+
+### リン酸化されていないCTDの性質（Mediatorと結合）
+
+CTDは、リン酸化されていないと、Mediatorと呼ばれる大きなマルチタンパク質複合体と結合する
+
+MediatorはTxn Factorsと相互作用する。
+この巨大なMediatorが多くのTFsと相互作用する事で、
+RNA Pol IIだけでは不十分な多様なspecificityを達成し、RNA Pol IIをプロモーターにローカライズする。
+
+これらの相互作用するTFsはバクテリアで言う所のActivating Factorsと同じような役割を果たしている。
+
+### リン酸化されたCTD（Mediatorをリリース）
+
+CTDがリン酸化されるとMediatorをリリースする。これがRNA Pol IIのプロモーターからの離脱（clearance）を促進する。
+RNA Pol IIが進み始めると、Elongationステップに進む事になる。
+（Promoter Escape）
+
+もしキナーゼが無くてATPaseだけがあると、open complex stageには進むけれど、
+abortive transcriptsだけが行われ続ける。
+abortive transcriptionについては[バクテリアにおけるTranscriptionのInitiation](バクテリアにおけるTranscriptionのInitiation.md)を参照。
+
+なお、TF II Hによるリン酸化はCTDの特定の配列に対してのみ行われる。
+
+## Promoter Proximal Pausing Event
+
+多くのプロモーターでは、initiate後に、Promoter Proximal Pausing Eventと呼ばれる現象が起こる。
+
+これはNELFとDSIFと呼ばれるfactorsがRNA Pol IIに結合して起こる。
+
+- NELF: Negative ELongation Factor
+- DSIF: DRB sensitive factor
+   - DRBはnucleotide analog
+
+これらのfactorがearly processive transcriptionをinhibitし、
+通常TSSの25〜60base 下流のあたりでRNA Pol IIを捕捉して留める。
+
+この捉えられた状態から解放されるには、PTEF bと呼ばれる三番目のfactorが必要になる。
+
+PTEF bは以下を変更する（リン酸化する）
+
+- CTDにある Ser 2
+- DSIF
+- NELF
+
+そしてこの修正でNELFがリリースされて、elongationが開始される。(DSIFはリン酸化された状態でくっついたまま）。
+
+## GRO-Seqの結果を見る（Bidirectional Txn）
+
+GRO-Seqについては [Assays](Assays.md)と[Transcription入門](Transcription入門.md)を参照。ある時点での転写進行中のmRNAを調べる手法だった。
+
+これを調べてみると、TSSから先が転写されていくのは良いとして、
+反対側のstrandも転写されているように見えた。これはプロモーターによるが、多くのプロモーターで見られるらしい。
+
+paused polymeraseの所でたくさんのreadsが見られるのでTSSのdownstreamとupstreamの近くの所で山が見られる。
+
+### ChIP SeqでPol IIを見てみる
+
+ChIP Seqで Pol IIの結合しているDNAの部位を調べると、以下のような結果が見られた。
+
+| Paused? | Expressed? | genesのうちの割合 |
+| ---- | ---- | ---- |
+| Yes | Yes | 30%以下 |
+| Yes | No | No1%以下 |
+| No | Yes | 45%以下 |
+| No | No | 25%以下 |
+
+TSSの付近にたくさんのreadsがあって、その後にも相対的には小さい頻度だがそれなりにreadsが続くのが一番上で通常の転写に思われる。
+
+3番目のものは、PTEF-bが豊富にあるプロモーターで、pauseがほとんど観測されていないのだと思われる。
+
+### Bidirectional Transcriptionsが起こるプロモーターと起こらないプロモーター(TATA box）
+
+TATA-boxがあるプロモーターはunidirectionalで、無いプロモーターはrobustなBidirectional Transcriptionが観測される。
+
+どうしてBidirectional Transcriptionが行われるのかは良く分かっていない。
+
+このBidirectional TranscriptionはGRO-seqでしか検出出来ない。
+northern blotやRNA-Seqでは転写した結果が比較的stableである必要があるが、
+この反対向きに転写されたRNAはすぐに分解されてしまう。
