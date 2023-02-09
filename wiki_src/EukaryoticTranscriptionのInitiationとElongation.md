@@ -37,10 +37,12 @@ TATA-binding proteinはminor grooveに結合するという珍しいタンパク
 ステップ4でRNA Pol IIは主にTF II Bと結合する。
 RNA Pol IIの中にTF II FがあってこれはほとんどRNA Pol IIの一部に見えるが、Elongationでこれが簡単に離れる事から別種のTFがRNA Polにくっついていると考えられている。
 
+### TF II Hの２つの役割
+
 TF II Hは２つの重要な役割がある。
 
 - ds translocaseでありATPase。ds DNAをTSS側に押し出す。これがTSSのあたりのDNAをオープンする。
-- TF II HにあるCyclin TI/Cdk9 と言われるキナーゼドメインが、RNA Pol IIのC-terminal domainをリン酸化する
+- TF II HにあるCyclin TI/Cdk9 と言われるキナーゼドメインが、RNA Pol IIのC-terminal domainをリン酸化する（Serine 5 phosphorylation）
 
 ## RNA Pol IIのCTD (C-Terminal Domain)
 
@@ -93,7 +95,7 @@ abortive transcriptionについては[[バクテリアにおけるTranscripti
 これらのfactorがearly processive transcriptionをinhibitし、
 通常TSSの25〜60base 下流のあたりでRNA Pol IIを捕捉して留める。
 
-この捉えられた状態から解放されるには、PTEF bと呼ばれる三番目のfactorが必要になる。
+この捉えられた状態から解放されるには、PTEF b（ぴーてふびーと読む）と呼ばれる三番目のfactorが必要になる。
 
 PTEF bは以下を変更する（リン酸化する）
 
@@ -136,3 +138,7 @@ TATA-boxがあるプロモーターはunidirectionalで、無いプロモータ�
 このBidirectional TranscriptionはGRO-seqでしか検出出来ない。
 northern blotやRNA-Seqでは転写した結果が比較的stableである必要があるが、
 この反対向きに転写されたRNAはすぐに分解されてしまう。
+
+## 次: EukaryoticTranscriptionTermination
+
+[[EukaryoticTranscriptionTermination]]

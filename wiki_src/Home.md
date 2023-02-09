@@ -99,3 +99,7 @@ DNAの損傷には以下の２種類があり、
 - [[EukaryoteのRNAポリメラーゼ]]
 - [[EukaryoteのDNAElements]]
 - [[EukaryoticTranscriptionのInitiationとElongation]]
+
+### Unit: The Regulation of Transcription
+
+- [[EukaryoticTranscriptionTermination]]
