@@ -174,3 +174,7 @@ geneが30nm fiberを形成してしまっていると、general transcription fa
 two-hybrid assayはこの実験の応用。
 DNA Binding Domainとあるタンパク質をくっつけて、Activation Domainと別のタンパク質をくっつけて、両者のタンパク質がくっつくならTFを生み出す、というもの。
 転写を調べる事で両タンパク質がくっつくかが調べられる。
+
+## 次: EukaryoticTranscriptionのDNABindingRegulators
+
+[EukaryoticTranscriptionのDNABindingRegulators](EukaryoticTranscriptionのDNABindingRegulators.md)
