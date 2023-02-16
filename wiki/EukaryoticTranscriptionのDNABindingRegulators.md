@@ -75,3 +75,44 @@ Mediatorは20以上のタンパク質からなり、たくさんの相互作用�
 
 
 TFIIBやBREは、[16ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=15)や[EukaryoteのDNAElements](EukaryoteのDNAElements.md)を参照。
+
+## Repressiveな転写制御の例
+
+Eukaryotic cellsの転写制御は基本的にはアクティベーションではあるが、Repressiveなものもいくつかはある。
+そこでここではどういうものがあるのかをいくつか見てみる。
+
+1. DNA binding proteinが転写に必要な要素とcompetitionを通じてブロックする
+    - DNAのGTFが結合する部分に先に結合してブロック
+    - DNAのActivatorが結合する部分に先に結合してブロック
+    - TSSのそばでRNA Pol IIが結合するのをブロック
+2. Activation Domainと相互作用してActivation Domainが機能するのを妨げる
+    - ActivatorのそばのDNA配列specificに結合して、Activation Domainと頭の部分が相互作用する
+3. Chromatin Modifierを動員する事でrepress
+    - HDAcで脱アセチル化する事で30nmファイバー構造を回復する事でプロモーターなどが必要な場所にアクセス出来なくする
+4. 
+
+
+### Gal4の抑制のメカニズム
+
+Gal4はガラクトースを消化するGalの転写のとても強いアクティベーターだが、
+これはグルコースがあれば不要。ガラクトースしか無い時にだけ必要となる。
+この転写の抑制の仕組みを見てみる。
+
+グルコースがある時はGal80というタンパク質がGal4のActivation Domainに結合してブロックする事で転写が抑制されている。
+galactoseがあるとGal80とGal4の相互作用を邪魔してGal4が機能するようになる。
+Gal80はシーケンスspecificでは無くDNAには結合しない。単にGal4のActivation Domainととても高いアフィニティがあるだけ。
+
+グルコースがあると、さらにMig1というDNA Binding Proteinが動員されて、
+これがさらにTup1と呼ばれるタンパク質を動員し、それがさらにHDAcを動員する。
+これでヒストンのアセチル化が解除されて30nmファイバー構造が再構築されてプロモーターがこの領域にアクセス不能になる。
+
+だからグルコースではなくraffinoseで培養すると、Gal80はActivation Domainを抑制したままだが、Mig1の動員は起こらなくなるのでHDAcも動員されず、
+結果として中くらいの程度で転写される。（basal promoterは機能する）
+
+ガラクトースで培養するとGal80も外れるのでとても頻繁に転写されるようになる。
+
+まとめると以下のようになる。
+
+- グルコース ... Repressed State
+- ガラクトース ... Activated State
+- Raffinose ... Non-Repressed State
