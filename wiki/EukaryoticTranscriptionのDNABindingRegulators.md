@@ -89,7 +89,6 @@ Eukaryotic cellsの転写制御は基本的にはアクティベーションで�
     - ActivatorのそばのDNA配列specificに結合して、Activation Domainと頭の部分が相互作用する
 3. Chromatin Modifierを動員する事でrepress
     - HDAcで脱アセチル化する事で30nmファイバー構造を回復する事でプロモーターなどが必要な場所にアクセス出来なくする
-4. 
 
 
 ### Gal4の抑制のメカニズム
@@ -116,3 +115,93 @@ Gal80はシーケンスspecificでは無くDNAには結合しない。単にGal4
 - グルコース ... Repressed State
 - ガラクトース ... Activated State
 - Raffinose ... Non-Repressed State
+
+## Gene Silencingとは
+
+特定の範囲のgeneをすべてターンオフするような制御がある。
+このSilenced Regionは何Kbにも及ぶ事がある。
+
+これはChromatinの変更で行われる。この領域内のChromatinをHeterochromatinと呼ぶ。
+Heterochromatinは以下のような特徴を持つ。
+
+- しばしばgene poor
+- Telomere-ProximalとCentromere
+- 繰り返しの配列
+- Transpositionの 制御/抑制
+
+## Gene Silencingのメカニズムの２つの例
+
+telomericとmating typeのsilenceのメカニズムを見てみる。mating typeは交配型とか。
+一番良く理解されているイースト菌の話をする。
+
+なお、例その1も例その2も、ヌクレオソームにタンパク質が結合してヌクレオソーム同士をコンパクトに押し込んで転写に必要なタンパク質からのアクセスを遮断するという所は共通。
+
+### イースト菌のmating type
+
+イースト菌のmating typeってなんの事だ？と思い、軽くWikipediaを見る。
+
+[出芽酵母 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%87%BA%E8%8A%BD%E9%85%B5%E6%AF%8D)
+
+a型とα型というmating typeがあるんだな。aとαそれぞれでsilenceされる領域があって、MAT(mating type locus)というのがアクティベートされて転写されてslienceされた領域との相互作用で性が決まる？
+
+[Control of yeast cell type by the mating type locus: positive regulation of the alpha-specific STE3 gene by the MAT alpha 1 product - PubMed](https://pubmed.ncbi.nlm.nih.gov/6337727/)
+
+ここでは細かい詳細は必要内のでこの程度の知識で先に進もう。
+
+### Telomeric/Mating TypeのlociのSilencingの特徴
+
+Mating Typeの領域はsilenceされるが、ここに何のgeneがあってもsilenceされる。gene Aやgene αだけでなく、その他どんなgeneを入れてもsilenceされる。
+つまりプロモーターなどに依存せずにsilenceされる仕組みという事がわかった。
+
+また、制限酵素で切る事も出来ないので制限酵素のアクセスもブロックされている、何らかの構造的なものと思われる。
+
+### 例その1、Sirタンパク質によるTelomeric/Mating TypeのlociのSilencing
+
+notes/MolecularBiologyResources/SirFacilitatedSilencing.pngも参照のこと。
+
+[27ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=26)
+
+このSilencingメカニズムには3つのSirタンパク質が関わる。(Sir 2, 3, 4）
+
+Sir: Silent Information Regulator
+
+1. 配列依存のDNA Binding ProteinがDNAに結合する（これがSir3とSir4を動員する）
+    - Binding ProteinはTelomere領域ではRap1、Silent Mating Type LociではORC, Rap1, ABF1の３つのうち2つがあれば動員される
+2. Sir3/Sir4がRap1などに結合
+3. Sir2がSir3/Sir4に結合
+    - このSir2がHDAc
+4. Sir2が付近のヌクレオソームをDeacetylate
+5. 脱アセチル化した（付近の）ヌクレオソームにSir3/Sir4が結合する
+     - これが何らかの、InaccessibleなChromatin構造を作る
+6. さらにこのSir3, 4はSir2を動員し、以下4から6が繰り返される（self propagation）
+
+Sir3/Sir4は大きいタンパク質で100kDaほどのサイズ。全部結合するとヌクレオソームに400kDaほどのタンパク質がつく事になる。
+ヌクレオソーム自身は80kDa程度。
+
+### Gene Silencingのバリヤー
+
+self propagationで広がっていくなら、それをどこかで止めるメカニズムがあるはずだ。それはどんなものか？
+
+1. Sir2のHDAcと競合するHATsがある。SAS2と呼ばれる。
+2. DOT1と呼ばれる酵素がH3K79 メチル化を行い(つまりDOT1はHMT）、これがSir3のヌクレオソームとの結合を妨げる（メカニズムは不明）
+3. 強く転写される領域があるとこのSilencingが止まる（Mating Type lociのそばのtRNAなどが知られている）
+
+tRNAはコーディング領域は80nt程度の短さなのでヌクレオソームの長さに比べると小さいのでメカニズムは謎も多い。
+
+### 例その2、HP1によるTelomeric/Mating TypeのlociのSilencingのメカニズム
+
+HP1: Heterochromatin Protein 1
+
+[27ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=26)
+
+Heterochromatinには、H3K9meが良く観測される。
+
+HP1タンパク質はこのH3K9meに結合するchromodomainと、chromoshadowと呼ばれるドメインの２つのドメインを持つ。
+chromodomainがH3K9meに結合し、chromoshadowドメインは隣のヒストンに結合したHP1のchromoshadowドメインと結合してDimer化する。
+これがヌクレオソーム同士を引き寄せて30nmファイバーの形成を助ける。
+
+また、一番端のHP1タンパク質のchromoshadowドメインはSu(var)3-9と呼ばれるタンパク質と結合し、このSu(var)3-9がさらにH3K9のメチル化を進める（つまりHMT）。
+これがさらにHP1を引き寄せて、以後self propagateしていく。
+
+Su(var) ... Suppressor of Variegation。ショウジョウバエの白と赤の斑の元となるタンパク質として発見された。
+
