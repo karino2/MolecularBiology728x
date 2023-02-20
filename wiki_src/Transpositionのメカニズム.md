@@ -1,5 +1,6 @@
 - progenitor 祖先
 - deleterious 有害な
+- staggered 驚いた、交互の、互い違いの
 
 ## Genetic Recombination
 
@@ -157,3 +158,31 @@ Transposonのあった元のDNAもそのまま結果に組み込まれて、Tran
 DNAの伸長はreplication forkとして片方をleading strand、片方をlagging strandとして合成される。
 
 結果うまれるDNAの構造はcointegrateと呼ばれる。
+
+## Transpositionのメカニズムその3、Retrotransposon
+
+viral-likeでとてもretrovirusに似ているメカニズムだが、生物の外に出て感染したりはしないRetrotransposonというものがある。
+
+[33ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=32)
+
+Retrotransposonは移動するのに自身をカットせずに、RNAが転写される。
+
+そしてこれがreverse transcriptionされて、cDNAが合成される（dsDNA）。
+
+retrovirusではこのcDNAがカプセルに入って細胞から出ていくが、Retrotransposonはその代わりに直接DNAのターゲットサイトをアタックして、自身を挿入する所が違う。
+このcDNAを挿入する酵素はintegraseと呼ばれる。
+
+このcDNAは挿入されるDNAよりちょっとだけ余分な所があるので、最初に3'末端を少し削り、
+これをターゲットのDNAに入れる所はカットアンドペーストのメカニズムとほとんど同じで、
+まず3'をつなげて、残りはextendしてligateされる（この時5'末端もcleaveされるかも）。
+
+## ３つのメカニズムを比較する
+
+3つのメカニズムはそれぞれ共通したり似ている部分も多いが違う部分もある。
+それぞれのpathwayを区別できそうな特徴を以下に列挙する。
+
+- transposonの移動途中で（切り離す元となったDNA側に）DSBが形成されるものがある
+- 中間生成物として完全な独立したdsDNAが出来るものがある
+- 枝分かれしたDNA中間生成分が出来るものがある（8の字につながる奴、[31ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=30)）
+- cointegrateを生成するものがある
+- ほとんどfull-lengthに渡るRNAが中間生成物として生成されるものがある
