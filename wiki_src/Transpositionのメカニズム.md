@@ -1,6 +1,7 @@
 - progenitor 祖先
 - deleterious 有害な
 - staggered 驚いた、交互の、互い違いの
+- flanking 側面にある
 
 ## Genetic Recombination
 
@@ -70,7 +71,6 @@ Barbara McClintockがとうもろこしの色の遺伝の研究で見つけた�
 
 人間のゲノムでは50%以上がtransposon-likeなrepeatsとなっていて、coding regionはちょっとしか無い。
 
-
 ## Transpositionが引き起こす事
 
 - geneやregulationの領域に挿入されて壊す
@@ -119,6 +119,8 @@ forHostというのは何かしらホストの生物に有益な何かのgeneで
 
 transposonは移動している時の短い期間以外では、何かの生物のcellular DNAと結合していないと単独では長くは存在出来ない。
 
+repeatsというのは全く同じ配列が二箇所にあるという意味っぽい。
+
 ## Transpositionのメカニズムその1、カットアンドペースト
 
 DNAの一部をカットして他の場所にペーストする。
@@ -132,6 +134,8 @@ transposase同士が固く結合したあとに起こる過程。
 1. transposonの両端をcleave。両端は3'はOH、5'はpになるように
 2. 3'-OHがターゲットDNAのホスホジエステル結合を攻撃。これは1-step transesterification reactionとして起こる（後述）。なお、両者のアタックの場所は数bp程度ずれた場所で起こる。
 3. 残った5'側とターゲットの3'側との間の隙間をDNAポリメラーゼ（non-processiveなDNAポリメラーゼで良い）で伸長したあとにリガーゼでつなげる。伸長する部分の配列はdirect repeatの所の対となる配列になる。
+
+相補的な配列がずれてつながって、反対側をそれぞれDNAポリメラーゼが合成するので、両方に同じ配列が出来る。これがdirect repeats。
 
 1-step transesterification reactionの化学的な反応については以下の図も参照。
 

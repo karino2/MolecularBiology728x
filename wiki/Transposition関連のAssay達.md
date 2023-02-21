@@ -34,8 +34,6 @@ Transposonに色素のgeneが入っている場合もある。
 - transposonを含むdonor plasmid
 - F (conjugal) plasmid (最初の時点ではtransposonを含まず、他のバクテリアに移動する機能を持つplasmid）
 
-
-
 そして、donar plasmidのtransposable elementにtetracycline耐性のgeneを、donor plasmidの他の領域にkanamycin耐性を持つようなgeneがあるとする。F plasmidにはampicillinの耐性のgeneがあるとする。
 
 [33ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=32)
@@ -49,3 +47,23 @@ Transposonに色素のgeneが入っている場合もある。
 - amp R, tet R, kan R ... Transpositionの結果donar plasmidとF plasmidが融合して、それが移動したと考えられる。replicative transpositionなど。
 
 
+## Sleeping Beauty
+
+Eukaryotic cellで同じような実験を考える。
+
+inverted repeatsとTSSと耐性geneを持つDNA片を用意する。
+次にtransposaseのgeneとTSSを持つDNA片を用意する。
+この２つを加えて、細胞が増えるかどうかを調べる。
+
+| inverted repeatsとTSSと耐性gene | TSSとtransposaseのgene | 薬剤下で細胞が増えるか |
+| ---- | ---- | ---- |
+| No | No | 少しだけ |
+| Yes | No | 少しだけ |
+| Yes | Yes | 100倍から1000倍の増え方 |
+
+さて、いろいろな生物種のゲノムを解析すると、人間は50%以上がtransposon-likeなゲノムだという話をした。
+これは現在Transposonなのでは無いが、かつてアクティブなTransposonだった事がある痕跡と思われる。
+
+これらの配列を調べて、先程の実験と同じように必要な要素を考えて元となるtransposonを予想して復元する、
+という実験も行われている。
+これはSleeping Beauty Experimentと呼ばれている。
