@@ -186,3 +186,7 @@ retrovirusではこのcDNAがカプセルに入って細胞から出ていくが
 - 枝分かれしたDNA中間生成分が出来るものがある（8の字につながる奴、[31ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=30)）
 - cointegrateを生成するものがある
 - ほとんどfull-lengthに渡るRNAが中間生成物として生成されるものがある
+
+## 次: Transposition関連のAssay達
+
+[[Transposition関連のAssay達]]
