@@ -32,7 +32,7 @@ Homologousとはほとんど同じ配列、という意味。いくつか少し�
 Homologous Recombinationは、[[RecombinationalRepair]]ではdsDNAの損傷の修復機構として見たが、
 その他にも減数分裂（meiosis）でも行われる。
 
-Homologous RecombinationではDouble Holiday Junctionの解決というのがあって、これにはpatch（ABとabは保たれる）とcross over（aB, Abの組み合わせになる）の２つがあったが、
+Homologous RecombinationではDouble Holliday Junctionの解決というのがあって、これにはpatch（ABとabは保たれる）とcross over（aB, Abの組み合わせになる）の２つがあったが、
 減数分裂の遺伝という観点ではこの２つは大きな違いとなる。（cross overの方がgeneのreassortmentが良く起こると表現されていた、reassortment of genesで遺伝子の混ぜ合わせ、とか）
 
 [[細胞分裂の復習]]も参照のこと。

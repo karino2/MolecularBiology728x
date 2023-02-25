@@ -67,3 +67,42 @@ inverted repeatsとTSSと耐性geneを持つDNA片を用意する。
 これらの配列を調べて、先程の実験と同じように必要な要素を考えて元となるtransposonを予想して復元する、
 という実験も行われている。
 これはSleeping Beauty Experimentと呼ばれている。
+
+## Genomic Southern Blot
+
+transpositionを直接ゲノムを調べる方法を考えてみる。
+
+移動前のTransposonが一つある細胞が成長して分裂し、その先でTranspositionするケースを考える。
+Transpositionが元の場所はそのままに移動するタイプだとして、分裂後に移動するケースを考えるなら、
+移動元となるTransposonは同じ場所にあるが、
+移動先は異なる場所になると考えられる。
+
+これら２つの細胞を別々に培養すると、それぞれの株が出来る。
+それらの株を制限酵素で中くらいのサイズに切断してgelで電気泳動する事を考えるが、
+単に電気泳動しても大量のDNA片が移動するだけで大した情報は得られない。
+
+そこでgelのDNAをsolid supportの上、典型的にはnitrocellulose membraneの上にTransferする（どうするのか具体的には良くわからないが）。つまりこのmembraneの上に移動する。
+このmembrane上で何らかのDNA probeで検出する事を考える。
+
+DNA probeとしては放射線ラベルとかfluorescentラベルとかをDNAとhybridizeして検出する。
+
+このprobeがもしtransposable elementでない所の場合は、このprobeの結果のバンドはどの株でも同じ場所になる。
+
+けれどもしこのprobeをTransposable Elementの配列の所にすると、株によってバンドの位置が変わる。
+それぞれの株でバンドが2つ出来て、一つはどの株でも同じ位置に出来る。これは移動前のtransposonの位置と思われる。
+株によって違うバンドの方は移動した先の配列と思われる。
+
+これらの違うバンドがそれぞれどこかを調べると、Transposable Elementがどこに移動したのかを調べる事が出来る。
+
+## Inside-Out PCR
+
+transposonの配列を知っているとする。
+DNAをtransposonを切断しないような制限酵素で切断していく。
+そして薄めた状態でligateすると、円環になる。（薄めていないと他のDNA片とligateしてしまったりするので薄める）
+
+この円環に対して、円環の外側と内側でtransposonの両端近くの配列とhybridizeして、
+transposonの外側に向かってextendするように設計したprimerを加えて、
+transposonの外側に向かって円環の内側と外側でそれぞれextendする（1周して反対側のtransposonの領域にある程度入るまでextendする）
+
+こうして出来た二本のDNA片を使ってPCRを行う事が出来て、こうしてPCRを行ってシーケンシングすれば、
+もともとのtransposonがどのgeneの中に入っているか、その周辺の配列を知る事が出来る。
