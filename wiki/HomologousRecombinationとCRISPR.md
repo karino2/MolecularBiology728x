@@ -3,6 +3,7 @@
 - phage (バクテリオ）ファージ。バクテリアを宿主とするウィルスの事。
 - resect 切除する
 - awry 不首尾に、斜めに、間違って
+- assortment 仕分け、分類、詰め合わせ、取り合わせたもの
 
 ## Homologous Recombination概要
 
@@ -96,8 +97,7 @@ recombinationが最低でも一つは無いと、homologsの分離がうまく�
 recombinationの始まりは、Spo11によるDSBの形成。Spo11はdimerのタンパク質。
 これは損傷とは別の、programされたDSBと言える。
 
-[35ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=34)
-
+[36ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=35)
 
 Spo11はType II topoisomeraseと同じような事をする。dsを、1〜2bpくらいずれた所に切れ目を入れる。
 Spo11のtyrosineと5'末端が共有結合を形成する。
@@ -131,3 +131,151 @@ biochemical assayでDmc1を加える事による違いを突き止める事は�
 そういう構造的なものでブロックされているのかもしれない。
 
 またrecombinationが起こりやすい場所はある。でもメカニズムは良くわかっていない。
+
+## ゲノム編集とCRISPR
+
+プログラムされたHomologous Recombinationの仕組みを活用してゲノム編集を試みる。
+
+イーストだと、homologyっぽい領域を両端に持つdsDNAを入れると、勝手にHomologous Recombinationが起こり、このdsDNAを組み込む。
+だから真ん中のあたりに入れたいgeneなどを入れておいて両端をhomologyっぽいものを並べておけばDNAを編集する事が出来る。
+
+だがイーストの生き物ではなかなかこの仕組みは起こらないので、少し細工がいる。
+ホスト側のDNAにDSBを入れるとrecombinationの頻度が劇的に上がるので、これを用いて同じような事が出来る。
+
+### zinc finger
+
+そこで初期の試みとしては、zinc fingerで特定の配列を識別するようにしたタンパク質を用いて、狙った場所にDSBを入れる、というのが行われていた。
+zinc fingerをつなげる事で狙った配列を識別するように出来て、
+それとnucleaseをつなげたタンパク質を作る、という感じか。（TF III Aとかがその名前か）
+
+### TALE
+
+TALE ... Transcription Activator-Like Effector
+
+バクテリア由来のタンパク質で、これも狙った配列を識別するように出来る。
+
+## CRISPR
+
+zinc fingerベースのものもTALEベースのものも、目的のタンパク質を合成したり、などにめちゃめちゃ時間が掛かる。
+そこで現れたのがCRISPR。
+
+### CRISPRの由来
+
+バクテリアに、特定にrepeatに挟まれたユニークな配列のある領域が発見された。
+これは初期のころから、バクテリアのDNA-basedなimmune systemなんじゃないかと思われていて、実際そうだった。
+
+[35ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=34)
+
+このユニークな配列を調べてみると、どうもPhageから来ているらしい。
+そしてこの配列を持つバクテリアは、その配列に対応したPhageに耐性がある事が判明。
+
+さて、このrepeatに挟まれたユニークな配列の領域がどう機能するか？
+
+1. まずrepeatごとRNAに転写される
+2. ユニークな配列ごとに処理（切断）されて、タンパク質-RNA Complexと結合（切断された結果は一つのユニーク配列と一つのrepeatを含む）
+3. このタンパク質-RNA Complexは結合したユニークな配列とhomologousなDNAをターゲットとして、二本鎖をunwind
+4. この領域をカット＞そのほかのexonucleaseがさらにcleave
+
+この仕組みは大きく２つのカテゴリがある。
+
+- Class II ... ユニークな配列一つにつき一つのタンパク質(Cas9が有名）が結合（有効化するのに一つのgeneで良い）
+- Class I ... ユニークな配列一つに、タンパク質の詰め合わせが対応する（有効化するのに複数のgeneをactivateする必要がある）
+
+なお、バクテリアには良くある事だが、このrepeatの領域のすぐそばにそれを処理するタンパク質のコード領域があるから、
+リピートを見つければそのタンパク質も探す事が出来る。
+
+### 自身をcleaveしない仕組みとPAM
+
+ユニークな配列をターゲットにするのなら、自身のrepeatに挟まれたユニークな配列もターゲットになってしまいそうだが、
+それをどうやって防いでいるか？
+
+これにはPAMと呼ばれる配列が関わっているが、この免疫機構には以下の２つの種類がある。
+
+1. PAMのある配列を攻撃するもの
+2. PAMの無い配列を攻撃するもの
+
+それぞれで防御方法が異なる。
+なおPAMはProtospacer Associated Motifの略。典型的には2〜3nt程度の短い配列。
+
+以下では1の例として、良く研究されているCRISPR/Cas9システムの場合を見ていく。
+
+[36ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=35)
+
+CRISPR: Clustered Regularly Interspaced Short Palindromic Repeats
+
+前述のrepeatに挟まれたユニークな配列をCRISPRではspacerと呼び、これは20ntの長さでファージ由来のもの。
+
+そしてファージ側にある同じ配列の領域をprotospacerと呼ぶ。
+
+CRISPR RNAとはこのリピートとspacerをあわせた領域を転写したあとにそれぞれのspacerごとになるように処理されたRNA片の事。
+このRNA片は一つのspacerと一つにリピートを含む。
+
+そのあと、多くのCRISPRシステムではtracrRNAと呼ばれるRNAが転写される。
+このtracrRNAが無いとCRISPRは機能しない。
+
+そのあとにいくつかのCas genesが転写される。
+Cas9がcleavageし、Cas1とCas2はファージからの配列の取得を行う。
+
+PAMはprotospacerの隣（の反対側の鎖）に存在する2〜3nt程度の配列で、
+spacerの間のrepeatには無い。
+
+このPAMによって自身の配列と攻撃対象となる敵の配列を区別している。
+
+なおPAMが無い方をアタックするシステムでは当然自身のrepeatの方にPAMがある。
+
+### Cas9システム
+
+Cas9には２つのnucleaseサイトがある。一つはRuvCに似た構造。
+もうひとつは金属でコーディネートされるアミノ酸が並ぶアクティブサイト、
+具体的にはhistidineとasparagineの並ぶサイト。
+そしてこの２つのnucleaseがdsDNAの凄く近くをカットする。
+
+金属コーディネートのサイトの方がspacer配列と一致する方の鎖をカットする方か。
+
+そしてCas9はPAMとしてNGG（Nは任意）があるspacerだけをカットする。
+
+Cas9はtracr RNAとguide RNAが結合する。
+
+[36ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=35)
+
+guide RNAがターゲットのシーケンスと一致する。tracr RNAとguide RNAをlinker RNAがつなげている。
+ゲノム編集としてはこのguide RNAを目的に合わせて差し替える事になる。
+
+つまり、ターゲットとしては以下の条件を満たす所をカットすることになる。
+
+- PAMがある
+- guide RNAと一致する
+
+なお、厳密んはPAMの隣の12配列が重要で、ここに一つでもミスマッチがあるとカットされない。
+残り8ntの中には、一つはミスマッチがあってもカットされる。
+
+### CRISPR/Cas9 の用途
+
+最初は、単にカットを入れる目的で使われていた。
+そうするとNHEJで修正されるので（[DSBsの概要とNHEJ](DSBsの概要とNHEJ.md)参照）、いくつかのntが削除される事になる。
+coding exonをターゲットにすれば、ここより下流はtruncation mutationされる事になる。
+
+よりコントロールされたmutationを目指して、二箇所のカットを入れる事で間の領域をまるまる削除するという事も行われていた。
+これでより確実にターゲットとするgeneをinactivate出来る。
+
+より進んだ活用としてはhomologous recombinationを併用するもの。
+homologous な領域を両端に持つ目的の配列を持ったdsDNA片をこのCRISPR/Cas9と併用する事で、この目的の配列をDSB付近の配列と置き換える事が出来る。
+
+なお、これは２つのhomologous chromosomesに同時に作用させる事が出来るので、母方のgeneと父方のgeneの両方を置き換える事が出来る。
+
+実用的には、Cas9やguided RNA, tracrRNAなどを持つplasmidと目的のdsDNA片を加えてtransfectする（transfectはEukaryote版形質転換（transform）の事をそう呼ぶ）。
+
+[37ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=36)
+
+### CRISPRの応用
+
+これらの仕組みを用いていろいろな応用が行われている。
+
+- cut DNA
+- nick DNA (片方だけ削って片方だけmutationを狙う）
+- CIRSPRi: inhibitorをつなげる
+- CIRSPRa: activatorをつなげる
+- fluorescent proteinをつなげる
+- recombinaseをつなげる
+- binding siteの競争相手に使う
+- 調べたいproteinをつなぐ
