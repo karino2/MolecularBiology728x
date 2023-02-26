@@ -113,3 +113,8 @@ DNAの損傷には以下の２種類があり、
 ### Unit: Homologous RecombinationとCRISPR
 
 - [[HomologousRecombinationとCRISPR]]
+
+### コースの最後にあったリンク
+
+- [Making Biologic Medicines for Patients: The Principles of Biopharmaceutical Manufacturing - edX](https://www.edx.org/course/making-biologic-medicines-for-patients-the-princ-2?utm_source=karino2&utm_medium=affiliate_partner)
+- [Principles of Synthetic Biology - edX](https://www.edx.org/course/principles-of-synthetic-biology?utm_source=karino2&utm_medium=affiliate_partner)
