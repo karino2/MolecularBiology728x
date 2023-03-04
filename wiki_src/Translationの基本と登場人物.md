@@ -65,3 +65,28 @@ UGAが最初のORFのストップCodonとして解釈されて、その後に一
 
 これら３つはlactoseの代謝に必要だが、必要な時は３つ全部必要だし、不要な時はすべて不要なので、
 一つのmRNAの制御でこの３つを同時に制御するのが合理的。
+
+## Eukaryotic mRNA
+
+ほぼmonocistronic。数少ない例外は小さなタンパク質でregulationにしか使わないような物。
+
+RBSは無いが、Kozak Sequenceと呼ばれる、リボソームが好む配列はあって、それはAUGの3nt アップストリームにGかAが、AUG直後にGがある配列。けれどKozak Sequenceが無いケースもたくさんあるので、これは好まれる傾向がある、程度の話。
+
+### 5' capping
+
+RBSは無いが、代わりに5'末端の特別なmodificationがリボソームを動員する。5' capと呼ばれる。
+
+[1ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=0)
+
+GTPが5'末端に特別な形で結合する。
+どう特別か？
+
+- 5'同士の結合
+- 間がP一つじゃなくてP３つ
+
+これらの修飾はRNAポリメラーゼのexit channelを出たところで行われるのだった。
+
+5' cappingはRNAを安定化させるし、Initiation Machineryが5' capに結合することでInitiationが始まる。
+
+バクテリアではRBSがリボソームがどこから翻訳を開始するかを教えるのに対し、Eukaryoteでは5' capに結合したあとにそこからdownstreamをAUGが出てくるまでスキャンすることで翻訳開始位置を調べる。
+あまりにも近すぎる例外的なケースを除いて、5' capの一番近いAUGが開始コドンとなる。
