@@ -114,7 +114,15 @@ DNAの損傷には以下の２種類があり、
 
 - [[HomologousRecombinationとCRISPR]]
 
+### Part2終わった感想ブログ
+
+- [728x Molecular BiologyのPart2を終えた！ - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/02/27/finish_728x_part2.html)
+
 ### コースの最後にあったリンク
 
 - [Making Biologic Medicines for Patients: The Principles of Biopharmaceutical Manufacturing - edX](https://www.edx.org/course/making-biologic-medicines-for-patients-the-princ-2?utm_source=karino2&utm_medium=affiliate_partner)
 - [Principles of Synthetic Biology - edX](https://www.edx.org/course/principles-of-synthetic-biology?utm_source=karino2&utm_medium=affiliate_partner)
+
+## Part3: RNA Processing and Translation
+
+- [[Translationの基本と登場人物]]
