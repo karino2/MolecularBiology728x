@@ -135,3 +135,32 @@ GTPが5'末端に特別な形で結合する。
 anticodonの側は（たぶんリボソームの）small subunitと言われるところと相互作用し、acceptor stemの方はlarge subunitと呼ばれるところと相互作用する。
 
 つまりtRNAはリボソームのmRNAと相互作用する場所から、タンパク質を合成する場所をつなげているとも見れる。
+
+## Wobble Base Pair
+
+コドンチャートを見ていると、最初の２つでアミノ酸が決まるケースがあったり、決まらなくても絞れたりするケースが多い。
+tRNAはそれに対応してアミノ酸の数+α程度の種類で済ますことが出来る。
+
+どういった仕組みか？
+
+[2ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=1)
+
+最初の2つのペアは通常のワトソン-クリック型のベースペア（Watson-Crick base pair）を形成するが、
+３つ目はWobble Base Pairというよりゆるいペアリングをする。
+
+anticodonがC, Aの時は通常のG, Uとペアリング。
+Uの時はプリンと、Gの時はピリミジンと。
+そしてanticodonはinosineのこともあり、inosineの場合はA/C/Uのすべてにマッチングする。
+
+AとCを単独で認識出来るanticodonは無い。AとGを区別する必要があるのは、コドンチャートを眺めるとIsoleucineとTryptophanの２つのみ。
+Isoleucineはinosineで３つとも識別すれば良い。
+Tryptophanはもう一つがStop codonとなるので、tRNAとは別の仕組みで識別することになる。
+
+### Inosineはどこからくるか？
+
+InosineはTranscriptionの時のヌクレオチドには入ってない。どこからくるのか？
+
+adenosine deaminasesと呼ばれる酵素群があり、これの仕業。
+これがadenosineをinosineにする。
+
+tRNAとmRNAに対してこのような作用をする酵素群が存在し、tRNAに対するdeaminaseはADATと、mRNAに対するdeaminaseをADARと呼ぶ（Adenosine DeAminase for "t"RNAと、Adenosine DeAminase for "m"RNAの略）。
