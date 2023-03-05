@@ -90,3 +90,48 @@ GTPが5'末端に特別な形で結合する。
 
 バクテリアではRBSがリボソームがどこから翻訳を開始するかを教えるのに対し、Eukaryoteでは5' capに結合したあとにそこからdownstreamをAUGが出てくるまでスキャンすることで翻訳開始位置を調べる。
 あまりにも近すぎる例外的なケースを除いて、5' capの一番近いAUGが開始コドンとなる。
+
+## tRNA
+
+[2ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=1)
+
+- 70〜90 bases
+- 塩基はmodificationを受けているものが多い
+   - Psi U loopのPsi Uはpseudouridine
+   - D loopはdihydrouridine
+
+### conservedな項目
+
+- 3'末端にCCAがある（一部の生物ではtranscriptionでは無くpost transcriptionの反応として付加されるものもある）
+- conservedな塩基が幾つかある
+    - Psi U loopに7つ
+    - D loopに4つ
+    - anticodon loopに1つ
+- Psi U loop, D loop, acceptor armの3つのarmのbpの数
+
+保存されている要素は、アミノ酸を持ってきてタンパク質を合成していく、という基本的な機能に関わる部分に多い。
+リボソームと結合したりリボソームにtRNAを渡すaccessory factorと相互作用したり。
+
+### 異なる項目
+
+- anticodon
+- variable loopのサイズ
+   - Class I: 3-5 bases
+   - Class II: 13-21 bases
+- discriminator base (3'末端のCCAの一つ手前のbase）
+
+異なる項目は、異なるアミノ酸を付加していく為に必要な区別となっている。
+
+異なるアミノ酸を持ってくるのはaminoacyl-tRNA synthetaseという酵素の役割。（略称：aa-tRNA synthetase）
+
+### レイアウト
+
+クローバーリーフの形は見やすいので良く使われるが、実際はL字型に折りたたまれた形状をしている（[ノートの2ページ目](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=1)参照）
+
+そして二本の線が並んでいる範囲は、dsDNAに類似した2重螺旋を形成している。
+
+また、anticodonの場所とアミノ酸が結合する場所が正反対に配置されていることにも注目。この両者は遠く離れている。
+
+anticodonの側は（たぶんリボソームの）small subunitと言われるところと相互作用し、acceptor stemの方はlarge subunitと呼ばれるところと相互作用する。
+
+つまりtRNAはリボソームのmRNAと相互作用する場所から、タンパク質を合成する場所をつなげているとも見れる。
