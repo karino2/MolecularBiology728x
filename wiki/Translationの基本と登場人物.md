@@ -164,3 +164,134 @@ adenosine deaminasesと呼ばれる酵素群があり、これの仕業。
 これがadenosineをinosineにする。
 
 tRNAとmRNAに対してこのような作用をする酵素群が存在し、tRNAに対するdeaminaseはADATと、mRNAに対するdeaminaseをADARと呼ぶ（Adenosine DeAminase for "t"RNAと、Adenosine DeAminase for "m"RNAの略）。
+
+## Translationを成立させるSpecificity
+
+Translationはコドンに対応したアミノ酸を付加することで行われるわけだが、これはどのような性質のSpecificityで実現されているかを調べる実験を幾つか見ていく。
+
+### tRNAに付加しているアミノ酸を変更する
+
+CysをチャージしたtRNAがあるとする。
+Cysは側鎖のCH2SHのSを取ることで、CH3のAlaに変化させることが容易にできる。
+これを用いてTranslationに関わるSpecificityについて調べる。
+
+すると、Cysのcodonに対してAlaが付加されてポリペプチドが形成されることが確認できる。
+
+大きく違うアミノ酸の場合はリボソームの所で区別する仕組みがあることを後に見ていくが、
+付加されているアミノ酸が少し変わる変更に関してはそのまま合成されてしまう。
+
+### tRNAのアンチコドンを変異させる
+
+ValをチャージするtRNAのアンチコドンはCAAでGUUにマッチングする。
+このCAAをCUAに変異させるとGAUにマッチングするようになる。これはAspのコドン。
+
+すると、Aspの入るべき所にValが入ってしまう。
+つまりアンチコドンを変更すると対応するコドンが変わってそのまま合成されてしまう。
+
+### Specificityについてのまとめ
+
+対応するコドンのtRNAにチャージされたアミノ酸はそのまま合成されてしまい、あるtRNAがどういうアンチコドンかとかどういうアミノ酸をチャージしているかとかはあまり気にせず合成されてしまう。
+
+だからtRNAに正しいアンチコドンがあり、それに正しいアミノ酸がチャージされている事がタンパク質合成のfidelityを担保していると考えられる。
+
+## Aminoacyl-tRNA Synthetases
+
+略称は aa tRNA Synthetases。
+
+4つのドメインを持ち、二つの反応を触媒する。
+
+- 反応1 ... amino acid adenylation
+- 反応2 ... tRNAのCharging
+
+### アミノ酸 adenylation
+
+アミノ酸とATPを化合して、AMPとの化合物とPPi（pyrophosphate）を生成する。
+
+[3ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=2)
+
+PPiは他の反応と同様pyrophosphataseが分解する。
+
+これがペプチド結合のためのエネルギーをATPの加水分解のエネルギーと橋渡しする。
+
+### tRNAのCharging
+
+acceptor stemがnucleophilicなアタックでAMPを蹴り出してアミノ酸と結合する反応。
+アミノ酸と結合しているtRNAはcharged tRNAと呼ばれる。
+
+acceptor stemに結合するときにも、高エネルギーの結合はそのまま保持される。
+
+### 4つのドメインと3つのActive Sites
+
+- 1つのドメインはAcceptor Stemと結合
+   - この中にAmino Acid Coupling Active Siteがある
+- 1つのドメインはanticodonと結合（最初のbaseだけ識別される）
+- 1つのドメインはATPとアミノ酸と結合
+     - この中にAdenylation active siteがある
+- 1つのドメインはAmino Acid Hydrolysis Domain ... これがアミノ酸AdenylationかtRNA ChargingのどちらかをPrrofreadする（どちらを確認するかはaa-tRNA Synthetaseごとに異なる）
+
+なお、一つのbaseの他にdiscriminator baseなども識別に使われる。
+
+### aa-tRNA Synthetaseの種類
+
+aa-tRNA Synthetaseはアミノ酸の種類一つにつき一種類が存在する。
+一つのアミノ酸に複数のtRNAが対応する場合があるが、その場合でもaa-tRNA Synthetaseは一種類で、
+この一つで全ての対応するtRNAを面倒みる。
+
+### Proofreading
+
+aa-tRNA Synthetaseが正しいアミノ酸をチャージしている事をどのように保証しているか？proofreadingの仕組みでこれを保証している。
+
+aa-tRNA Synthetaseのproofreadingは似たアミノ酸同士を見分ける機能な事が多い。
+
+例えばtyrosineとphenylalanineはOH基しか違いがない。
+だからtyrosineのtyrosyl-tRNA synthetaseはphenylalanineかどうかを見分ける仕組みがある。
+
+aa-tRNA Syntehtaseのproofreadingには二つの仕組みがある。
+
+- Chemical/Enzymatic Proofreading  
+Editing Active Siteが化学的に望まないアミノ酸をcleaveする
+- Kinetic Proofreading  
+正しいアミノ酸とtRNAのペアの時は、Active Siteに正しい場所に配置されて、AMPが付加されたりtRNAにチャージングされたりが早く起こる。だから正しい組み合わせの生産物の方が多くなる。
+
+### Chemical/Enzymatic Proofreading
+
+tyrosineはediting active siteでOH基とsteric clashが起こってediting active siteとマッチしない。
+一方phenylalanineはマッチする。
+このようにediting active siteは望まないアミノ酸を排除するためにマッチする。
+
+さらにsynthesis active site（AMPを付加する所のActive Site）ではtyrosineとマッチングする。
+
+このフィルタリング的なediting active siteと合成の実際のactive siteのspecificityの二段階で、正しいアミノ酸が反応する事を保証する。
+
+## バクテリアのリボソームの構造概要
+
+- sedimentation 沈殿、沈降
+
+リボソームは巨大なタンパク質で、E. coliの場合、2.5MDaくらいの規模でRNAポリメラーゼの5倍以上の大きさ。
+
+リボソーム全体は70Sとも言われる。
+SはSvedbergで遠心分離を発明した人。
+沈殿でサイズを推定した時にSを単位として70Sだった。
+bacterial ribosomeの上部だけだと50S、下部だけだと30S。
+（足し合わせても70にはならない）
+
+リボソームはRNAとタンパク質からなり、タンパク質は一般に小さく、10〜20 kDa程度のもの。
+RNAは長いものもあり、23S rRNAがほぼ3k base、16S rRNAが1.5k baseほど。
+
+リボソーム全体に占める割合としては、RNAとタンパク質は、ほぼ50% 50%。だからribonucleoproteinと呼ばれることも。
+
+リボソームは二つのサブユニットから構成されて、Largeのサブユニットが50S、Smallのサブユニットが30S。
+
+タンパク質はRNAを立体構造に保つのが主な役割で、触媒としての反応には関わっていない。
+触媒の機能はrRNA（とtRNA）がになっている。
+
+だからribozymeと呼ばれる事もある。
+
+### 二つのチャンネル
+
+- mRNA-tRNA チャンネル
+- peptide exit channel  
+α-helixだけはこのチャンネルの中で形成されるが、それ以外のfoldingは出た後に行われる
+
+
+
