@@ -293,5 +293,22 @@ RNAは長いものもあり、23S rRNAがほぼ3k base、16S rRNAが1.5k baseほ
 - peptide exit channel  
 α-helixだけはこのチャンネルの中で形成されるが、それ以外のfoldingは出た後に行われる
 
+### リボソームの構造のうち重要な機能を担っている2つの部分
 
+リボソームには3つのtRNAと結合する場所がある。
+それぞれ以下のように名前がついている
 
+- A site ... aminoacyl tRNAの、chargedされたものが結合する
+- P site ... peptidyl tRNAと結合。アミノ酸からペプチドを合成していく時、ペプチドはtRNAとくっついたまま合成されていく
+- E site ... 合成が終わった後にしばらく留まる場所。expended, exit, exitingのどれかの意味か。ここにあるtRNAはアミノ酸ともペプチドとも結合していない。
+
+[4ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=3)
+
+mRNAはAとPの間の所で曲げられていて、どこがAに対応するコドン（3つのbase）かが分かりやすくなっている。
+
+また、PとAのtRNAのacceptor側の終端はお互いに近接している。ここでペプチドの合成が行われる（上記ノート参照）。
+この辺りがpeptidyl transferase centerと呼ばれ、こちらはlarge subunit内となる。（これが一つ目の重要な部分）
+
+さらに、Eのacceptor endはこれら二つとはかなり離れた場所に配置されるので、間違って再結合してしまわないようになっている。
+
+アンチコドンの側はdecoding centerと呼ばれ、small subunit側に存在する。（これが二つ目の部分）
