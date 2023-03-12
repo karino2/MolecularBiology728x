@@ -29,9 +29,11 @@ cistronは歴史的な経緯でかつてORFのような領域とみなされて�
 
 また、一つのmRNAが関連する複数のタンパク質をエンコードしている場合、これをoperonと呼ぶこともある。
 
-RBS ... Ribosome Binding Site。配列としてはGGAGG。スタートcodonの3〜9nt upstream側（5'側）にある。
+### Ribosome Binding Site（RBS）
 
-リボソームの構成要素（Small Ribosome Subunitの一部）である16S rRNAはCCUCCという領域を持っていて、これがRBSとペアリングする。
+配列としてはGGAGG。スタートcodonの3〜9nt upstream側（5'側）にある。
+
+リボソームのSmall Subunitの一部である16S rRNAはCCUCCという領域を持っていて、これがRBSとペアリングする。
 これにより、Small Ribosome Subunitが動員される。
 
 ### PolycistronicのNo Polar Effectと、Polar Effectがあるケース
@@ -194,9 +196,7 @@ ValをチャージするtRNAのアンチコドンはCAAでGUUにマッチング�
 
 だからtRNAに正しいアンチコドンがあり、それに正しいアミノ酸がチャージされている事がタンパク質合成のfidelityを担保していると考えられる。
 
-## Aminoacyl-tRNA Synthetases
-
-略称は aa tRNA Synthetases。
+## Aminoacyl-tRNA Synthetases （aa tRNA Synthetases）
 
 4つのドメインを持ち、二つの反応を触媒する。
 
@@ -227,7 +227,7 @@ acceptor stemに結合するときにも、高エネルギーの結合はその�
 - 1つのドメインはanticodonと結合（最初のbaseだけ識別される）
 - 1つのドメインはATPとアミノ酸と結合
      - この中にAdenylation active siteがある
-- 1つのドメインはAmino Acid Hydrolysis Domain ... これがアミノ酸AdenylationかtRNA ChargingのどちらかをPrrofreadする（どちらを確認するかはaa-tRNA Synthetaseごとに異なる）
+- 1つのドメインはAmino Acid Hydrolysis Domain ... これがアミノ酸AdenylationかtRNA ChargingのどちらかをProofreadする（どちらを確認するかはaa-tRNA Synthetaseごとに異なる）
 
 なお、一つのbaseの他にdiscriminator baseなども識別に使われる。
 
@@ -312,3 +312,100 @@ mRNAはAとPの間の所で曲げられていて、どこがAに対応するコ�
 さらに、Eのacceptor endはこれら二つとはかなり離れた場所に配置されるので、間違って再結合してしまわないようになっている。
 
 アンチコドンの側はdecoding centerと呼ばれ、small subunit側に存在する。（これが二つ目の部分）
+
+## Eukaryoteとの簡単な比較
+
+リボソームはかなりconservedで、触媒の機能となる領域はほとんど同じ。
+外側に違いがあるくらい。
+
+追加されている項目は主にregulationやinitiation周辺の機能を提供する。
+
+### バクテリアのリボソーム
+
+- 全体は70S（2.5MDa）
+   - large subunitは50S (1.6MDa）
+       - rRNA 5S は120nt
+       - rRNA 23Sは2900nt
+       - タンパク質は34個以下
+   - small subunitは30S (0.9MDa）
+       - rRNA 16Sは1540nt
+       - タンパク質は21個
+
+### Eukaryoteのリボソーム
+
+- 全体は80S（4.2MDa）
+   - large subunitは60S (2.8MDa）
+       - rRNA 5Sは120nt
+       - rRNA 28S は4700nt
+       - rRNA 5.8Sは160ntで、これはバクテリアには無いもの
+       - タンパク質は49個
+   - small subunitは40S（1.4MDa）
+       - rRNA 18Sは1900nt
+       - タンパク質は33個以下
+
+## クイズのメモ
+
+```
+A T(U)
+G C
+
+CCACC - GGUGG
+GGAGG - CCUCC
+GCACC - CGUGG
+TTTTC  - AAAAG
+GCAGG - CGUCC
+
+RBS: GGAGG
+```
+
+
+```
+UGCA
+UGC GCA CAU AUG UGC
+
+Alanine, Cystein, Methionine, Histidine
+```
+
+- GCAはAla
+- UGCはCys
+- CAUはHis
+- AUGはMet
+
+```
+UGCUGCUGC
+UGC GCU CUG
+
+Cys, Ala, Leu
+```
+
+- GCUとCUGのどちらかがAlaでどちらかがLeu
+   - CUGがLeuならGCUがAla
+
+```
+GCAGCAGCAGCA
+
+GCA CAG AGC
+
+Ala, Gln, Ser
+```
+
+- CAGかAGCのどちらかがGlnでどちらかがSer
+
+```
+CAUCAUCAU
+
+CAU AUC UCA
+
+His, Ile, Ser
+```
+
+- AUCとUCAのどちらかがIleでどちらかがSer
+
+
+```
+AUGAUGAUG
+
+AUG UGA GAU
+
+Met, Asp
+```
