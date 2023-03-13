@@ -125,4 +125,10 @@ DNAの損傷には以下の２種類があり、
 
 ## Part3: RNA Processing and Translation
 
+### Unit: Translationの概要
+
 - [Translationの基本と登場人物](Translationの基本と登場人物.md)
+
+### Unit: TranslationのElongation
+
+- [TranslationのElongation](TranslationのElongation.md)
