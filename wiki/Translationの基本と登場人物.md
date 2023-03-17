@@ -342,3 +342,7 @@ mRNAはAとPの間の所で曲げられていて、どこがAに対応するコ�
    - small subunitは40S（1.4MDa）
        - rRNA 18Sは1900nt
        - タンパク質は33個以下
+
+## 次: TranslationのElongation
+
+[TranslationのElongation](TranslationのElongation.md)
