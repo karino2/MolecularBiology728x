@@ -205,3 +205,7 @@ specificityの確保とeventの順番を制御するのに使われている。
 
 このように、イベントが順番に起こることを保証するのにGTPの加水分解が使われている。
 またSpecificityの確保にも寄与している。
+
+## 次: TranslationのInitiation
+
+[[TranslationのInitiation]]
