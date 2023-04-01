@@ -12,15 +12,11 @@
 バクテリアのケースでは、三つのAuxiliary factors、IF1, IF2, IF3がある。IFはinitiation factorの略。
 これらは最初30S側のA, P, Eサイトと結合する。
 
-ステップ1: 最初、50Sと30Sは結合したり離れたりしている。
-
-ステップ2: そこにIF3が30SのEサイトの一部に結合する。IF3が結合すると50Sと30Sは結合しなくなって、両者が離れる。
-
-ステップ3: 次にIF1がAサイトに結合する。
-
-ステップ4: IF2がIF1に結合する。Pサイトのそばに配置されるが、Pサイトをブロックはしない。
-
-ステップ5: IF2がInitiator tRNAとmRNAのstart codonを動員する。両者はどちらが先とかは決まっていない。なお、IF3もtRNAの結合を助けるらしい事が分かっている。
+- ステップ1: 最初、50Sと30Sは結合したり離れたりしている。
+- ステップ2: そこにIF3が30SのEサイトの一部に結合する。IF3が結合すると50Sと30Sは結合しなくなって、両者が離れる。
+- ステップ3: 次にIF1がAサイトに結合する。
+- ステップ4: IF2がIF1に結合する。Pサイトのそばに配置されるが、Pサイトをブロックはしない。
+- ステップ5: IF2がInitiator tRNAとmRNAのstart codonを動員する。両者はどちらが先とかは決まっていない。なお、IF3もtRNAの結合を助けるらしい事が分かっている。
 
 [8ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=7)
 
@@ -156,5 +152,96 @@ eIFはeukaryotic Initiation Factorの略。
 4. 43S PICがmRNA/eIF Complexと結合する
    - eIF3がeIF4Eと結合
    - eIF1AがeIF4Aと結合
+   - 全て結合したものを48S PICと呼ぶことも
 
+### Start Codonを見つけるためのステップ
 
+1. 48S PICがmRNAを5'末端からスキャンしていき、Met-tRNAがbase pairするまで進める（AUGでペアリングする）
+   - ほとんどいつも5'末端に一番近いAUGとペアリングする事になる
+   - eIF4Aのhelicaseとしての活動で進められる（ヘリカーゼ無しでもこの反応は起こるが、スキャンというよりはランダムウォークっぽくなる）
+2. base pairされると、eIF2のGTPが加水分解される
+    - するとInitiator tRNAからリリースされて離れていく
+    - すると、多くのeIFもリリースされていく。eIF1Aだけ残る
+3. eIF5B-GTPがInitiator-tRNAとeIF1Aと結合する
+
+### Large Subunit (60S)の動員のステップ
+
+1. eIF5B+GTPがLarge Subunitと結合する。バクテリアのIF2と似たような機能。
+2. eIF5BのGTPが加水分解される（factor binding siteによるいつもの加水分解）
+3. eIF5B+GDPがリリースされる
+4. Large Subunitの結合によりeIF1Aが追い出される
+
+以上で、PサイトのInitiator-tRNAが配置されてmRNAも正しくStart Codonとベースペアしていて、Aサイト、Eサイトも空となり、
+Elongationの準備が整う。
+
+### バクテリアとEukaryoteのInitiation Factorの比較
+
+ | Eukaryote | バクテリア |
+| ---- | ---- |
+| eIF1, 3, 5 | IF3 |
+| eIF1A | IF1 |
+| eIF2 | IF2のうちInitiator tRNAの動員 |
+| eIF5B | IF2のうちLarge Subunitの動員 |
+| eIF4 | 対応する要素無し |
+
+IF2の役割はEukaryoteでは二つの別々のeIFに分割されている。
+
+eIF4に対応するものはバクテリア側には無い。eIF4はmRNAにくっついて高次ストラクチャーを解体したりAUGのスキャンの為にmRNAを進めたりするヘリカーゼ的な機能。
+バクテリアでは単純にRBSと16Sがbase paringするだけ。
+
+## Eukaryoteの例外的なmRNAとIRES
+
+いくつかの例外的なgeneは5'-capを必要としない。これらは代わりにIRESs（Internal Ribosome Entry Site）を使う。
+これはmRNAが特殊な構造を作り、通常のinitiationのステップを一部バイパスしたりする。
+
+3種類のIRESが見つかっている。
+
+- Group I ... 80S (full ribosome）を直接動員する。これはeIFを全く必要としない。Initiator tRNA-Metすら要らない。これはウィルス由来のもののみ。コオロギのウィルスに見つかっている。
+- Group II ... IRESがSmall Subunitを動員する。一部のeIFとInitiator tRNA-Metを必要とする。
+- Group III ... IRES固有のBinding Factorを必要とする。これもeIF（の一部）とInitiator tRNA-Metを必要とする。
+
+### IRESの例その1、CrPV
+
+Group Iのコオロギのウィルス、CrPV（Cricket Paralysis Virus）の例を見ていく。
+
+mRNAの5'末端に、tRNAのような構造があり、それとベースペアするmRNAのように見えるようになっている。
+この5'末端の構造が直接Pサイトに結合する。
+
+このままElongationが始まるような感じだが、最初はpeptidyl transferase反応が不要なのでそこだけ特殊。
+
+これは、タンパク質の最初をMet以外の好きなものに出来るという点で応用のあるIRESで、
+特定のgeneの前にこのIRESを置くことでMet以外から始まるタンパク質を合成させられる。
+
+この5'末端の構造はコドン-アンチコドンの所は通常のtRNAとそっくりだが、一度Pサイトと結合すると通常のtRNAのclassic stateでは無くP/E-site hybrid stateと似た構造となっている。
+acceptor endはEサイトの側に伸びている。
+
+### IRESの例その2、Group IIのIRES
+
+このケースでは、eIF4Gを直接mRNAのIRESが引き寄せて結合する。その後eIF4Aが結合する。eIF4Eは必要としない。
+そしてこれが43S PICを結合して、
+このIRESのdownstreamをスキャンしていき、IRESの最寄りのAUGをStart Codonとする。
+
+つまり、このケースではeIF4Eをバイパスして、通常のmRNAの動員のステップを行う事で、5'-capを不要としている。
+
+### IRESの例その3、Group IIIのIRES（apoptosisの例）
+
+apoptosisの初期の段階で、eIF4Eが破壊される。これにより通常のtranslationがストップされる。
+だが、apoptosisを進めるためのタンパク質は合成されて欲しい。
+
+DAP 5（Death Associated Protein 5）というタンパク質がある。
+これがIRES dependent translation association factor (ITAF、アイタフと発音)となっている。
+
+DAP 5は細胞内のRNAの特定の配列（これがIRES）と結合する。
+
+DAP 5はeIF4Gの一部と似た形をしている。eIF4Eと結合する部分に対応する領域は無いが、eIF4Aに対応する領域はある。
+つまりDAP 5がeIF4Gの代わりをする事でGroup IIのIRESと似たようなメカニズムで翻訳が開始される。
+つまり、DAP 5がmRNAのIRESと結合するとeIF4Aと43S PICと結合し、その後IRESのdownstreamのAUGをスキャンしていく。
+
+この仕組みは、例えば通常はinhibitされたnucleaseのgeneとなっている所に、
+アポトーシス時はその途中から翻訳する事でinhibitしている部分を取り除いたnucleaseを合成する、
+というように使われたりする。
+これでアポトーシス以外ではinhibitされているものが、アポトーシス時にはアクティブな物が合成されて、DNAなどを分解して行ったりする。
+
+## 次: TranslationのTermination
+
+[[TranslationのTermination]]

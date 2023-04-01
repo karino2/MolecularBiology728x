@@ -136,3 +136,5 @@ DNAの損傷には以下の２種類があり、
 ### Unit: TranslationのInitiationとTermination
 
 - [TranslationのInitiation](TranslationのInitiation.md)
+- [TranslationのTermination](TranslationのTermination.md)
+- [TranslationにまつわるAssay達](TranslationにまつわるAssay達.md)
