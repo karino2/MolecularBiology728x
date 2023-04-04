@@ -1,5 +1,7 @@
 前: [TranslationのElongation](TranslationのElongation.md)
 
+- UTR ... UnTranslated Region
+
 ## Initiationの目的
 
 バクテリアとEukaryoteではInitiationのステップは大きく異なるが、Initiationの目的は共通である。
