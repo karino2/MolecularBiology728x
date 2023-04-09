@@ -9,7 +9,7 @@
 - elongation
 - termination
 
-ここではまずInitiaationについて扱う。
+ここではまずInitiationについて扱う。
 
 ## Initiationの4つのステップ
 
