@@ -138,3 +138,7 @@ DNAの損傷には以下の２種類があり、
 - [[TranslationのInitiation]]
 - [[TranslationのTermination]]
 - [[TranslationにまつわるAssay達]]
+
+### Unit: TranslationのRegulation
+
+- lousy 劣っている、質の悪い
