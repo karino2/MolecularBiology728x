@@ -141,4 +141,4 @@ DNAの損傷には以下の２種類があり、
 
 ### Unit: TranslationのRegulation
 
-- lousy 劣っている、質の悪い
+- [Translationの量を調べるAssay達](Translationの量を調べるAssay達.md)
