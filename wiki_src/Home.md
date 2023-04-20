@@ -142,3 +142,4 @@ DNAの損傷には以下の２種類があり、
 ### Unit: TranslationのRegulation
 
 - [[Translationの量を調べるAssay達]]
+- [[バクテリアにおけるTranslationのRegulation]]

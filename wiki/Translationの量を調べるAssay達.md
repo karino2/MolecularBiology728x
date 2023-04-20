@@ -55,13 +55,15 @@ mRNAとリボソームが一つ結合してTranslationが始まる前の状態�
 Spectrophotometryで見ると、80S (リボソーム一つ）、80Sが二つ、80Sが3つ…と言った場所に山がみられる。
 この手法ではリボソーム6個とか7個くらいまでが見分けられる限界。
 
-これとRT-PCRを組み合わせる事で、特定のRNAがTranslationされているかを確認する事が出来る。
-
-RT-PCRについては[Assays](Assays.md)や[Transcription入門](Transcription入門.md)を参照。
-
 [12ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=11)
 
 これで調べると、単体で存在しているS40は少ない事が分かる。これはS40がmRNAと結合している時は他のリボソームもくっついている事が多いからだろう。
+
+また、これとRT-PCRを組み合わせる事で、特定のRNAがTranslationされているかを確認する事が出来る。
+各位置のmRNAに対してRT-PCRをして調べたいmRNAのreadのカウントを調べてPolysome Profilingのグラフと付き合わせる事で、目的のmRNAのreadがPolysomeの山の範囲にどのくらいあるかを特定する事で、
+目的のmRNAがtranslateされているかを判断出来る。
+
+RT-PCRについては[Assays](Assays.md)や[Transcription入門](Transcription入門.md)を参照。
 
 ## Ribo-seq
 
@@ -81,6 +83,7 @@ Natureの[http://rdcu.be/lBkN](http://rdcu.be/lBkN)を見ろとの事。見て�
 この実験結果はなかなか示唆に富むな。
 
 話を戻して。大まかには遠心分離でpolysomeを分離して、どうにかしてそれの量をシーケンシングで測るという事だな。
+28ntはRibosomeに保護されている部分と思われる所か。
 
 ### Translational Efficiency
 
@@ -100,22 +103,6 @@ Ribo-seqのデータをRNA-seq readsのデータと比較する事で、Translat
 TEをRibo-seq reads/RNA-seq readsと言っていた。
 つまり存在しているmRNAのうちどれだけがPolysomeからが分かるという事だよな。
 
-## Translational Controls
+## 次: バクテリアにおけるTranslationのRegulation
 
-我らはTranslational Controlsについて、二つの側面に関心がある。
-
-1. 各mRNAの基本的なTE（mRNAにより異なる）
-2. あるmRNAが制御によってTEがどう変わるか
-
-### なぜTranslationをRegulateする必要があるのか？
-
-転写を制御するのだからそれで十分では無いのか？という疑問に答える。
-
-1. 細胞内のタンパク質の水準を素早く変更出来る（転写制御ではmRNAの水準が変わるのを待って初めてタンパク質の水準が変わる）  
-細胞内のタンパク質の量を増やすには最速。減らすにはdegradationの方が早いが、量を変える早い手段である事には変わりない。
-2. Cell Cycleやフェーズなどで、転写が（ほとんど、または全く）行われない時期がある（初期embryoとかMeta phaseとか）が、そこでもタンパク質の量を制御したい
-3. ある種のタンパク質を、細胞内の特定の場所に集中的に集めたい  
-mRNAを特定の場所に向けるとともに、その場所にactivatorを集めて、他の場所にはrepressorをばら撒くような感じで達成出来る
-4. バクテリアのpolycistronic mRNAで、合成されるタンパク質の量を変えたい場合がある
-5. 素早くTranslation全体を抑制したい時などに便利（ストレス下などでタンパク質が正しく作られない事が予想されるケースなど）
-
+[バクテリアにおけるTranslationのRegulation](バクテリアにおけるTranslationのRegulation.md)
