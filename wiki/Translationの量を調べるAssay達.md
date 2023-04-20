@@ -99,3 +99,23 @@ TEは大体20xとかのオーダーの差があるので、いくらかはTEで�
 Ribo-seqのデータをRNA-seq readsのデータと比較する事で、Translational Efficiency が分かる、との事。
 TEをRibo-seq reads/RNA-seq readsと言っていた。
 つまり存在しているmRNAのうちどれだけがPolysomeからが分かるという事だよな。
+
+## Translational Controls
+
+我らはTranslational Controlsについて、二つの側面に関心がある。
+
+1. 各mRNAの基本的なTE（mRNAにより異なる）
+2. あるmRNAが制御によってTEがどう変わるか
+
+### なぜTranslationをRegulateする必要があるのか？
+
+転写を制御するのだからそれで十分では無いのか？という疑問に答える。
+
+1. 細胞内のタンパク質の水準を素早く変更出来る（転写制御ではmRNAの水準が変わるのを待って初めてタンパク質の水準が変わる）  
+細胞内のタンパク質の量を増やすには最速。減らすにはdegradationの方が早いが、量を変える早い手段である事には変わりない。
+2. Cell Cycleやフェーズなどで、転写が（ほとんど、または全く）行われない時期がある（初期embryoとかMeta phaseとか）が、そこでもタンパク質の量を制御したい
+3. ある種のタンパク質を、細胞内の特定の場所に集中的に集めたい  
+mRNAを特定の場所に向けるとともに、その場所にactivatorを集めて、他の場所にはrepressorをばら撒くような感じで達成出来る
+4. バクテリアのpolycistronic mRNAで、合成されるタンパク質の量を変えたい場合がある
+5. 素早くTranslation全体を抑制したい時などに便利（ストレス下などでタンパク質が正しく作られない事が予想されるケースなど）
+
