@@ -84,10 +84,18 @@ Natureの[http://rdcu.be/lBkN](http://rdcu.be/lBkN)を見ろとの事。見て�
 
 ### Translational Efficiency
 
-Ribo-seqのデータをRNA-seq readsのデータと比較する事で、Translational Efficiency が分かる、との事。
-TEの定義はRibo-seq reads/RNA-seq readsか。
-つまり存在しているmRNAのうちどれだけがPolysomeからが分かるという事だよな。
+Translational Efficiency（TEと略す）の定義は
+
+```
+タンパク質の数/mRNA/時間
+```
+
+との事。つまり、単位時間あたりにmRNA一つから合成されるタンパク質の数、か。
+単位時間は対象とするものによって違うらしい。バクテリアとかなら分、真核生物ならhour、など。
 
 合成されたタンパク質の数とmRNAの数の比率はgeneによって大きな差があることがわかっている（1000xとかのオーダー）。
-
 TEは大体20xとかのオーダーの差があるので、いくらかはTEで説明出来るが、他にも大きな要素があると思われる。
+
+Ribo-seqのデータをRNA-seq readsのデータと比較する事で、Translational Efficiency が分かる、との事。
+TEをRibo-seq reads/RNA-seq readsと言っていた。
+つまり存在しているmRNAのうちどれだけがPolysomeからが分かるという事だよな。
