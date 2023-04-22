@@ -59,11 +59,14 @@ Spectrophotometryで見ると、80S (リボソーム一つ）、80Sが二つ、8
 
 これで調べると、単体で存在しているS40は少ない事が分かる。これはS40がmRNAと結合している時は他のリボソームもくっついている事が多いからだろう。
 
-また、これとqRT-PCRを組み合わせる事で、特定のRNAがTranslationされているかを確認する事が出来る。
-各位置のmRNAに対してqRT-PCRをして調べたいmRNAのreadのカウントを調べてPolysome Profilingのグラフと付き合わせる事で、目的のmRNAのreadがPolysomeの山の範囲にどのくらいあるかを特定する事で、
+また、これとRT-PCRを組み合わせる事で、特定のRNAがTranslationされているかを確認する事が出来る。
+各位置のmRNAに対してRT-PCRをして調べたいmRNAのreadのカウントを調べてPolysome Profilingのグラフと付き合わせる事で、目的のmRNAのreadがPolysomeの山の範囲にどのくらいあるかを特定する事で、
 目的のmRNAがtranslateされているかを判断出来る。
 
-RT-PCRについては[Assays](Assays.md)や[Transcription入門](Transcription入門.md)を参照。qRT-PCRについては記述がないが、特定の
+RT-PCRについては[Assays](Assays.md)や[Transcription入門](Transcription入門.md)を参照。
+
+ただ後の動画ではQuantitative Real Time PCRと言っていて、クイズではqRT-PCRを選ばせるものがあった。
+qRT-PCRについては詳細は良くわからないが特定のmRNAの量を調べる手法っぽい。
 
 ## Ribo-seq
 
@@ -102,6 +105,74 @@ TEは大体20xとかのオーダーの差があるので、いくらかはTEで�
 Ribo-seqのデータをRNA-seq readsのデータと比較する事で、Translational Efficiency が分かる、との事。
 TEをRibo-seq reads/RNA-seq readsと言っていた。
 つまり存在しているmRNAのうちどれだけがPolysomeからが分かるという事だよな。
+
+
+## ここまで見てきたAssayをどう使ってRegulationを調べるか
+
+ここからは、ここまで見てきたAssayを使って、どうRegulationを調べる事が出来るかを見ていく。
+
+### 例1: Polysome Profilingを使って、実際にTranslationのRegulationが行われている事を確認する
+
+Polysome ProfilingとRT-PCRを付き合わせる事で特定のmRNAが現在翻訳されているかを調べる事が出来る、という話をした。
+これを使って例えばグルコースがあるプレートと無いプレートで特定のmRNAが翻訳されているかを調べる事が出来る。
+
+またRT-PCRではなくhigh throughput sequencing手法と組み合わせることで、Polysomeを形成している全mRNAの分布を調べる事も出来る。
+
+このassayを行っている時に気を付けるのは、転写が行われていないのか翻訳が行われていないのかを区別するために、
+mRNAの量もチェックする事。
+
+mRNAの総量は変わらないがPolysomeの数が大きく変わるなら、TranslationのRegulationが行われている証拠となる。
+
+[Translationの量を調べるAssay達](Translationの量を調べるAssay達.md)ではRT-PCRと組み合わせると言っていたが、この動画ではqRT-PCRと組みわせると言っている。どういう事だろう？
+qRT-PCRはQuantitative (real-time) Reverse Transcriptase PCRと注がついている。
+
+qRT-PCRがなんなのかについてはあまり説明が無いが、どうも特定のmRNAについてRT-PCRするような手法のようだ。
+
+### 例2: Meiosisの間をRibo-seqとRNA-seqを比較して調べる
+
+Meiosisに関わる二つのgene、SPS2とSPS1について、Meiosisの間のRibo-seqとRNA-seqのデータを様々なタイムポイントで計測する。
+
+RNA-seqの方をみると、それぞれのタイムポイントで大体似通った水準のそれぞれのmRNAが見られる。
+だが、Ribo-seqをみると、SPS2が先に多く現れて、しばらくSPS1は出てこない。そのあとSPS1が増えていくので、
+SPS1は初期のステージではtranslationがrepressされていると思われる。
+
+### 例3: F1F0 ATP synthaseオペロンの例
+
+- stoichiometry 化学量論
+
+Ribo-seqを用いて同一mRNAの中のそれぞれのサブユニットのtranslationの比率が違う事を突き止める。
+
+これはミトコンドリアでプロトンgradientを用いてATPを合成する酵素。
+F1F0 ATP synthaseは8種類のサブユニットから出来ていて、一つのmRNAにエンコードされている。
+
+だがこのF1F0 ATP synthaseはそれぞれのサブユニットの個数が違う。
+Eサブユニットはたくさん、AとDは3つ、C, G, B, Hは一つずつで構成されている。
+
+これはmRNAのRibo-seqのreadsにも見てとれて、
+Eのreadsがもっとも多く、AとDは中くらい、それ以外が少なめ。
+このreadsの量の比率はcomplexの構成要素の比率と対応している事が多い。
+
+このように一つのmRNAについて、翻訳対象のサブユニットごとに翻訳の量が違うという事は、
+なんらかのTranslationの制御が行われている証拠と言える。
+
+## Ribosome DensityとRate-Limiting Step
+
+TranslationのRate-Limiting Stepがどこなのかを調べたい時には、Ribosome Densityを調べる。
+よくあるケースとしてはTranslationの量をもっと増やしたい、とかいう時に必要な情報。
+
+Ribosome Densityは、 リボソームの数/ORFの単位長さ が定義。
+
+- ElongationがRate-Limiting ... Ribosomeがたくさんついていて、Ribosome Densityが高い
+- InitiationがRate-Limiting ... Ribosomeは少ししかついていないだろうからRibosome Densityが低い
+
+なおRibosome Densityの上限は生物種により多少の違いはあるが、1/35nt 程度との事。
+28ntくらいが保護される長さなので、その前後に少し余白があると思うとこのくらいであるのは納得できる。
+
+S. cerevisiaeで調べた結果が紹介されていて、注意深く行なったPolysome ProfilingとqRT-PCRの結果を付き合わせて計算しているように見える。
+
+とにかく、平均のRibosome Densityは1/154ntで、最大値は1/35nt、1/50nt以上のgeneは72 genesのみだった。
+
+多くのgeneではinitiationがRate Limiting Stepで、だからRegulationの多くはInitiationで起きていると予想される。
 
 ## 次: バクテリアにおけるTranslationのRegulation
 
