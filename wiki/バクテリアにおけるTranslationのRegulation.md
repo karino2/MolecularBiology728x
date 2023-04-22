@@ -1,5 +1,8 @@
 前: [Translationの量を調べるAssay達](Translationの量を調べるAssay達.md)
 
+- steric 立体の
+- conniption fit ヒステリー発作
+
 ## なぜTranslationをRegulateする必要があるのか？
 
 転写を制御するのだからそれで十分では無いのか？という疑問に答える。
@@ -55,3 +58,30 @@ silent mutationの範囲は動画ではstart siteの40 downstreamと5 upstream�
 
 [Structure versus codon bias - Nature Reviews Microbiology](https://www.nature.com/articles/nrmicro2153) をみると-4〜+37で半分くらいが説明出来る、となっているので、start site基準だが、一方で-5くらいにRBSがある事を考えるとRBSのdownstream 40くらい、とも言える。
 どっちも正解か。
+
+## Regulationをどう実現しているか
+
+Basal Levelではなく、あるmRNAのTranslationをどうinhibitしたりするか？
+
+1. RBSとStart Codonの間の適当な配列とbindするタンパク質が、30Sの結合を阻害する 
+ー＞RBSでは特定のmRNAではなく全mRNAがinhibitされてしまうのでmRNA固有な配列になりうるRBSとStart Codonの間が多い
+2. 複数のORFがあるmRNAで、上流のORFの一部が下流のRBSかその付近とhybridizeする
+
+1だけProtein Dependent、それ以外はRNA Dependent
+
+[13ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=12)
+
+2は、最初のRBSが識別されてTranslationが進むとこのsecondary structureは解除されるので翻訳可能になる。
+
+これはPolar Effectと呼ばれる。upstreamのgeneがturn offされると、downstreamのgeneもturn offされるから。
+
+### Polar Effectを用いたRibosomal Proteinsの制御の例
+
+Ribosomal Proteinsは、rRNAと合わせてリボソームを形成するものだが、
+rRNAがなければこのタンパク質をTranslateするのは無駄である。
+
+そこでRibosomal ProteinがrRNAに結合している間は普通にTranslationが行われ続けるが、
+余ってるrRNAが無くなってRibosomal ProteinsがrRNAと結合しなくなると、このタンパク質が自身のmRNAの上流のRBS付近に結合して、
+Protein Dependentなinhibitが起こる。
+
+するとそのORFの一部が下流のRBS付近と結合して、下流のタンパク質まで翻訳されなくなる（Polar Effect）。
