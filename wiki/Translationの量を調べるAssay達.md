@@ -59,11 +59,11 @@ Spectrophotometryで見ると、80S (リボソーム一つ）、80Sが二つ、8
 
 これで調べると、単体で存在しているS40は少ない事が分かる。これはS40がmRNAと結合している時は他のリボソームもくっついている事が多いからだろう。
 
-また、これとRT-PCRを組み合わせる事で、特定のRNAがTranslationされているかを確認する事が出来る。
-各位置のmRNAに対してRT-PCRをして調べたいmRNAのreadのカウントを調べてPolysome Profilingのグラフと付き合わせる事で、目的のmRNAのreadがPolysomeの山の範囲にどのくらいあるかを特定する事で、
+また、これとqRT-PCRを組み合わせる事で、特定のRNAがTranslationされているかを確認する事が出来る。
+各位置のmRNAに対してqRT-PCRをして調べたいmRNAのreadのカウントを調べてPolysome Profilingのグラフと付き合わせる事で、目的のmRNAのreadがPolysomeの山の範囲にどのくらいあるかを特定する事で、
 目的のmRNAがtranslateされているかを判断出来る。
 
-RT-PCRについては[Assays](Assays.md)や[Transcription入門](Transcription入門.md)を参照。
+RT-PCRについては[Assays](Assays.md)や[Transcription入門](Transcription入門.md)を参照。qRT-PCRについては記述がないが、特定の
 
 ## Ribo-seq
 
