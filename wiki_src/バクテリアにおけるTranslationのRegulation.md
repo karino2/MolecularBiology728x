@@ -65,7 +65,10 @@ Basal Levelではなく、あるmRNAのTranslationをどうinhibitしたりす�
 
 1. RBSとStart Codonの間の適当な配列とbindするタンパク質が、30Sの結合を阻害する 
 ー＞RBSでは特定のmRNAではなく全mRNAがinhibitされてしまうのでmRNA固有な配列になりうるRBSとStart Codonの間が多い
-2. 複数のORFがあるmRNAで、上流のORFの一部が下流のRBSかその付近とhybridizeする
+2. mRNAの内部のhybridization  
+複数のORFがあるmRNAで、上流のORFの一部が下流のRBSかその付近とhybridizeする
+3. Riboswitch Dependent Regulation
+4. Small RNA Regulation
 
 1だけProtein Dependent、それ以外はRNA Dependent
 
@@ -85,3 +88,28 @@ rRNAがなければこのタンパク質をTranslateするのは無駄である�
 Protein Dependentなinhibitが起こる。
 
 するとそのORFの一部が下流のRBS付近と結合して、下流のタンパク質まで翻訳されなくなる（Polar Effect）。
+
+
+### RIboswitchによるSAMに関わるタンパク質の制御の例
+
+特定の小さい分子が結合すると形を変えるRNAがあり、これにより制御する仕組み。
+ここでは例として、S-Adenosyl methionine (SAM)で形を変えるケースを見てみよう。
+
+SAMはmethyltransferaseがドナーとして使うメチル基を取り出すのに使う分子。
+このSAMが結合すると形が変わるRNAがある。
+
+[13ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=12)
+
+SAMがある事で足の所がhybridizeして、その結果反対側のhybridizeが解けて、その結果そことhybridizeする新しい部分とhybridizeしてループを形成する。
+
+このmRNAはSAMを合成するタンパク質で、SAMが十分にあればこのタンパク質は不要になるので、
+翻訳を抑制するためにこのRiboswitchが使われている。
+RBSがアクセス出来なくなるので翻訳されなくなる。
+
+### Small RNAによる制御
+
+バクテリアのSmall RNAはsRNAとも呼ばれ、通常80〜110ヌクレオチド長くらい。
+
+例えばmRNA内部のhybridizeにより翻訳が抑制されている状態で、hybridizeしている片方とsRNAがhybridizeする事で元の内部hybrizeが解除されてRBSがアクセス可能になり翻訳が開始されるようなケースがある。（activationのケース）
+
+また、RBS周辺とsRNAがhybridizeする事でRBSがアクセス不能になるようなケースもある（inhibitのケース）
