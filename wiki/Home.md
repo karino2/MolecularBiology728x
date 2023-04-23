@@ -143,3 +143,4 @@ DNAの損傷には以下の２種類があり、
 
 - [Translationの量を調べるAssay達](Translationの量を調べるAssay達.md)
 - [バクテリアにおけるTranslationのRegulation](バクテリアにおけるTranslationのRegulation.md)
+- [EukaryoticTranslationalRegulation](EukaryoticTranslationalRegulation.md)

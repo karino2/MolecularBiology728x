@@ -113,3 +113,7 @@ RBSがアクセス出来なくなるので翻訳されなくなる。
 例えばmRNA内部のhybridizeにより翻訳が抑制されている状態で、hybridizeしている片方とsRNAがhybridizeする事で元の内部hybrizeが解除されてRBSがアクセス可能になり翻訳が開始されるようなケースがある。（activationのケース）
 
 また、RBS周辺とsRNAがhybridizeする事でRBSがアクセス不能になるようなケースもある（inhibitのケース）
+
+## 次: EukaryoticTranslationalRegulation
+
+[EukaryoticTranslationalRegulation](EukaryoticTranslationalRegulation.md)
