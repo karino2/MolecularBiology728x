@@ -17,27 +17,16 @@ EukaryoticでもgeneによってTEはかなり違いがある。
 
 Translationの制御に関わる所を中心に、Initiationのステップを簡単に見直す。
 
-大きく、以下の２つの段階があるのだった（[[TranslationのInitiation]]を参照)
+大きく、以下の4つの段階があるのだった（[[TranslationのInitiation]]を参照)
 
-- Small SubunitにeIFとMet-tRNAがロードされる（43S Pre Initiation Complexを形成）
-- 43S PICにmRNAが動員される
+- ステップ1: Small SubunitにeIFとMet-tRNAがロードされる（43S Pre Initiation Complexを形成）
+- ステップ2: 43S PICにmRNAが動員される
+- ステップ3: Start Codonのスキャン
+- ステップ4: Large Subunitの動員 
 
-それぞれのステップが翻訳制御に使われている。
+### eIF2Bをinhibitする事でMet-tRNAのロードを抑制（ステップ1をターゲット）
 
-前者としてはMet-tRNAのロードの段階が制御の対象となる。
-
-後者はさらに以下のステップで進むのだった。
-
-- mRNAの5' capにeIF4Eが結合
-- eIF4GとeIF4AがmRNA+eIF4Eと結合
-- eIF4AがヘリカーゼとしてmRNAの5'側のsecondary structureを解除
-- 43S PICとmRNA complexが結合
-
-後者のステップの制御対象としては２つ目のeIF4GとeIF4Aがターゲットとなっている。
-
-### eIF2Bをinhibitする事でグローバルに翻訳を抑制
-
-グローバルな翻訳制御として、Met-tRNAがロードされるステップをターゲットとしたものを見ていく。
+グローバルな翻訳制御として、Met-tRNAがロードされるステップをターゲットとしたものを見ていく。これはステップ1をターゲットにした翻訳制御。
 
 Met-tRNAはロード時には、eIF2+GTPと結合した状態でやってくるのだった。（Initiator-tRNA+eIF2+GTP ternary complex)
 
@@ -59,16 +48,16 @@ mRNAが結合してStart Codonのスキャンが起こり、Start Codonとbase p
 | HRI | heme level, osmotic shock, heat shock |
 | PERK | ERストレス、hypoxia |
 
-### 4E-BPによるmRNAの動員のブロック
+### 4E-BPによるmRNAの動員のブロック（ステップ2をターゲット）
 
-mRNAの動員は以下のステップで進むのだった。
+mRNAの動員であるステップ2はさらに以下のステップで進むのだった。
 
 - mRNAの5' capにeIF4Eが結合
 - eIF4GとeIF4AがmRNA+eIF4Eと結合
 - eIF4AがヘリカーゼとしてmRNAの5'側のsecondary structureを解除
 - 43S PICとmRNA complexが結合
 
-そしてこの二番目のeIF4GとeIF4Aの結合が制御のターゲットとなっている。
+このステップの制御対象としては２つ目のeIF4Gがターゲットとなっている。
 
 4E Binding Proteins、略して4E-BPsと呼ばれるタンパク質群がある。
 4E-BPは基本的にはeIF4Eと結合し、これはeIF4Gの結合と競合する。
@@ -89,3 +78,18 @@ BrunoはmRNAのORFのdownstreamのどこかの配列に結合する。
 するとこのBrunoとcupが結合する。cupは4E-BPの一種だが、通常はそれほど強力では無く翻訳を妨げない。
 だが、これがmRNAと結合すると、eIF4Eと結合しやすくなって翻訳を抑制する。
 これは特定のmRNAをターゲットにする事が出来る仕組み。
+
+### ferritinのgeneに見られる、AUGへのスキャンをターゲットにした制御
+
+ferritin proteinのgeneの例。
+ferritinのgeneのORFのupstreamにIRE (Iron Regulatory Element）と呼ばれる領域があり、ヘアピンを形成している。
+
+このIREにIRP (Iron Regulatory Protein)と呼ばれるタンパク質が結合する。これは折り畳まれた状態のIREの配列を認識して結合する。
+IRPは、鉄イオンが結合していなければIREに結合でき、鉄イオンが結合しているとIREに結合できない。
+
+IRPが結合しているとスキャンを途中でブロックしてAUGまで辿り着く事が出来ない。
+
+ferritin proteinは自由に存在している鉄イオンを掃除するタンパク質。
+鉄イオンはOHラディカルなどを作り出すのであまり細胞に良いものではない。
+
+鉄イオンが自由には存在しなくなれば、もうferritinはいらなくなるので、合成を止める。
