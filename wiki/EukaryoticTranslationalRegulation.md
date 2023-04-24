@@ -122,3 +122,7 @@ uORFやuAUGでは三つのケースが考えられる
           - Elongationの初期にはまだeIFがいくつか残っている事があって、40SがmRNAとくっついたままになって、そこからまたスキャンが始まる事があるとか
      - uORFのStop Codonの配列もこのRe-initiationの起きる確率に影響を与えている模様
 
+### GCN4 geneのuORFによるRegulationの例
+
+GCN4はAAの合成に関わるgeneのactivationに関わるタンパク質。
+
