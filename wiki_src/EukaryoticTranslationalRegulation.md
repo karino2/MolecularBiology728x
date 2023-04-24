@@ -93,3 +93,32 @@ ferritin proteinは自由に存在している鉄イオンを掃除するタン�
 鉄イオンはOHラディカルなどを作り出すのであまり細胞に良いものではない。
 
 鉄イオンが自由には存在しなくなれば、もうferritinはいらなくなるので、合成を止める。
+
+## uORFによる翻訳の制御
+
+ORFのStart Codonのupstreamに、ORFやAUGがある事が発見され、これが翻訳の制御に関わっている。
+このupstreamにあるORFやAUGをuORFとuAUGと呼ぶ。（これと対比するために実際のgeneのORFのStart CodonのAUGをsAUGと呼ぶ）
+
+50%の人間のgeneは、upstream AUGを持つ事が最近わかった。
+
+EukaryoteのTranslationのinitiationでは最初のAUGをスキャンする、という話だったのに、これはどうしたことか？という事を見ていく。
+
+uORFは通常短く、4〜8とか程度のAAしか無いもので、何らかの機能のあるタンパク質を合成する事は無い。
+
+uORFやuAUGでは三つのケースが考えられる
+
+1. upstreamに短いORFがあるケース（Start CodonもStop Codonもある）
+2. uAUGだけがあり、Stop Codonが無く、そのままやがてsAUGに繋がっているケース
+    - ORFのin frameのケース ... 余計なものが5'につくがおそらく普通に機能する
+    - ORFのout of frameのケース（ORFのCodonがずれるケース） .... おそらくゴミが出来てしまう
+
+### uAUGがある時にどうやってDownstreamのORFが翻訳されるのか？
+
+- 最初のAUGをバイパスする事がある
+    - Kozak consensus sequence （AorG NN AUG G）とは違う配列になっている（少しバイパスしやすくなる）
+    - uAUGとオーバーラップまたは近くにRNAのsecondary structureが出来るとバイパスしやすくなる（ただし何故かはよくわからない。eIF4Aが伸ばしそうなものだが…）
+- uORFのStop Codonの後にRe-initiationが起こる事がある
+     - uORFが短い時（3〜10 AA程度）しか起こらない
+          - Elongationの初期にはまだeIFがいくつか残っている事があって、40SがmRNAとくっついたままになって、そこからまたスキャンが始まる事があるとか
+     - uORFのStop Codonの配列もこのRe-initiationの起きる確率に影響を与えている模様
+
