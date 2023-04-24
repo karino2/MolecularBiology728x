@@ -124,5 +124,47 @@ uORFやuAUGでは三つのケースが考えられる
 
 ### GCN4 geneのuORFによるRegulationの例
 
-GCN4はAAの合成に関わるgeneのactivationに関わるタンパク質。
+uORFを使うRegulationの一番極端で良く調べられている例として、GCN4 geneの例を見てみる。
 
+GCN4はAAの合成に関わるgeneのactivationに関わるタンパク質。
+これの5' upstream側には4つものuORFが見つかり、これが制御に関わっているらしい。
+
+GCN4はAAが豊富にある状態では不要で、AAが少ないと必要となるタンパク質。
+
+これらのuORFはどれも8 AA以下の長さしか無い。
+
+[14ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=13)
+
+- このuORFのORFの中の配列を変えてもGCN4の翻訳には一切の影響がなかった。
+- このuORFのstart codonを変更してAUGでは無くすと、ノートのようになった。
+      - uORF4のAUGを変えたところは、+AAでもちょっとだけGCN4が翻訳されるようになった、という意味。
+
+これはどうやって起こるのか？
+
+uORF1は特殊なORFで、uORF1を翻訳したリボソームの40%がStop Codonの後も40Sサブユニットが残る、という性質な事が分かった。
+そしてこの40Sサブユニットが残ると、そのままAUGスキャンを続ける。
+だが、uORF1の翻訳を終了した時点では、Initiator tRNAが無いので、スキャンの結果AUGがあってもマッチしない。
+PサイトにInitiator tRNAがやってきて初めてAUGを認識できるようになる。
+
+このInitiator tRNAがいつやってくるか、のタイミングで挙動が変わる。
+
+- uORF4より前 ... リボソームの翻訳が始まりStop Codonで解体される
+- uORF4より後 ... GCN4のAUGまでスキャンし、そこから通常の翻訳が始まる
+
+uORF4からGCN4のORFまでの間はかなり遠く、500ntくらいの長さがあるので、uORF4までにトラップされなければInitiator tRNAが間にやってくる時間は十分にある。
+
+実際、この間の500ntを縮めてみると、GCN4の発現が著しく減少する。
+
+このInitiator tRNAの再ロードがどれくらい起こるかは、Met tRNA+eIF2+GTPのTernary Complexがどれだけ豊富にあるかに依る。
+
+ここの制御は先に述べた「eIF2Bをinhibitする事でMet-tRNAのロードを抑制（ステップ1をターゲット）」でも出てきた。
+GCN2がeIF2をリン酸化するとeIF2BがGEFとして機能できなくなってGDPのままになる。
+するとInitiator-tRNAがあまり存在しない事から再ロードが遅れてuORF4までの間にロードされず、その結果GCN4 geneまで辿り着けるようになる。
+
+このGCN2のリン酸化はアミノ酸がどれくらい欠乏しているかで挙動が変わるので、こうしてアミノ酸の豊富さでGCN4の翻訳が制御される事になる。
+
+以上からノートの表の振る舞いが理解できる。
+
+- uORF1のAUGが無くなる ... uORF2でInitiationが起こってStop Codonでリボソームが解体されてしまい、downstreamに行く余地がなくなるのでAA濃度にかかわらずgeneが発現しなくなる。
+- uORF2, 3, 4のAUGを無くす ... uORF1の翻訳後40Sが残った後に、途中でトラップされるuORFが無いので残りさえすればGCN4 geneまでスキャンされる事になるのでAAの濃度に関係なく発言する事になる。
+- uORF4のAUGだけ無くす ... トラップされる下限が切り上げられるので少し発現しやすくなる。
