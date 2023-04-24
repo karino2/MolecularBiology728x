@@ -168,3 +168,7 @@ GCN2がeIF2をリン酸化するとeIF2BがGEFとして機能できなくなっ�
 - uORF1のAUGが無くなる ... uORF2でInitiationが起こってStop Codonでリボソームが解体されてしまい、downstreamに行く余地がなくなるのでAA濃度にかかわらずgeneが発現しなくなる。
 - uORF2, 3, 4のAUGを無くす ... uORF1の翻訳後40Sが残った後に、途中でトラップされるuORFが無いので残りさえすればGCN4 geneまでスキャンされる事になるのでAAの濃度に関係なく発言する事になる。
 - uORF4のAUGだけ無くす ... トラップされる下限が切り上げられるので少し発現しやすくなる。
+
+## Translation Optimizationについてはバクテリアの方で
+
+動画の並び順としてはここにTranslation Optimizationがあったけれど、内容的にバクテリアなので[バクテリアにおけるTranslationのRegulation](バクテリアにおけるTranslationのRegulation.md)に書く。
