@@ -76,3 +76,6 @@ group IIのメカニズムは本質的にはsplicesomeを使ったものと同�
 3. イントロンは投げ縄のような構造（lariat）を形成し、exon1は3' OHを持つフリーの状態になる
     - 投げ縄を構成するのは2'-5' ホスホジエステル結合
 4. フリーのexon1の3' OHがexon2とintronの間のホスホジエステル結合をアタックし、grou Iと同様directにtransesterificationする
+
+## Self-Splicing Intronsの構造の詳細
+
