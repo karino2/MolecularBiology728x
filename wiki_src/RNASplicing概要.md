@@ -81,6 +81,8 @@ group IIのメカニズムは本質的にはsplicesomeを使ったものと同�
 
 [17ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=16)
 
+図では円がうまく書けなかったのでssRNAが大きく見えるが、dsRNAの領域がとても多い。
+
 右上のループはORFでself splicingを助けるsmall proteinのcoding regionとなっている。self splicingの反応自体には必要では無い。
 このsmall proteinはintronが適切な二次構造、三次構造を形成するのを助けるらしい。
 
@@ -88,4 +90,22 @@ EBS1(Exon Binding Site1)とEBS2がexon1と結合する事で形成される。�
 
 ドメインVとドメインVIは反応に必要で、ドメインVIにはexon1をアタックするアデニンが存在している。
 
-図では円がうまく書けなかったのでssRNAが大きく見えるが、dsRNAの領域がとても多い。
+三次構造でこのアデニンとexon1の端が近接するようになっていて、反応しやすくなっている。
+
+## RNAの構造を調べるassayその1、RNase Digestion
+
+RNAの二次構造を調べるためのassayとして、RNase digestionがある。
+
+まず、対象のRNAの末端をラベルづけする。
+そしていろいろな種類のRNaseを使ってこれを切断する。
+
+| RNaseの種類 | カット対象 |
+| ---- | ---- |
+| V1 | dsRNA |
+| A | ssRNAのCかUの3' |
+| T1 | ssRNAのGの3' |
+
+[18ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=17)
+
+高温の時のV1は切断出来る場所が無いのでシマが出ないように書いてあったが、
+一番上に一つシマが出るのでは？と思った。
