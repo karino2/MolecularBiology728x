@@ -92,7 +92,7 @@ EBS1(Exon Binding Site1)とEBS2がexon1と結合する事で形成される。�
 
 三次構造でこのアデニンとexon1の端が近接するようになっていて、反応しやすくなっている。
 
-## RNAの構造を調べるassayその1、RNase Digestion
+## RNAの2次構造を調べるassayその1、RNase Digestion
 
 RNAの二次構造を調べるためのassayとして、RNase digestionがある。
 
@@ -109,3 +109,44 @@ RNAの二次構造を調べるためのassayとして、RNase digestionがある
 
 高温の時のV1は切断出来る場所が無いのでシマが出ないように書いてあったが、
 一番上に一つシマが出るのでは？と思った。
+
+## RNAの2次構造を調べるassayその2、DMS-Seq（とその亜種SHAPE-Seq）
+
+RNAをメチル化するreagent、DMSを使う方法がある。
+
+DMSはアデニンとシトシンのうち、ssRNAの部分だけをメチル化する。
+そしてシーケンシングしてDMSシグナルがどこで見られるかをカウントする。
+
+なお、コントロールとしてdenaturingしたRNAにもDMSしてみて、RNAのヘンテコな性質でメチル化されてないだけという事が無い事を確認する。
+
+in-vivo, in-vitroの両方で出来るという利点がある。
+
+in-vivoとin-vitroの結果が同じ場合もあるが違う場合もある。
+違う場合、in-vitroの環境では正しくRNAがfoldされていないと思われるので、何かRNAのfoldに必要な要素があると推測される。
+
+### 実験の手順
+
+[19ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=18)
+
+1. DMSを加えてメチル化する（RNA片一つにつき1〜2箇所くらいメチル化されるようにする）
+2. RNAを分割して60〜70bpくらいの長さのものだけを集める
+3. adapterをligateする（このアダプターが最初にプライマーとhybridizeする場所となる）
+4. primerをhybridizeしてReverse Transcriptaseで逆転写（この逆転写はメチル化されているbaseがあるとそこで止まる）
+5. cDNAのうち、ステップ2より短い適当なサイズ（25〜45bpの間とか）の長さのものだけを集める
+6. これをテンプレートとして用いてseqして、メチル化されたと思われるbaseのreadoutsをカウントする
+
+ステップ5は逆転写がメチル化で止まったものが集められると期待出来る。
+
+### DMS-Seqの改善である、SHAPE-seq
+
+SHAPE-SeqもDMS-Seqと似ているが、SHAPE reagentを使う所が違う。
+
+SHAPE reagentはDMSと違って、ssRNAの全baseの2'-OHを修飾する。
+だからbaseの種類によらずにssRNAをすべて修飾させられる。
+
+2'-OHの修飾でもDMS-Seqと同様にReverse Transcriptaseがそこで止まるので、DMS-Seqと同様の手順でssRNAの場所を調べる事が出来る。
+
+このreadoutsのカウントを比較する事で、修飾がある所と無い所だけじゃなくて、修飾が多い所と少ない所も見る事が出来て、
+ssRNAではあるが3次構造などで守られている場所などを推測する事が出来る。
+
+
