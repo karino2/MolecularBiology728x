@@ -79,3 +79,13 @@ group IIのメカニズムは本質的にはsplicesomeを使ったものと同�
 
 ## Self-Splicing Intronsの構造の詳細
 
+[17ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=16)
+
+右上のループはORFでself splicingを助けるsmall proteinのcoding regionとなっている。self splicingの反応自体には必要では無い。
+このsmall proteinはintronが適切な二次構造、三次構造を形成するのを助けるらしい。
+
+EBS1(Exon Binding Site1)とEBS2がexon1と結合する事で形成される。（EBSは図のループ）
+
+ドメインVとドメインVIは反応に必要で、ドメインVIにはexon1をアタックするアデニンが存在している。
+
+図では円がうまく書けなかったのでssRNAが大きく見えるが、dsRNAの領域がとても多い。
