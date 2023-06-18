@@ -148,3 +148,5 @@ DNAの損傷には以下の２種類があり、
 ### Unit: RNA Splicing I
 
 - [[RNASplicing概要]]
+- [[SelfSplicingIntrons]]
+- [[premRNAのsplicing]] pre mRNAをWikiNameにうまく出来なかったのでpremRNAと書いてある。
