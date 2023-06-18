@@ -170,3 +170,33 @@ dsRNAになっている事が重要ならbpが両方変異して変異後もペ�
 どこが正しく予想出来てどこが予想出来ていないかを調べる事も出来る。
 調べてみると、正しく予想されている所も多いが、この予想とは違う結果になっている場所もそれなりに確認されている。
 
+## pre-mRNA splicingのメカニズム
+
+ここまではself splicing intronsのメカニズムを見てきたが、ここからはより一般的なsplicing、pre-mRNA splicingを見ていく。
+
+splicing自体のステップはgroup IIのself splicingと同様で、以下のステップとなる。
+
+1. Aの2' OHが5'側のexon1の3'側ホスホジエステル結合をアタック
+2. exon1が切断され、ラリアット（投げ縄）が形成される
+3. exon1の3'-OHがexon2の5'側ホスホジエステル結合をアタック
+4. exon1-exon2が形成される
+
+両者を比較すると以下のようになる。
+
+|  | group II self-splicing | pre-mRNA splicing |
+| ---- | ---- | ---- |
+| 何に触媒されるか？ | intron RNA | RNAsとタンパク質 |
+| intron structure | long, highly structured | less information, less structure |
+| splicing reaction | 一つのintronで一つのsplicingしか起きない | たくさんのexonを含むpre-mRNAがsplicingされてmature mRNAになる |
+
+### pre-mRNAの配列の特徴
+
+配列としては以下のような特徴が見られる。
+なお、Yはピリミジン（CかT）、Nは4つのうちのどれか（A, G, C, U）。
+
+[20ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=19)
+
+exonの3'側はほぼ必ずG、intronの5'側はほぼGU。intronの3'側はGで、exonの5'側はG。
+この辺はhighly conservative。
+
+図中でY11と書かれている所がpolypryimidine trackと呼ばれる所で、intronnの3'のsplice siteのそばにpyrimidinesが連続で並ぶ（11個とか）領域がある。
