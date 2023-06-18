@@ -78,3 +78,32 @@ splicingの最初のステップではこちらがわは影響が無いので、
 一方、ステップ2のfree exonが3'側のexonのsplicing siteをアタックする反応は、このシーケンスが必要と予想されるので起こらない。
 
 つまり時間2のバンドは現れずに時間1のバンドで止まると予想される。
+
+### Trans Componentsを調べるための亜種
+
+初めてsplicesomeが発見された実験では、生成物のRNA単体を調べたのでは無く、生成RNAとタンパク質の複合体についての同種の実験からだった。
+
+手順を見ておくと以下のようになる。
+
+1. body labelしたRNAを合成
+2. nuclear extractを追加
+3. splicing complexをnative gelで分離
+
+1と2は先に述べたin vitroでのpre mRNA splicingのassayと同様。ステップ3だけ違う。
+
+native gelではRNAとタンパク質が結合した状態でgelを移動していく。（mobility shift assayと類似）
+
+この結果を見ると、時間とともにバンドが何種類か形成されたり消えていったりしていくのが分かる。
+それを観測された順番にA-complex, B-complex, C-complexなどと呼んで研究している。
+
+ちなみにこの結合しているタンパク質を動画ではtransacting factorsと呼んでいるが、Trans-acting factorの事だろうか。
+
+そしてより詳しくTrans acting factorsを調べたい場合は、上の実験をさらに変更して以下のようにする場合もある。
+
+1. body labelしたRNAを合成
+2. nuclear extractを追加
+3. time pointごとに取得した生成物をultracentrifugeとgradient（glycerolやsucroseの濃度gradient）で分離
+4. 各fractionをdenaturing gelで分離
+
+このgradientでultracentrifugeするのはもっともやさしくサイズごとに分離する方法である。
+しかも大きなcomplexに対しても使える方法なので、この場合には適している。
