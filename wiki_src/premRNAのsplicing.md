@@ -129,7 +129,7 @@ SpliceosomeのCycleの最初はE complexの形成から始まる。EはearlyのE
 以下の3つのsnRNPsがターゲットとなるRNAと結合する。
 
 - U1 ... 5'側のsplice siteと結合
-- BBP ...  Branch point Binding Proteinの略。branch pointのAの所に結合。
+- BBP ...  Branch point Binding Proteinの略。branch pointのAの所に結合。これはfree protein。
 - U2AF ... U2 association factor。２つのsubunitを持ち、branch pointから3'のsplicing siteにまたがって結合する。
 
 U1とRNAの結合を見ると、conservativeなregionの配列とbase paringしている事が分かる。
@@ -174,7 +174,7 @@ U6, U5, U4の３つからなるとても大きな multi-snRNPがやってきて�
 
 B1 complexからU1 snRNPが離れていき、B2 complexが形成される。
 
-このU1とRNAとの結合を切り離すにはヘリカーゼのようなATPaseが必要で、DEAD-box タンパク質と呼ばれるタンパク質がこの機能を持っている。
+このU1とRNAとの結合を切り離すにはヘリカーゼのようなATPaseが必要で、DEAD-box proteins と呼ばれるタンパク質がこの機能を持っている。
 DEADはアクティブサイトのアミノ酸のAsp, Glu, Ala, Aspの並びなのでD-E-A-Dだからこう呼ばれている。
 これは非常にprocessivityの低いヘリカーゼのような働きをするタンパク質と考えられる。
 
