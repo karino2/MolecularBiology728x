@@ -107,3 +107,45 @@ native gelではRNAとタンパク質が結合した状態でgelを移動して�
 
 このgradientでultracentrifugeするのはもっともやさしくサイズごとに分離する方法である。
 しかも大きなcomplexに対しても使える方法なので、この場合には適している。
+
+## Spliceosome Cycle
+
+Spliceosomeによって起こるsplicingの反応のステップを以下で見ていくが、まずは構成要素を見る事から始める。
+
+### Spliceosomeの構成要素の種類
+
+Splicesomeを構成する、RNAと結合するTrans acting factorsには、大きく以下の2つの種類がある。
+
+- snRNPs ... 比較的長いRNA(100ntとか）にタンパク質が結合したもの
+- free proteins
+
+Splicingの反応はsnRNPsが主体となっている。
+snRNPsはRNAを含んでいて、対象のRNAな事からも予想されるように、base paringで結合する部分がある。
+
+### E complex
+
+SpliceosomeのCycleの最初はE complexの形成から始まる。EはearlyのE。
+
+[21ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=20)
+
+以下の3つのsnRNPsがターゲットとなるRNAと結合する。
+
+- U1 ... 5'側のsplice siteと結合
+- BBP ...  Branch point Binding Proteinの略。branch pointのAの所に結合。
+- U2AF ... U2 association factor。２つのsubunitを持ち、branch pointから3'のsplicing siteにまたがって結合する。
+
+U1とRNAの結合を見ると、conservativeなregionの配列とbase paringしている事が分かる。
+
+Ψ（Psi）はpseudouridine residueで、アデニンとペアリングしやすいとか。
+pseudouridineはpost transcriptional modificationで修飾されて出てくる。
+tRNAなどそのほかのRNAでも良く見られるpost transcriptional modification＞[Translationの基本と登場人物](Translationの基本と登場人物.md)
+
+U1とpre-mRNAのcomplementarityがsplicingにとって必要かどうかなどは幾つかの実験で試す事が出来る
+
+- 対象となるRNA側の配列を変異させるmutagenを使ってcomplementarityがなくなるとspliceしなくなるか？
+   - U1側の配列を変更するmutagenを使ってcomplementarityがなくなるとspliceしなくなるか？
+- extractから抗体を使ってU1を取り除いてもsplicing反応が起こるか？
+- 同じ抗体を使って、単にU1とターゲットのRNAが本当にくっついているかどうかをnative gelを使ったwestern blotで比較する
+
+E complex形成の時点ではまだ対象となるRNAには何も起きていない。
+
