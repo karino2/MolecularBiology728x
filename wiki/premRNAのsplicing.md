@@ -108,11 +108,9 @@ native gelではRNAとタンパク質が結合した状態でgelを移動して�
 このgradientでultracentrifugeするのはもっともやさしくサイズごとに分離する方法である。
 しかも大きなcomplexに対しても使える方法なので、この場合には適している。
 
-## Spliceosome Cycle
+## Spliceosomeの構成要素の種類
 
 Spliceosomeによって起こるsplicingの反応のステップを以下で見ていくが、まずは構成要素を見る事から始める。
-
-### Spliceosomeの構成要素の種類
 
 Splicesomeを構成する、RNAと結合するTrans acting factorsには、大きく以下の2つの種類がある。
 
@@ -122,7 +120,7 @@ Splicesomeを構成する、RNAと結合するTrans acting factorsには、大�
 Splicingの反応はsnRNPsが主体となっている。
 snRNPsはRNAを含んでいて、対象のRNAな事からも予想されるように、base paringで結合する部分がある。
 
-### E complex
+## Spliceosome Cycle その1： E complexの形成
 
 SpliceosomeのCycleの最初はE complexの形成から始まる。EはearlyのE。
 
@@ -149,3 +147,37 @@ U1とpre-mRNAのcomplementarityがsplicingにとって必要かどうかなど�
 
 E complex形成の時点ではまだ対象となるRNAには何も起きていない。
 
+## Spliceosome Cycle その2： A complexの形成からB1, B2 Complexまで
+
+先の「Trans Componentsを調べるための亜種」で見た、Aバンドに対応するcomplexをA complexと呼ぶ。
+これはE complexの後に形成される。
+
+[22ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=21)
+
+### A complexの形成
+
+E complexからBBPが離れて、BBPがあった場所にU2と呼ばれるsnRNPがやってきて結合する。これをA complexと呼ぶ。
+このU2は、実際のsplicing反応の触媒として必要な事が分かっている。
+U2がbranch siteを少し曲げる。
+
+最初にBBPが認識したあと、実際の触媒反応をする前にU2に置き換わるのは不思議ではあるが、
+どうもRNAがsplicingの対象かどうかを識別するステップと、実際に反応を触媒するステップが別になっている模様。
+
+### A complexからB1 complexへ
+
+U6, U5, U4の３つからなるとても大きな multi-snRNPがやってきて、U2AFが離れた後に結合し、ターゲットとなるRNAを曲げて、
+5'のsplice siteとbranch siteを近接させる。
+
+この状態をB1 complexと呼ぶ。
+
+### B1 complexからB2 complexへ
+
+B1 complexからU1 snRNPが離れていき、B2 complexが形成される。
+
+このU1とRNAとの結合を切り離すにはヘリカーゼのようなATPaseが必要で、DEAD-box タンパク質と呼ばれるタンパク質がこの機能を持っている。
+DEADはアクティブサイトのアミノ酸のAsp, Glu, Ala, Aspの並びなのでD-E-A-Dだからこう呼ばれている。
+これは非常にprocessivityの低いヘリカーゼのような働きをするタンパク質と考えられる。
+
+こうしてU1が離れていくとB2 complexとなる。
+
+U1があった所がU6に置き換わった格好となり、このU6も触媒として重要な機能を果たすsnRNP。
