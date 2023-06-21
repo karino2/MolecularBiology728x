@@ -18,6 +18,7 @@ splicing自体のステップはgroup IIのself splicingと同様で、以下の
 | 何に触媒されるか？ | intron RNA | RNAsとタンパク質 |
 | intron structure | long, highly structured | less information, less structure |
 | splicing reaction | 一つのintronで一つのsplicingしか起きない | たくさんのexonを含むpre-mRNAがsplicingされてmature mRNAになる |
+|ATPを使うか？|不要|必要|
 
 ### pre-mRNAの配列の特徴
 

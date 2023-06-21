@@ -12,6 +12,8 @@ RNAは触媒的な機能を果たすものがある。これはribozymesと呼�
 
 どちらもIntronが触媒としての機能を果たしている。
 
+ATPを必要としない、isoenergeticな反応。
+
 ### group I
 
 [15ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=14)
