@@ -130,7 +130,7 @@ SpliceosomeのCycleの最初はE complexの形成から始まる。EはearlyのE
 
 - U1 ... 5'側のsplice siteと結合
 - BBP ...  Branch point Binding Proteinの略。branch pointのAの所に結合。これはfree protein。
-- U2AF ... U2 association factor。２つのsubunitを持ち、branch pointから3'のsplicing siteにまたがって結合する。
+- U2AF ... U2 association factor。２つのsubunitを持ち、branch pointから3'のsplicing siteにまたがって結合する。これはpolypyrimidine trackのあたりに結合する事になる。
 
 U1とRNAの結合を見ると、conservativeなregionの配列とbase paringしている事が分かる。
 
@@ -181,3 +181,34 @@ DEADはアクティブサイトのアミノ酸のAsp, Glu, Ala, Aspの並びな�
 こうしてU1が離れていくとB2 complexとなる。
 
 U1があった所がU6に置き換わった格好となり、このU6も触媒として重要な機能を果たすsnRNP。
+
+## Spliceosome Cycle その3： C complexの形成と実際の触媒反応
+
+[23ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=22)
+
+B2 complexから、実際に触媒の反応が起きてmature RNAになるまでのステップを見ていく。
+
+### B2 complexからC1 complexまで
+
+まず、B2 complexからU4がリリースされる。
+
+U4はU6と一つになってやってくる事からも分かるように、最初はU4とU6にはbase paringでつながっているが、
+別のタンパク質の働きによってこの２つの結合が解除されてU4がリリースされる。
+
+U4がリリースされると、U6の接触面が増えて、U2と相互作用出来るようになり、U2と相互作用する。（U6とU2の間のbase paringが起こる）。
+この結果、branch siteのAと5'側のsplice site（exon 1とintronの間の所）がさらに近くなって反応の準備が整う。
+
+そしてbranch siteのAの2'-OHがアタックして、exon 1がフリーになる。このフリーのexon 1がU6に保持され、
+残りはラリアットを形成する。この状態がC1 complexとなる。
+
+### C1 complexの構成要素
+
+C1 complexはU6, U5, U2と、ラリアットと、フリーのexon 1となる。
+これはnaturing gelのCの所を取り出してdenaturing gelで調べてみると、ラリアットとexon 1の2つのバンドが見える事から、触媒反応の最初のステップが起きた事が分かる。
+
+### C1 complex から C2 complex、そして分解へ
+
+フリーのexon 1が3'側のsplice siteをattackし、２つのexonがつながって、残りがラリアットとして残る。この残ったラリアットをC2 complexと呼ぶ。
+
+exonがつながったものはリリースされて、C2 complexはintron側は別の酵素によりラリアットを解除されて分解に回され、
+U6, U5, U2に関してはU6にU4がふたたびやってきて結合してU2が押し出されて、元の状態に戻って次のspliceに備える。
