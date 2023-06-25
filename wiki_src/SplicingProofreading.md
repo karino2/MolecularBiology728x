@@ -44,3 +44,46 @@ Prp16は実際にexon1のcleavageが起きているかどうかを判断し、cl
 exon1がcleaveされていないときは、何もしない。
 
 この状態のまま反応が進まないと別のタンパク質の助けを借りて結合しているspliceosome factorが剥がされて振り出しに戻る。
+
+### ATPを使ってfidelityを高める仕組み
+
+ATPの加水分解の過程を用いてどのようにfidelityを高めるのかを、化学反応式の観点から考えてみる。
+
+[24ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=23)
+
+図の反応式1から考えてみる。
+
+これはEnzymeとSubstrateからProductが生成される反応。
+最初のE+SがESになる反応はk1で進み、kの-1で戻り、affinityであるkd、つまり解離定数は kの-1/kの1 となる。
+
+ESが形成されると、そのあとはE+Sに戻るかE+Pに進むかになる。
+このケースではESからE+Sに分かれる反応は二通りありえて、kの-1かkの-3でのパスがあり、逆にE+SからESになるのもこの２つの経路がある。
+
+次にこの反応を少し複雑にして、2のケースを考えてみよう。
+ESからE'Sに移るk2の反応でエネルギーを消費するとする。
+
+ATPを消費する反応の例は以下の３つをこれまで見てきた
+
+1.  RNAのconformational change
+2. RNA-RNA helicase反応でbase paringの水素結合を引き離す
+3. splicing factorを引き離す（protein-protein complexから特定のproteinを引き離す）
+
+そしてE'SからE'+Sに分かれる反応k4はエネルギー的により安定し、逆の反応があまり起こらないようなものを考えている。
+もう一度E'Sを形成するには、k4の逆反応ではなくE+Sからやり直さなくてはいけない。
+
+この式をPrp16の例に当てはめると式3のようになる。ここでLIはlariat intermediate、LI*はlariat intermediateがconformational rearrangementされたもの。
+
+k2からk3に進むのが、２つのexonがつながる正常なケース。
+
+一方でPrp16はまだexon1が切り離されていないsplicing intermediateに結合する場合もある（C1 complexの一つ前の段階と結合）。
+この場合はconformational changeが起きずにATPの加水分解が行われるが、これがk3'のケース。
+LIのままADPになっている事に着目。
+
+つまり、この反応は以下の２つのパスがある。
+
+- k3 ... ２つのexonが近接するように配置され、spliceが次の段階に進む事ができる
+- k3' ... conformationはそのままで２つのexonは離れたまま（やがて別のタンパク質の助けを借りてsplicing componentsは離されて最初からやり直す）
+
+k3はATPを消費するので逆に戻る事は無い。これはk2とk-2を行ったり来たりして反応が次に進まないという事を防ぐ。
+
+
