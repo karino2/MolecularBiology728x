@@ -171,7 +171,7 @@ U6, U5, U4の３つからなるとても大きな multi-snRNPがやってきて�
 
 この状態をB1 complexと呼ぶ。
 
-### B1 complexからB2 complexへ
+### B1 complexからB2 complexへ（DEAD-box proteins）
 
 B1 complexからU1 snRNPが離れていき、B2 complexが形成される。
 

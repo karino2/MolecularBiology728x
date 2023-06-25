@@ -1,0 +1,21 @@
+Splicingの基礎となる化学的な反応、cleavageとjoiningは基本的にはisoenergeticでATPを必要としない。
+
+だが、Splicingのサイクルの中ではATPを必要とする部分が何箇所かある。
+
+サイクルの中ではRNAのbase paringが起きたりそれが離れたりする場所があり、
+それらにはエネルギーを必要とするのは[premRNAのsplicing](premRNAのsplicing.md)で見た。
+
+ここではそのほかにATPを使ってfidelityを高める、proofreadingの役割を果たすケースを見ていく。
+
+Splice反応で、intronとexonの境界にある配列情報は非常に少なく、highly conservedなものはintronの5'側ではGUの２つだけで、
+比較的conservedに範囲を広げても周辺の4〜5塩基程度だった。
+3'側のsplice siteも似たようなレベルで、さらにbranch siteも生物種によるがそれほど複雑な決まりは無い。
+
+だからspliceosomeがpre mRNA内のいろいろな場所をsplice siteと誤解しうる。
+そこでspliceのサイクルでは一つのsplice siteに幾つもの物質が反応して繰り返しチェックしたり、
+ATPを用いてサイクルが一方向になるようになっている。
+
+## Proofreadingの具体例、Prp5とPrp16
+
+Proofreadingの具体例として、Prp5とPrp16の役割を見ていく。
+
