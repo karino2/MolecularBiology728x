@@ -86,4 +86,6 @@ LIのままADPになっている事に着目。
 
 k3はATPを消費するので逆に戻る事は無い。これはk2とk-2を行ったり来たりして反応が次に進まないという事を防ぐ。
 
+## 次: Alternative Splicing
 
+[[AlternativeSplicing]]
