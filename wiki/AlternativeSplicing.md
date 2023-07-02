@@ -15,7 +15,7 @@
 - regulated alternative splicing ... 細胞の種類の違いなどによって生成されるタンパク質が違うものなどで使われる。
    - ある細胞では細胞膜に結合してほしく、それ以外の細胞では細胞質にいてほしいタンパク質など。alternative splicingでドメインを削除したりする。
 
-### northern blotでalternative splicingを調べる
+## northern blotでalternative splicingを調べる
 
 1. RNAをgel electrophoresisで分離
 2. RNAをmembrane（通常はニトロセルロース）にtransfer
@@ -32,3 +32,7 @@ mRNAが核から核外に輸送されるのは、mature mRNAになってから�
 だからsplicing intermediateは核の中にしか存在しない。
 そこで細胞質から取る、というのが考えられる。
 さらに細胞にはintronが含まれてるRNAを破壊するpathwayがあるので、細胞質には無いというのはより確かな事といえる。
+
+## RT-PCRでalternative splicingを調べる
+
+[Assays](Assays.md)
