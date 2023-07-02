@@ -35,4 +35,14 @@ mRNAが核から核外に輸送されるのは、mature mRNAになってから�
 
 ## RT-PCRでalternative splicingを調べる
 
-[[Assays]]
+現代ではnorthern blotよりはRT-PCRを使う方が多くの上方が得られる。
+RT-PCRについては[[Assays]]も参照のこと。
+
+簡単のため、exonが3つ（intronが2つ）あるケースを考えてみる。
+RT-PCRを使ってalternative splicingを調べる手順を以下に示す。
+
+1. 目的の細胞（の細胞質）からRNAを分離する
+2. cDNAを作る
+3. 興味のある部分をPCRで増やして量を測る
+
+ステップ3に関して。
