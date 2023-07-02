@@ -15,5 +15,20 @@
 - regulated alternative splicing ... 細胞の種類の違いなどによって生成されるタンパク質が違うものなどで使われる。
    - ある細胞では細胞膜に結合してほしく、それ以外の細胞では細胞質にいてほしいタンパク質など。alternative splicingでドメインを削除したりする。
 
+### northern blotでalternative splicingを調べる
 
+1. RNAをgel electrophoresisで分離
+2. RNAをmembrane（通常はニトロセルロース）にtransfer
+3. ラベル付けしたDNAプローブをRNAにhybridize
 
+ようするに電気泳動したRNAをラベル付けして撮影するような事がしたいのか。
+
+DNAプローブで特定のgeneの特定の配列をターゲットにすると、alternative splicingが起きて無ければバンドは一つになる。
+alternative splicingが起きていると複数に分かれる。
+
+さて、splicingの途中経過を検出していた実験と比較して、mature mRNAだけをどうやって検出したらいいだろうか？
+
+mRNAが核から核外に輸送されるのは、mature mRNAになってからだけ。
+だからsplicing intermediateは核の中にしか存在しない。
+そこで細胞質から取る、というのが考えられる。
+さらに細胞にはintronが含まれてるRNAを破壊するpathwayがあるので、細胞質には無いというのはより確かな事といえる。
