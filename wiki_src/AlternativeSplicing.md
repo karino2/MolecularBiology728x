@@ -46,3 +46,17 @@ RT-PCRを使ってalternative splicingを調べる手順を以下に示す。
 3. 興味のある部分をPCRで増やして量を測る
 
 ステップ3に関して。
+このケースでは、それぞれのexonに相当する部分とhybridizeする3つのプライマーを作る。
+
+[25ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=24)
+
+一つはforward、2つはreverseのプライマーで、forwardのはexon1とhybridizeする。図中の2Rはexon2と、3Rはexon3とhybridizeする。
+
+1Fと3Rを入れてPCRし、例えば適当な放射線ラベルなどでラベルづけして電気泳動すれば、splicingが1, 2, 3を含むケースと1, 3のみのケースで結果の長さが変わる。
+
+また、1Fと2Rを加えてPCRすれば1, 2, 3なら一定量のバンドが見えるが、1, 3のケースならバンドは見られない。
+
+PCRの効率などはシーケンスによって違ったりもするので、バンドの比率をそのままsplicingの比率とみなす事は出来ないが、
+それでもどういうsplicingが多いかをある程度はつかむ事ができる。
+
+こうして、組織によってsplicingのされ方が違ったりとか、状況によってsplicingの仕方が変わるようなものを調べる事ができる。
