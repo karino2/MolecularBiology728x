@@ -102,13 +102,19 @@ exon1とexon3のreadsがあってさらにサイズがどのくらいかによ�
 
 ## Alternative Splicingがどのくらい使われているか
 
-Metazoanとは多細胞生物の動物（植物でない）のうち原生動物を除いたものらしい。＞[後生動物 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%BE%8C%E7%94%9F%E5%8B%95%E7%89%A9)
+Metazoan organizmsとは多細胞生物の動物（植物でない）のうち原生動物を除いたものらしい。＞[後生動物 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%BE%8C%E7%94%9F%E5%8B%95%E7%89%A9)
 
 ここまでAlternative Splicingの機構を見てきたので、次に、それがどのくらい重要なのか、をどのくらい使われているかを見ていく事で考えてみる。
 
-人間は、
+| 項目 | 人間 | ショウジョウバエ |
+| ---- | ---- | ---- |
+| ゲノム中でタンパク質をコーディングしているgenes | 22180個 | 13937個 |
+| 2個以上のisoformsがあるgeneの割合 | 88% | 45% |
+| geneあたりの平均isoform数 | 3.4個 | 1.9個 |
+| 全isoform数 | 215170 | 29173 |
 
-- ゲノムの中でタンパク質をコーディングしているgenes ... 22180
-- 2個以上isoformsがあるgeneの割合 ... 88%
-- geneあたりの平均isoform数 ... 3.4個
-- 全isoform数 ... 215170
+これらの数字もまだまだ研究中で日々新しいデータが更新されている領域らしい。
+
+なんで人間の平均isoform数が3.4なのにgeneの数と全isoform数の間は10倍近い差があるんだろう？
+
+生物種によりこのように大きく違う。また、人間にはAlternative Splicingはすごく大きなインパクトのある重要な機能といえる。
