@@ -35,8 +35,9 @@ mRNAが核から核外に輸送されるのは、mature mRNAになってから�
 
 ## RT-PCRでalternative splicingを調べる
 
+[[Assays]]
+
 現代ではnorthern blotよりはRT-PCRを使う方が多くの上方が得られる。
-RT-PCRについては[[Assays]]も参照のこと。
 
 簡単のため、exonが3つ（intronが2つ）あるケースを考えてみる。
 RT-PCRを使ってalternative splicingを調べる手順を以下に示す。
@@ -60,3 +61,54 @@ PCRの効率などはシーケンスによって違ったりもするので、�
 それでもどういうsplicingが多いかをある程度はつかむ事ができる。
 
 こうして、組織によってsplicingのされ方が違ったりとか、状況によってsplicingの仕方が変わるようなものを調べる事ができる。
+
+## RNA-seqでalternative splicingを調べる
+
+[[Assays]]
+
+RNA-seqを使ってalternative splicingを調べる事も良く行われる。
+
+### RNA-seqの手順
+
+1. mature mRNAを取り出す
+2. cDNAを作る
+3. cDNAを分割する
+4. サイズごとに集める
+5. サイズごとにhigh throughput sequencingを行う
+
+high throughput sequencingはnext generation methodsとも言っていた。例としてはIllumina sequencing machineなどがあるとの事。
+
+### 結果から分かる事
+
+まず、サイズの情報が無い、single-end RNA-seq readsの場合を考える。
+
+例えばexon1, exon2, exon3の３つがつながったmRNAがあると、RNA-seqを行えば、exon1, 2, 3のそれぞれのreadと、
+さらにexon1と2にまたがったread, exon2と3にまたがったreadが得られる。
+これでそれぞれのexonがつながって連続している事が保証され、どのようなmature mRNAになっているかが分かる。
+
+一方、exon1とexon3で構成されるmature mRNAの場合、
+exon2のreadが得られないだけでは無く、exon1と3にまたがったreadが得られる。
+
+だがこの手法ではまたがった所のreadsが無いと、どちらのsplicingなのかをはっきり決める事は出来ない。
+
+これにサイズによってより分けた結果サイズの付加情報があるsize-selected paired-end RNA-seq readsの場合、
+exon1とexon3のreadsがあってさらにサイズがどのくらいかによって、
+大きい場合は間にexon2があるケース、小さい場合はexon1と3が直接つながったケースという事が分かるので、
+より確実にどちらのsplicingかが判断できる。
+
+と言っていたがいまいち良く分からない。ただ、もっと複雑なgene、それこそexonが50個とかある場合などもあるとの事で、
+こうしたサイズ情報も合わせて考える方が構造をより良く理解しやすいのかもしれない。
+そういうものは、数百のオーダーのalternative splicingがある場合もあるとか。
+
+## Alternative Splicingがどのくらい使われているか
+
+Metazoanとは多細胞生物の動物（植物でない）のうち原生動物を除いたものらしい。＞[後生動物 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%BE%8C%E7%94%9F%E5%8B%95%E7%89%A9)
+
+ここまでAlternative Splicingの機構を見てきたので、次に、それがどのくらい重要なのか、をどのくらい使われているかを見ていく事で考えてみる。
+
+人間は、
+
+- ゲノムの中でタンパク質をコーディングしているgenes ... 22180
+- 2個以上isoformsがあるgeneの割合 ... 88%
+- geneあたりの平均isoform数 ... 3.4個
+- 全isoform数 ... 215170
