@@ -118,3 +118,99 @@ Metazoan organizmsとは多細胞生物の動物（植物でない）のうち�
 なんで人間の平均isoform数が3.4なのにgeneの数と全isoform数の間は10倍近い差があるんだろう？
 
 生物種によりこのように大きく違う。また、人間にはAlternative Splicingはすごく大きなインパクトのある重要な機能といえる。
+
+## Alternative Splicingの分類を考える
+
+どんな種類のalternative splicingが存在するか？と考えると、以下のような代表的なものが考えられる。
+
+- exonがスキップされるかどうか
+- intronが保持されるかどうか（intron retention）
+- mutually exclusive alternative exons
+- alternative promoter, alternative termination site
+
+### exonスキップ
+
+あるsplicingが全てのexonを含み、もうひとつのsplicingがどれかのexonをスキップすれば、２つの生成結果は異なるものとなり、
+Alternative Splicingが起きたといえる。
+
+[25ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=24)
+
+例えば図の3をスキップするケースを考えると、
+5'側のsplice siteが別のものが使われるケースと、3'側のsplice siteが別のものが使われるケースの２つが考えられる。
+regulationを考える時にはどちらなのかが重要になってくる。
+
+### intron retention
+
+例えば前述の図と同じexonがある時に、2と3の間のintronがそのまま残るかカットされるか、のようなalternative spliceが考えられる。
+
+### mutually exclusive alternative exons
+
+特定のexon、例えばexon2が、それぞれのsplicingで別々のexon2.1, exon2.2, exon2.3という感じの亜種にバラけるケース。
+どのsplicingでも2番目のexonにそれぞれバラバラのexonが含まれるようなもの。
+
+これは特定のドメインを差し替えるような時に使われる。
+
+### alternative promoter, alternative termination site
+
+splicingの最初のexonが異なったり、最後のexonが異なるようなケース。
+
+最初のexonが異なればその次も異なるexonが使われるかもしれないので、生成されるタンパク質のN-末端側が異なるタンパク質ができる事になる。
+
+逆に最後のexonが異なるケースだと、その次も別のexonにつながるようにもできる事から、C末端側が異なるタンパク質ができる事になる。
+
+これはタンパク質の膜のbinding domainなどが対象となって、特定の細胞では膜結合タンパク質に、
+別の細胞では細胞質にとけるタンパク質になる、のように特定のドメインを差し替えるような時に使われる仕組み。
+
+## Alternative Splicingの使われている具体例
+
+ここではAlternative Splicingが実際に生物のどんな所で使われているかを見ていく。
+
+### troponin T proteinのαとβの例
+
+ある生物種が形成の段階で異なるsplicingをする例として、α-troponin Tとβ-troponin Tの例を見ていく。
+
+[26ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=25)
+
+troponin T proteinは、成人になると生成されるアルファと、胎児の時に生成されるベータの２つの型があり、
+これはalternative splicingで生成しわけられている。
+
+adult formであるアルファはexon3を含み、fetal formであるベータはexon 4を含む。それ以外は同一。
+こうして２つのisoformのタンパク質ができる。
+troponin Tの場合、アルファとベータで異なるのはわずか14AAだけ。
+
+アルファとベータでは、筋肉のタンパク質であるtropomyosinとの相互作用の仕方が異なる。
+これは筋肉の収縮の仕方が成人と胎児で異なる結果となる。
+
+### 吸血コウモリの血液センサーの例
+
+吸血コウモリ（vampire bats）は他の恒温動物の血液を餌とする。
+そこでいろいろな生物種で見られるthermoreceptorを、温かい血液を検知するのに最適化するべくalternative splicingを使用している。
+
+この対象とするgeneはsensory ion channelで、通常の生物では危険なレベルの高温を検出するのに使われているもので、
+具体的には43度以上あたりから反応する。
+これがalternative splicingで30度あたりから37度あたりまでの温度を検出するのに使われるように調整されている。
+
+対象となるタンパク質はTRPV1と呼ばれるタンパク質。通常の生物では一種類だが、
+吸血コウモリは２つのisoformのタンパク質を持つ。
+そして鼻の所にこの温度を検出するセンサーを持つ。
+
+吸血コウモリと似たコウモリとして、fruite batというものがいる。
+こちらは血は吸わないのでこのセンサーは不要。
+
+吸血コウモリはTRPV1のshort formとlong formを持ち、
+short formはlong formのC末端を63AAほど削ったものになっている。
+
+fruit batはほとんどlong formだけを持つ。
+
+吸血コウモリは２つのformを持つだけでは無く、このformを場所により生成しわけていて、
+鼻のあたりの末梢神経では4:6程度の比率で、別の場所ではこれがほとんどlong formのみとなっている。
+
+short formとlong formの違いは、exon 14, 14A, 15のあたりに見られて、
+long formでは14, 15がsplicingでつながるが、short formでは14, 14A, 15と間に14Aが挟まり、
+この14Aはコーディングregionに含まれて、この中にstop codonがある。
+
+なお、モグラもこの吸血コウモリと似たsplicingを行う事が知られている。
+
+犬や牛も似たexon 14Aがあるが、これらの中にはstopコドンが入っていない。
+
+ネズミや人間などのその他の生物では14Aに相当するexonは無く、14から15が直接つながる。
