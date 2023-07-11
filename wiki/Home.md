@@ -155,3 +155,4 @@ DNAの損傷には以下の２種類があり、
 
 - [SplicingProofreading](SplicingProofreading.md)
 - [AlternativeSplicing](AlternativeSplicing.md)
+- [SplicingRegulation](SplicingRegulation.md)
