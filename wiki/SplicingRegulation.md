@@ -23,3 +23,7 @@ intronは数千とかのオーダーでさらにもっと長い事もある。
 
 ## Splice Sitesの決定
 
+[premRNAのsplicing](premRNAのsplicing.md)などでも見たメカニズムから考えると、spliceすることになるintronの両端にタンパク質がくっついてどこをSpliceするかが決まりそうに見えるが、
+実際は少なくとも哺乳類に関しては、最初にexonがタンパク質に認識されている証拠がある。
+
+つまり、

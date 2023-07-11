@@ -214,3 +214,7 @@ long formでは14, 15がsplicingでつながるが、short formでは14, 14A, 15
 犬や牛も似たexon 14Aがあるが、これらの中にはstopコドンが入っていない。
 
 ネズミや人間などのその他の生物では14Aに相当するexonは無く、14から15が直接つながる。
+
+## 次: Splicing Regulation
+
+[SplicingRegulation](SplicingRegulation.md)
