@@ -33,3 +33,7 @@
 [[バクテリアのTranscription入門]]のTranscriptionのプロモーターのマッピングより
 
 - Promoter Fusion Assay
+
+[[EukaryoticTranscriptionのDNABindingRegulators]]
+
+- SELEX（Systematic Evolution of Ligands by EXponential enrichment） ...  DNAのどういう配列にタンパク質が結合しやすいかを調べる。ランダムな配列のオリゴヌクレオチドをたくさん入れて結合させて、残ったものをamplifyしてどの配列が一番多く結合するかを調べる。アレンジしてRNAで使われる事も（[[SplicingRegulation]]を参照）

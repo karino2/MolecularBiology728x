@@ -61,7 +61,7 @@ Splicingの補助を考える上では、Enhancersにどのようなものがあ
 - SR proteins（こちらがEnhancers）
 - hnRNPs（こちらがSuppressors）
 
-SRやhnRNPはintronやexonのsmall redundant sequencesに結合する。
+SRやhnRNPはintronやexonのsmall redundant sequencesに結合する。（小さい繰り返し配列）
 
 exonに結合してsplicing反応を助けるタンパク質をESE（exonic splicing enhancer）、intronに結合してsplicing反応を助けるタンパク質をISE(intronic splicing enhancer）と呼ぶ。
 SRはESEやISEの一種。
@@ -96,7 +96,7 @@ hnRNPがsplicingを抑制するメカニズムを幾つか見ていこう。
 テンプレートのクロマチンの状態も、pre-mRNAのexonの識別に影響を与える。
 
 exon（のテンプレート）の付近でChIP-seqして調べると、exonのあたりではpost translationallyに修正されたH3K27me2と呼ばれるヒストンが多く見られた。
-exonの中心からの距離と発現数をプロットするとexonの中心をピークに山になっているのが見て取れる。
+exonの中心からの距離と発現数をプロットするとexonの中心をピークに山になっているのが見て取れる。＞[Assays](Assays.md)
 
 alternative splicingでexonが飛ばされる率が高い細胞と低い細胞でヒストンを調べると、特定の種類のヒストンが多いと飛ばされず、低いと飛ばされる、という事が確かめられる。
 
@@ -107,3 +107,61 @@ alternative splicingでexonが飛ばされる率が高い細胞と低い細胞�
 こうして、普段飛ばされがちなexonを含めるような効果を発揮出来る。
 
 ２つ目、ある種のヒストンが多い領域は、splicingのenhancersやsuppressorsを集める働きをして、splicing機構を活性化させたり抑制したりする。
+
+## SplicingのRegulationを調べるAssayたち
+
+[Assays](Assays.md)
+
+### EMSA(electrophoretic mobility shift assay)
+
+RNAとタンパク質が結合しているかを調べるassay。
+
+ラベル付けしたRNAとタンパク質を入れて、電気泳動する。タンパク質がくっついていると動きが遅くなる。
+これで特定の変異の与える影響などを調べたり、タンパク質の濃度を変えて行って結果を見たりなど、いろいろな亜種がある。
+
+タンパク質の濃度を変えて行って結果を見ていくと、何nanomolarで50%くらいくっつくかを判定する事で、
+割と良いbinding affinityの推計が出来る。
+
+### bead-mediated RNA affinity chromatography
+
+RNAと結合しているタンパク質を調べるassay
+
+1. biotinを付加したRNAを用意する（bintinylated）
+2. 目的のタンパク質を含んだcell extractを入れて、タンパク質を結合させる
+3. streptavidin beadsを使って目的のRNA-タンパク質複合体を取り出す
+4. 適当なタンパク質を特定する手法で結合しているタンパク質を調べる
+
+biotin-streptavidin beadsの結合はとても強くて15 femtomolar。
+
+タンパク質を特定する手法としては、
+
+- western blot(確認したいタンパク質のantibodyを持っているなら）
+- mass spectrometry (十分な量のタンパク質があると分かっているなら）
+
+### SELEX
+
+結合する配列の方を調べるassayとしてSELEXをRNAに使えるように修正したものがある。
+SELEXは[EukaryoticTranscriptionのDNABindingRegulators](EukaryoticTranscriptionのDNABindingRegulators.md)で出てきたassay。[Assays](Assays.md)参照。
+
+1. プロモーターとランダム配列の短めのDNA（オリゴヌクレオチド）を作る
+2. in vitroで転写してRNAを作る
+3. 目的のタンパク質を結合させて、結合してないRNAを除去
+4. reverse transcribeしてPCRで増やす
+5. 2〜4を何度か回す
+
+こうして目的のタンパク質が好む配列を見つけたら、これを着目しているgeneの中から探す。
+
+### iCLIP-seq
+
+目的のタンパク質がRNAのどこに結合するかを調べるassay。
+
+1. RNAと目的のタンパク質を結合させる
+2. 紫外線を照射（UV irradiate）して、RNAとタンパク質をcrosslinkする
+3. RNaseで部分的にRNAを溶かして小さなフラグメントにする
+4. RNA-protein complexをimmunoprecipitateして取り出す
+5. nonspecificなproteaseを使ってタンパク質のうちcrosslinkしているペプチドだけ残して他を削る
+6. 3'側にpriming siteとなる配列をligate
+7. reverse transcriptaseでcDNAを作る（reverse transcriptaseはcrosslinkしている領域を乗り越える事は出来ないのでそこで止まる）
+8. High-throughput sequencingなどで配列を調べて、どこにペプチドのcrosslinkがあるか（どこにタンパク質が結合しているか）を調べる
+
+

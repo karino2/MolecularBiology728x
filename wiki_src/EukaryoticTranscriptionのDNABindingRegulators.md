@@ -36,6 +36,8 @@ SELEX: Systematic Evolution of Ligands by EXponential enrichment
 
 多くのbinding siteは10bpとかそれ以下程度。ランダムの範囲を狭くすれば全通りに近いオリゴヌクレオチドを得られる確率が上がる。
 
+[[Assays]]
+
 ## DNA Binding ProteinsのTranscription Activating Domains
 
 ここまでBinding Domainについて見てきた。Activation Domainはどうだろう？
