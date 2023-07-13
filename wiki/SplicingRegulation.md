@@ -164,4 +164,41 @@ SELEXは[EukaryoticTranscriptionのDNABindingRegulators](EukaryoticTranscription
 7. reverse transcriptaseでcDNAを作る（reverse transcriptaseはcrosslinkしている領域を乗り越える事は出来ないのでそこで止まる）
 8. High-throughput sequencingなどで配列を調べて、どこにペプチドのcrosslinkがあるか（どこにタンパク質が結合しているか）を調べる
 
+## Splicing Regulationの具体例
 
+### 発芽イーストの飢餓時の減数分裂
+
+イースト菌の胞子は過酷なコンディションでも残りやすいので、
+飢餓が訪れるとイースト菌は減数分裂を行って胞子に未来を託す。
+
+geneを大文字で、生成するタンパク質を頭文字だけ大文字で表す、UME6とUme6など。
+
+飢餓などのストレスにより、UME6の転写がactivateされてUme6が生成される。
+Ume6はMER1のactivateを助け、さらにMER2, MER3, SPO22, SPO70などの減数分裂に関わるgeneの発現も促進する。
+
+Mer1はMER2, MER3, SPO22, SPO70などの、U1の弱い5' splice siteとの結合を助け、これがこれらのRNAのalternative spliceを引き起こす。
+このalternative spliceの結果、Meiosisに必要なタンパク質が生成されるようになる。
+
+通常のU1 splice siteとU1の関係は以下。
+
+| 名前 | 配列 |
+| ---- | ---- |
+| U1 | 3'-CAUUCA-5' |
+| 通常のconsensus 5' splice site | 5'-GU(GA)AGU-3' |
+| MER2の弱い5' splice site | 5'-GUUCGU-3' |
+
+通常は6AA中、5〜6個ペアリングするが、MER2の場合は4つしかペアリングしない。
+
+これがMer1とU1 snRNPが結合してこのMer1の助けがあると、RNAとの結合が強化される。
+
+### ショウジョウバエの性決定の例
+
+発生時期の性の違いのほとんどはalternative splicing違いで決められている。
+
+Sex lethal (略称Sxl）と呼ばれるタンパク質がある。
+
+X染色体の数の違いによりSxlの量がメスの方が多く、このSxlがSxl pre-mRNAの3' splice siteをsuppressするので、
+より多くのintronがスキップされてオスと異なるmature mRNAが作られる。
+これがさらにSxlを生成するので、ますますSxlが多くなる。
+
+オスはSxlがあまり無いため、このSxlのpre-mRNAのintronの一部がスキップされず含まれるようになり、その結果生成されるタンパク質が機能しないゴミタンパク質となる。
