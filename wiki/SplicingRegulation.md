@@ -166,6 +166,11 @@ SELEXは[EukaryoticTranscriptionのDNABindingRegulators](EukaryoticTranscription
 
 ## Splicing Regulationの具体例
 
+Splicing Regulationが実際にどのように使われるかの例を２つ見ていく。
+
+- 発芽イーストの飢餓時の減数分裂
+- ショウジョウバエの性分化
+
 ### 発芽イーストの飢餓時の減数分裂
 
 イースト菌の胞子は過酷なコンディションでも残りやすいので、
@@ -197,8 +202,33 @@ Mer1はMER2, MER3, SPO22, SPO70などの、U1の弱い5' splice siteとの結合
 
 Sex lethal (略称Sxl）と呼ばれるタンパク質がある。
 
+さらに Sxlー＞Traー＞Dsx(FかM） というpathwayがある。
+
+TraはTransformer proteinとも呼ばれるとか。
+DsxのFはfemale、DsxのMはmale。（上付き添字で書かれているが、ノートはこの書き方で）
+
+このpathwayでそれぞれがenhancerになったりsuppressorになったりするのを見ていこう。
+
+[28ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=27)
+
 X染色体の数の違いによりSxlの量がメスの方が多く、このSxlがSxl pre-mRNAの3' splice siteをsuppressするので、
 より多くのintronがスキップされてオスと異なるmature mRNAが作られる。
-これがさらにSxlを生成するので、ますますSxlが多くなる。
+これがさらにSxlを生成するので、ますますSxlが多くなる。（Suppressor）
 
-オスはSxlがあまり無いため、このSxlのpre-mRNAのintronの一部がスキップされず含まれるようになり、その結果生成されるタンパク質が機能しないゴミタンパク質となる。
+オスはSxlがあまり無いため、このSxlのpre-mRNAのintronの一部がスキップされず含まれるようになり、その結果機能するタンパク質が合成されなくなる。
+
+TRAのmRNAのintronにstop codonが含まれる部分があり、このintronの3' splice siteをSxlはブロックする。
+結果として、Sxlがあるとこのintronもspliceで消え去るのでTraが生成されるようになる。
+一方Sxlが不足しているとブロックされないのでstop codonが含まれるようになり、
+機能するタンパク質は合成されなくなる。（Suppressor）
+
+TraはTra2と協力してDSXのweak 3' splice siteのU2AFとの結合を助け、spliceされるようにして、最後のドメインがmaleとfemaleで違う部分になるよにする。（Enhancer）
+
+最後のDsxの生成では、C-terminal domainだけが異なる事になる。female は短く、maleの方が長い。
+このDsxの違いがmaleやfemaleの形成に必要な様々なgene発現に影響する。
+
+### チャレンジ問題の単語リスト
+
+- degenerate 劣化、退化
+- spinal muscular atrophy（SMA） 脊髄性筋萎縮症
+- autosomal 常染色体の
