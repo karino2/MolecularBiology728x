@@ -1,0 +1,3 @@
+geneの制御はdegradationよりもsynthesisの方で行われるのが主流なので、degradationのregulationはどちらかといえば例外的な話となる。
+
+そこでまずは制御されてない一般のRNA Turnoverの話から入る。
