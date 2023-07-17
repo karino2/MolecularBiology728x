@@ -72,11 +72,13 @@ Nucleaseには三種類ある
 2. 5'ー＞3' exonucleases
 3. 3'ー＞5' exonucleases
 
+これらを使って単純にカットするin vitroなassayを行う事が出来る。
+
 ### Nucleaseを使ったassayの基本的な手順
 
 Nucleaseを使ったassayの基本的な手順は以下となる。
 
-1. RNAをラベル付けしてnucleaseを含む何かを混ぜてしばらく待つ
+1. RNAをラベル付けしてnucleaseを含む何か（nuclease候補となるもの）を混ぜてしばらく待つ
 2. gel electrophoresisとautoradiogramでRNAがどうなったかを調べる
 
 さて、ラベルをRNA全体に行った時に、nucleaseで幾つかのバンドに結果が分かれるためには、
@@ -128,10 +130,14 @@ RNAの中で、ホスホジエステル結合の部分のOの代わりにSとし
 ### exonucleaseはオリゴヌクレオチドを作る
 
 exonucleaseはどちら向きのも、ntまで分解する訳では無くオリゴヌクレオチド(oligonucleaothides)に分解する。
-オリゴヌクレオチドを分解するのはこれとは別の酵素であるoligonucleaothidaseである。
+オリゴヌクレオチドを分解するのはこれとは別の酵素であるoligonucleotidaseである。
 
 ### exonucleaseはhydrolyticとphosphorolyticがある
 
-hydrolyticなexonucleaseは水を使ってphosphodiester bondをattackしてmonophosphatesを生成する。
+- hydrolyticなexonuclease ... 水を使ってphosphodiester bondをattackしてmonophosphatesを生成する。（つまりrNMP）
+- phosphorolyticなexonuclease ... phosphateをnucleophileに使って、diphosphatesを生成する。（つまりrNDP）。
 
-phosphorolyticなexonucleaseはphosphateをnucleophileに使って、diphosphatesを生成する。
+phosphorolyticな方が、rNTPに戻すのが簡単なので、より高速に分解したい所ではphosphorolyticなexonucleaseが使われる。
+
+phosphorolyticなexonucleaseはオリゴを生成せずにヌクレオチドを直接生成する場合もある。また、oligonucleotidaseもphosphorolytic。
+
