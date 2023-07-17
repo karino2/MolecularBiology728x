@@ -83,16 +83,55 @@ Nucleaseを使ったassayの基本的な手順は以下となる。
 適当なspecificityのendonucleaseのケースである必要がある。
 
 5'ー＞3' exonucleasesと3'ー＞5' exocnuleasesは通常めっちゃ早く反応してしまうので、
-これらのincubateして5分とか経ってから計測すると何も計測出来ない。
+これらのincubateして5分とか経ってから計測すると何も計測出来ない。(どちらもhighly processive）
 
 とても短い時間なら何かは引っかかるが、full lengthからのグラデーションになって、しかもどっちのexonucleaseかも分からないという点で、
 あまり得られる情報は多くない。
 
-### どちらのexonucleaseであるかを知る為の手順の修正
+### RNAのラベル付け
 
 ラベルをRNA全体に行うと、5'ー＞3' exonucleasesと3'ー＞5' exocnuleasesのどちらなのかが分からない。
 そこで、ラベル付けの方法を工夫する事でこれらを見分ける手順を考える。
+そのためにRNAへのラベル付けについて考えてみる。
 
 まずRNA全体にラベル付けを行うには、T7などのバクテリオファージ(phage)のRNAポリメラーゼを用いて、これと放射線ラベルや蛍光ラベルをつけたヌクレオチドを一緒に入れるとこれらのヌクレオチドが使われたRNAが素早く合成される。
 
 [T7ファージ - Wikipedia](https://ja.wikipedia.org/wiki/T7%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B8)
+
+5'末端のラベルづけは、三リン酸をカットして、末尾をリン酸化するキナーゼをラベル付けされたリン酸とともに入れれば5'にラベルづけする事が出来る。
+
+3'末端のラベル付けは、poly A tailを作るポリメラーゼを使ってラベルづけ出来る。（ラベル付けされたATPを使うんだろう）
+
+### ラベル付けの違いでexonucleaseの結果がどう変わるか？
+
+5'末端にラベルをつけて5'ー＞3' exonucleaseを使えば、バンドは消える。
+一方3'ー＞5' exonucleaseを使えばグラデーションとなる。
+
+逆に3'末端にラベルをつけて5'ー＞3' exonucleaseを使えばグラデーションになり、一方3'ー＞5' exonucleaseを使えば消える。
+（poly Aの量によっては後者も少しのグラデーションが見える事もあるがすぐに消える）。
+
+### 末端にPhosphothioateの部分を作る
+
+RNAの中で、ホスホジエステル結合の部分のOの代わりにSとしたphosphothioateがあると、
+そこはnucleaseはカット出来ない。
+そこでこのphosphothioateを間に持つRNA片を作ってRNAにligateすることで、
+そこはnucleaseでカットされないように出来る。
+これを組み合わせる事でも新しい事が分かる。
+
+例えば、5'側にラベルをつけて3'側にこのPhosphothioateの部分を足すとどうなるか考えてみよう。
+5'ー＞3' exonucleaseが何もバンドが見えないのはphosphothiooateがあるか無いかによらない。
+だが3'ー＞5' exonucleaseはphosphothioateがある所までしか分解されず、ちょっとだけ短いバンドとして見える。
+
+このように途中で止まってくれると、実験の手順としても楽だ。incubateして放っておくだけで良くて、
+間の幾つものtimepointで結果を取らなくて良い。
+
+### exonucleaseはオリゴヌクレオチドを作る
+
+exonucleaseはどちら向きのも、ntまで分解する訳では無くオリゴヌクレオチド(oligonucleaothides)に分解する。
+オリゴヌクレオチドを分解するのはこれとは別の酵素であるoligonucleaothidaseである。
+
+### exonucleaseはhydrolyticとphosphorolyticがある
+
+hydrolyticなexonucleaseは水を使ってphosphodiester bondをattackしてmonophosphatesを生成する。
+
+phosphorolyticなexonucleaseはphosphateをnucleophileに使って、diphosphatesを生成する。
