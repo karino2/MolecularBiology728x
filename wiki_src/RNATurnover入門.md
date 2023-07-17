@@ -63,3 +63,36 @@ RNAの大半はrRNAである。
    - Gro-seqとかNET-seqだと消える前に観測出来る
 
 antisenseにtranscriptされるとは、プロモーターから反対側に向かってtranscriptされる事。
+
+## Nucleaseを使った基本的なAssay達
+
+Nucleaseには三種類ある
+
+1. endonucleases
+2. 5'ー＞3' exonucleases
+3. 3'ー＞5' exonucleases
+
+### Nucleaseを使ったassayの基本的な手順
+
+Nucleaseを使ったassayの基本的な手順は以下となる。
+
+1. RNAをラベル付けしてnucleaseを含む何かを混ぜてしばらく待つ
+2. gel electrophoresisとautoradiogramでRNAがどうなったかを調べる
+
+さて、ラベルをRNA全体に行った時に、nucleaseで幾つかのバンドに結果が分かれるためには、
+適当なspecificityのendonucleaseのケースである必要がある。
+
+5'ー＞3' exonucleasesと3'ー＞5' exocnuleasesは通常めっちゃ早く反応してしまうので、
+これらのincubateして5分とか経ってから計測すると何も計測出来ない。
+
+とても短い時間なら何かは引っかかるが、full lengthからのグラデーションになって、しかもどっちのexonucleaseかも分からないという点で、
+あまり得られる情報は多くない。
+
+### どちらのexonucleaseであるかを知る為の手順の修正
+
+ラベルをRNA全体に行うと、5'ー＞3' exonucleasesと3'ー＞5' exocnuleasesのどちらなのかが分からない。
+そこで、ラベル付けの方法を工夫する事でこれらを見分ける手順を考える。
+
+まずRNA全体にラベル付けを行うには、T7などのバクテリオファージ(phage)のRNAポリメラーゼを用いて、これと放射線ラベルや蛍光ラベルをつけたヌクレオチドを一緒に入れるとこれらのヌクレオチドが使われたRNAが素早く合成される。
+
+[T7ファージ - Wikipedia](https://ja.wikipedia.org/wiki/T7%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B8)
