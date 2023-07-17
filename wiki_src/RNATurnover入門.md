@@ -45,3 +45,21 @@ RNAの大半はrRNAである。
 その為にはこれらのITS, ETSが1分間に3000000 nt程度の速度で分解される必要がある。
 
 こうしたゴミRNAを素早やく除去しないと、RNAと結合して役割を果たすタンパク質の類が本来のターゲットを探すのを邪魔してしまうので、重要。
+
+## RNAの種類ごとの半減期
+
+1. mRNAs ... 中くらいの半減期
+    - イースト菌で平均20分、人間で平均10時間程度
+    - regulateされる事もある
+    - 一番分布が広い
+2. stable RNA（tRNA, rRNA, snoRNAs, U1など） ... 長い半減期
+   - オーダーとしてはmany cell divisionsくらいで、観測不能なくらい長い
+   - 複雑にfoldされるかタンパク質と固く結合している
+   - defectiveか細胞が飢餓状態の時だけたくさんの分解が観測出来る
+3. junk RNA ... 短い半減期
+   - 1分以下とか
+   - intronとかantisenseにtranscriptされたものとかrRNAのITSやETSなど
+   - polyadenylatedされてない
+   - Gro-seqとかNET-seqだと消える前に観測出来る
+
+antisenseにtranscriptされるとは、プロモーターから反対側に向かってtranscriptされる事。
