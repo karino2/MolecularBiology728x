@@ -141,3 +141,5 @@ phosphorolyticな方が、rNTPに戻すのが簡単なので、より高速に�
 
 phosphorolyticなexonucleaseはオリゴを生成せずにヌクレオチドを直接生成する場合もある。また、oligonucleotidaseもphosphorolytic。
 
+## RNAの半減期に関わるIn vivo assay
+
