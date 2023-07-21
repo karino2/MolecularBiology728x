@@ -168,6 +168,41 @@ metazoan: metazoaは動物界から原生動物を除いたものだとか。＞
 
 ts mutantは温度変化でRNA Pol IIが機能しなくなるようなミュータントか。
 
+promoter shut offはゲノムの編集が必要なのでセットアップに手間がかかるが、目的のgeneだけを止められるので副作用が少ない。
+その他の手法は全transcriptionが止まってしまうので副作用が大きい。
+
 ### ステップ4のdecay rateとhalf lifeの計算
 
 [29ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=28)
+
+## RNA Pulse-Chase Assay
+
+前述のtranscriptを止めるassayのうち、全transcriptを止めるものは副作用が大きい。
+そこで半減期を調べるにはPulse Chase Assayを行う方が良い場合もある。
+
+RNA seqするので特定のgeneの半減期を調べる事が出来る。
+
+以下が手順。
+
+1. ラベルづけしたrNTPsを加えた状態でしばらく待つ（many generation）
+   - これがPulseフェーズ
+2. t=0でラベル無しrNTPsに変える（加えるものを変える、これを大量に加える）
+3. ラベルづけした方のrNTPを含むRNAをtime-pointごとに計測する
+   1. RNAを分離
+   2. 4TU-RNAをcontrolとして少量追加（結果からはこの分を割り引く）
+   3. 対象とする全RNAをbiotinylate
+   4. mRNAを濃縮する（enrichする）、rRNAを取り除くなど
+   5. streptavidinで選択する
+   6. 結果をRNA-seqする
+
+ラベルには4-thio uracilが良く使われる。ウラシルのOをSH基に置換したもの。
+これにbiotinを結合させる事が出来るから。
+
+2の大量に加えるというのは、例えば1で 1 micro molarの4-thio uracilを加えて待ったあとに、
+t=0より後には 20 micro molarのuracilを加えて観測する、というような具合。
+
+## バクテリアとEukaryoteのmRNA decay
+
+ページを分ける。
+
+- [[バクテリアのmRNADecay]]

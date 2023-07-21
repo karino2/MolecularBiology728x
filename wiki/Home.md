@@ -160,3 +160,4 @@ DNAの損傷には以下の２種類があり、
 ### Unit: RNA Turnover I
 
 - [RNATurnover入門](RNATurnover入門.md)
+- [バクテリアのmRNADecay](バクテリアのmRNADecay.md)
