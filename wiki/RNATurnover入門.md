@@ -143,3 +143,17 @@ phosphorolyticなexonucleaseはオリゴを生成せずにヌクレオチドを�
 
 ## RNAの半減期に関わるIn vivo assay
 
+RNAの半減期を測りたい。例えば特定のgeneに興味があったとすると、そのmRNAの半減期を知りたくなる。
+調べ方としては以下の手順
+
+1. transcriptionを抑制する（t=0)
+   - promoter shut-off
+   - RNA pol II ts  mutant
+   - 薬剤（thiolutin, α-amanitin, actinomycin D）
+
+目的のgeneのupstreamに、E. coliならlacZ promoterとか、イースト菌ならGAL promoterとか、metazoanならTet controlled promoterなどをつなげて、turn-onしたりturn-offしたりする。
+
+Tetならtetracyclineを加えたり取り除いたりして制御する。
+GALやlacならグルコースを加えてturn offする。
+
+metazoan: metazoaは動物界から原生動物を除いたものだとか。＞[後生動物 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%BE%8C%E7%94%9F%E5%8B%95%E7%89%A9)
