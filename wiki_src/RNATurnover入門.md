@@ -148,8 +148,16 @@ RNAの半減期を測りたい。例えば特定のgeneに興味があったと�
 
 1. transcriptionを抑制する（t=0)
    - promoter shut-off
-   - RNA pol II ts  mutant
-   - 薬剤（thiolutin, α-amanitin, actinomycin D）
+   - RNA pol II ts mutant
+   - 薬剤（thiolutin, α-amanitin, actinomycin D、バクテリアなら抗生物質のRifampicinなど）
+2. 時間軸に渡ってRNAを細胞から分離
+   - phenol extractionやethanol precipitation（mRNA以外のRNAやDNAはどうにかして取り除く）
+3. 調べたいRNAを検出する
+   - qRT-PCR
+   - RNA-seq
+4. decay rateとhalf lifeを計算する
+
+### ステップ1のTranscriptioの抑制
 
 目的のgeneのupstreamに、E. coliならlacZ promoterとか、イースト菌ならGAL promoterとか、metazoanならTet controlled promoterなどをつなげて、turn-onしたりturn-offしたりする。
 
@@ -157,3 +165,9 @@ Tetならtetracyclineを加えたり取り除いたりして制御する。
 GALやlacならグルコースを加えてturn offする。
 
 metazoan: metazoaは動物界から原生動物を除いたものだとか。＞[後生動物 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%BE%8C%E7%94%9F%E5%8B%95%E7%89%A9)
+
+ts mutantは温度変化でRNA Pol IIが機能しなくなるようなミュータントか。
+
+### ステップ4のdecay rateとhalf lifeの計算
+
+[29ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=28)
