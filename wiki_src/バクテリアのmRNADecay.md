@@ -69,3 +69,14 @@ E. coliなどは5' to 3'のexonucleaseを持たないが、どこかを切断す
 そのほかの生物ではRNase Jと呼ばれる5' to 3' exonucleaseを持つ。ただTriphosphateは分解出来ない。
 
 RNase Jはhydrolytic exoで、5' to 3' exo。
+
+### 2次構造のdegradation
+
+Secondary Structure（ヘアピンなど）は、3'側から分解する場合は問題とならない。
+PhlBのヘリカーゼの機能がこの構造を解いていくから。
+
+だが3'側の末端に出来るヘアピンはこの仕組みではほどけない。
+また、ヘリカーゼがスタックする場合もある。一度端っこでスタックしてしまうと、そのまま再開する事は出来ず、少しsingle strandのリージョンが必要となる。
+
+そこで3'の末端がヘアピンの時は、poly-A polymeraseかPNPaseが末尾にAを付加していき、少しsingle strandの領域を作る。
+そしてヘリカーゼが解いてdegradeする。
