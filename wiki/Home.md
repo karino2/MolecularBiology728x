@@ -161,3 +161,4 @@ DNAの損傷には以下の２種類があり、
 
 - [RNATurnover入門](RNATurnover入門.md)
 - [バクテリアのmRNADecay](バクテリアのmRNADecay.md)
+- [EukaryoteのmRNADecay](EukaryoteのmRNADecay.md)

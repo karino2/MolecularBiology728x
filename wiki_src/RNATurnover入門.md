@@ -206,3 +206,4 @@ t=0より後には 20 micro molarのuracilを加えて観測する、という�
 ページを分ける。
 
 - [[バクテリアのmRNADecay]]
+- [[EukaryoteのmRNADecay]]

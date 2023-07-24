@@ -104,3 +104,6 @@ degradationしているmRNAにもリボソームがくっついていて翻訳�
 さらにこの付加されるAA配列は、ClpXP proteaseというタンパク質が認識するタグとなっていて、
 これに認識されたタンパク質は素早く分解されて細胞内から消える。
 
+## 次: EukaryoteのmRNADecay
+
+[[EukaryoteのmRNADecay]]
