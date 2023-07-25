@@ -1,7 +1,7 @@
 - incubate 培養する（なんかDNAを複製させるとかでもincubateって言うけど、培養って変だよなぁ…）
 - reagent 試薬
 
-[複製の始動](複製の始動.md)で述べたような理解がどのように得られたのか、それらに関わるassayを見ていく。
+[複製の始動](%E8%A4%87%E8%A3%BD%E3%81%AE%E5%A7%8B%E5%8B%95)で述べたような理解がどのように得られたのか、それらに関わるassayを見ていく。
 
 ## 始動のイベントに関わるassay
 
@@ -18,7 +18,7 @@ DnaAが最初にdsDNAに結合するところのassayから見ていく。
 Gel Shift assayとも呼ばれる。
 単にラベルを付与したDNAとタンパク質を混ぜて電気泳動してみるだけ。
 
-[Assays](Assays.md)
+[Assays](Assays)
 
 ### 手順
 
@@ -75,7 +75,7 @@ EMSAで、ラベル無しのコンペティターを一杯入れて反応が変�
 
 ORCというタンパク質の例が出ていた。
 
-[Assays](Assays.md)
+[Assays](Assays)
 
 ### 手順
 
@@ -142,7 +142,7 @@ SV40の例が出ていた。腫瘍のウィルスでポリオウィルスがこ�
 そしてSV40 large T antigenというタンパク質がこのゲノムに結合するとunwindが起こるとか。
 E. coliと違ってsupercoilの必要無いらしい。
 
-[Assays](Assays.md)
+[Assays](Assays)
 
 ### 手順
 
@@ -195,7 +195,7 @@ ssDNA cleaving reagentで処理する事でunwindの所のssDNAに切れ目を�
 footprintingは数百bp以上になってくると厳しい。
 gel shiftはタンパク質が多く関わると厳しい。
 
-[Assays](Assays.md)
+[Assays](Assays)
 
 ### メカニズム
 

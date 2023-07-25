@@ -1,4 +1,4 @@
-前: [RNATurnover入門](RNATurnover入門.md)
+前: [RNATurnover入門](RNATurnover%E5%85%A5%E9%96%80)
 
 mRNAの半減期について、ここではバクテリアについて見ていく。
 
@@ -12,13 +12,13 @@ mRNAの半減期について、ここではバクテリアについて見てい�
 5'側は、末端のtriphosphateが保護している。
 また、RNAの2次構造が5'末端のdecayを防いているケースもある。（とてもとても長い半減期のRNAの場合）
 
-eukaryoteではtranslateの都度RNAはunwindされるが、バクテリアでは5'側のstructureはそのままに直接ribosomeのbinding siteにribosomeが結合するので、この2次構造が保存される。（[TranslationのInitiation](TranslationのInitiation.md)も参照）
+eukaryoteではtranslateの都度RNAはunwindされるが、バクテリアでは5'側のstructureはそのままに直接ribosomeのbinding siteにribosomeが結合するので、この2次構造が保存される。（[TranslationのInitiation](Translation%E3%81%AEInitiation)も参照）
 
 ### 3'末端側の保護
 
 3'末端側は、おもに2次構造で保護される。
 
-[バクテリアにおけるTranscriptionのElongation](バクテリアにおけるTranscriptionのElongation.md)で見たように、TranscriptionのterminationにはIntrinsic TerminationとRho-Dependent Terminationがあるのだった。
+[バクテリアにおけるTranscriptionのElongation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranscription%E3%81%AEElongation)で見たように、TranscriptionのterminationにはIntrinsic TerminationとRho-Dependent Terminationがあるのだった。
 そしてIntrinsic Terminationのケースでは、
 Transcriptionの時点で3'末端側にあるGC-richな領域がヘアピンを形成するのだった。
 これが3'末端側のdecayから保護する二次構造となる。
@@ -106,4 +106,4 @@ degradationしているmRNAにもリボソームがくっついていて翻訳�
 
 ## 次: EukaryoteのmRNADecay
 
-[EukaryoteのmRNADecay](EukaryoteのmRNADecay.md)
+[EukaryoteのmRNADecay](Eukaryote%E3%81%AEmRNADecay)

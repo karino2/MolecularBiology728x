@@ -161,4 +161,4 @@ hybridizeしやすい配列としにくい配列があるが、ratioを比較し
 
 ## 次：ReplicatorMapping
 
-[ReplicatorMapping](ReplicatorMapping.md)
+[ReplicatorMapping](ReplicatorMapping)

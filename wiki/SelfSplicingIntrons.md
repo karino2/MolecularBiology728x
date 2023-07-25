@@ -1,4 +1,4 @@
-前: [RNASplicing概要](RNASplicing概要.md)
+前: [RNASplicing概要](RNASplicing%E6%A6%82%E8%A6%81)
 
 ## Self-Splicing Intronsのメカニズムの概要
 
@@ -135,4 +135,4 @@ dsRNAになっている事が重要ならbpが両方変異して変異後もペ�
 
 ## 次: pre mRNAのsplicing
 
-[premRNAのsplicing](premRNAのsplicing.md)
+[premRNAのsplicing](premRNA%E3%81%AEsplicing)

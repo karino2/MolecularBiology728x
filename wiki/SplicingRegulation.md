@@ -1,4 +1,4 @@
-前: [AlternativeSplicing](AlternativeSplicing.md)
+前: [AlternativeSplicing](AlternativeSplicing)
 
 ## ExonとIntronのゲノム的なスケールの話
 
@@ -23,7 +23,7 @@ intronは数千とかのオーダーでさらにもっと長い事もある。
 
 ## Splice Sitesの決定
 
-[premRNAのsplicing](premRNAのsplicing.md)などでも見たメカニズムから考えると、spliceすることになるintronの両端にタンパク質がくっついてどこをSpliceするかが決まりそうに見えるが、
+[premRNAのsplicing](premRNA%E3%81%AEsplicing)などでも見たメカニズムから考えると、spliceすることになるintronの両端にタンパク質がくっついてどこをSpliceするかが決まりそうに見えるが、
 実際は少なくとも哺乳類に関しては、最初にexonがタンパク質に認識されている証拠がある。
 
 つまり、A complexの形成で最初に結合するU1とU2は、Spliceする相手同士では無く、exonの両脇同士の二人となる。
@@ -39,11 +39,11 @@ intronは数千とかのオーダーでさらにもっと長い事もある。
 
 ### RNAポリメラーゼによる補助
 
-RNAポリメラーゼIIは[EukaryoticTranscriptionのInitiationとElongation](EukaryoticTranscriptionのInitiationとElongation.md)や[EukaryoticTranscriptionTermination](EukaryoticTranscriptionTermination.md)で見たように、C-terminal domainにリン酸化されてる尻尾を持つ。
+RNAポリメラーゼIIは[EukaryoticTranscriptionのInitiationとElongation](EukaryoticTranscription%E3%81%AEInitiation%E3%81%A8Elongation)や[EukaryoticTranscriptionTermination](EukaryoticTranscriptionTermination)で見たように、C-terminal domainにリン酸化されてる尻尾を持つ。
 このC-terminal側の尻尾のリン酸化は、複数のリン酸化される場所があって、
 どこがリン酸化されているかで役割が変わる。
 
-[EukaryoticTranscriptionTermination](EukaryoticTranscriptionTermination.md)でも見たように、大きくSer5-PiとSer2-Piがある。
+[EukaryoticTranscriptionTermination](EukaryoticTranscriptionTermination)でも見たように、大きくSer5-PiとSer2-Piがある。
 
 Ser5-Piが多い時は合成されるRNAの5'側をcappingする酵素をリクルートし、
 Ser5-Piが減ってSer2-Piが（相対的に）増えるとsplicingと3'側をpolyadenylationする機構を助ける。
@@ -96,7 +96,7 @@ hnRNPがsplicingを抑制するメカニズムを幾つか見ていこう。
 テンプレートのクロマチンの状態も、pre-mRNAのexonの識別に影響を与える。
 
 exon（のテンプレート）の付近でChIP-seqして調べると、exonのあたりではpost translationallyに修正されたH3K27me2と呼ばれるヒストンが多く見られた。
-exonの中心からの距離と発現数をプロットするとexonの中心をピークに山になっているのが見て取れる。＞[Assays](Assays.md)
+exonの中心からの距離と発現数をプロットするとexonの中心をピークに山になっているのが見て取れる。＞[Assays](Assays)
 
 alternative splicingでexonが飛ばされる率が高い細胞と低い細胞でヒストンを調べると、特定の種類のヒストンが多いと飛ばされず、低いと飛ばされる、という事が確かめられる。
 
@@ -110,7 +110,7 @@ alternative splicingでexonが飛ばされる率が高い細胞と低い細胞�
 
 ## SplicingのRegulationを調べるAssayたち
 
-[Assays](Assays.md)
+[Assays](Assays)
 
 ### EMSA(electrophoretic mobility shift assay)
 
@@ -141,7 +141,7 @@ biotin-streptavidin beadsの結合はとても強くて15 femtomolar。
 ### SELEX
 
 結合する配列の方を調べるassayとしてSELEXをRNAに使えるように修正したものがある。
-SELEXは[EukaryoticTranscriptionのDNABindingRegulators](EukaryoticTranscriptionのDNABindingRegulators.md)で出てきたassay。[Assays](Assays.md)参照。
+SELEXは[EukaryoticTranscriptionのDNABindingRegulators](EukaryoticTranscription%E3%81%AEDNABindingRegulators)で出てきたassay。[Assays](Assays)参照。
 
 1. プロモーターとランダム配列の短めのDNA（オリゴヌクレオチド）を作る
 2. in vitroで転写してRNAを作る

@@ -30,7 +30,7 @@ photolyaseはpyrimidine dimerをフリップさせて自分側に向けて結合
 
 glycosylaseは損傷したbaseを除去する。
 
-[DNAの損傷](DNAの損傷.md)の加水分解の所で記したように、CがdeaminateされるとUになる。
+[DNAの損傷](DNA%E3%81%AE%E6%90%8D%E5%82%B7)の加水分解の所で記したように、CがdeaminateされるとUになる。
 また、dUMPが組み込まれてUが入る事もある。
 
 glycosylaseはこのUを（塩基部分だけ）除去する。

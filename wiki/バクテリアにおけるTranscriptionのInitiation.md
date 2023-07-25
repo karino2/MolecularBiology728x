@@ -1,4 +1,4 @@
-前:  [バクテリアのTranscription入門](バクテリアのTranscription入門.md)
+前:  [バクテリアのTranscription入門](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AETranscription%E5%85%A5%E9%96%80)
 
 - intercalate 挿入する、（うるう日を）入れる
 
@@ -27,7 +27,7 @@ initiation は4step。
 4. Stable Ternary Complex
     - プロモーターから離れてRNAの合成によるelongationが始まる
 
-α-CTDについては[バクテリアのTranscription入門](バクテリアのTranscription入門.md)でもやった通りUP elementに結合する。
+α-CTDについては[バクテリアのTranscription入門](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AETranscription%E5%85%A5%E9%96%80)でもやった通りUP elementに結合する。
 
 ## Open Complex Formation
 
@@ -144,7 +144,7 @@ DNA unwinding assay（この場合はKMnO4を使う、RNAPのactive siteまで�
 3. UTC （Unstable Ternary Complex）から STC（Stable Ternary Complex）への遷移  
 これは難しいので既存の手法ではうまく行かない＞新規のAssayへ
 
-[Assays](Assays.md)を参照
+[Assays](Assays)を参照
 
 ## Initiationを調べるAssay達（新規の）
 
@@ -181,4 +181,4 @@ heparinがあると、RNAPホロは、Closed Complex Formationのステップが
 
 ## 次：バクテリアにおけるTranscriptionのElongation
 
-[バクテリアにおけるTranscriptionのElongation](バクテリアにおけるTranscriptionのElongation.md)
+[バクテリアにおけるTranscriptionのElongation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranscription%E3%81%AEElongation)

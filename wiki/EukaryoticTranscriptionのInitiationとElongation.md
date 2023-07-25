@@ -1,6 +1,6 @@
-前: [EukaryoteのDNAElements](EukaryoteのDNAElements.md)
+前: [EukaryoteのDNAElements](Eukaryote%E3%81%AEDNAElements)
 
-Initiationは[バクテリアにおけるTranscriptionのInitiation](バクテリアにおけるTranscriptionのInitiation.md)も参照のこと。
+Initiationは[バクテリアにおけるTranscriptionのInitiation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranscription%E3%81%AEInitiation)も参照のこと。
 
 ## 転写のGTFs
 
@@ -8,7 +8,7 @@ RNA Polymeraseはプロモーターを識別するのにGTFsが必要だった�
 RNA Pol IIのGTFには、TF II A, TF II B, TF II D, TFII E, TFII F, TFII Hがある。
 
 TF II Cは無いのか？というと、これはnicked DNAに結合するものとして存在する。
-nicked DNAはRNA polymerasesが転写を開始するのに必要なものだった。（[バクテリアのTranscription入門](バクテリアのTranscription入門.md)のRNAPを参照）
+nicked DNAはRNA polymerasesが転写を開始するのに必要なものだった。（[バクテリアのTranscription入門](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AETranscription%E5%85%A5%E9%96%80)のRNAPを参照）
 
 nicked DNAはnonspecificに転写を開始する。逆にnickを塞げば、specificな転写しか残らない。
 nickがなければTF II CはTFとしては機能しなくなり、転写とは関係ない別の役割を果たすだけになる。
@@ -78,7 +78,7 @@ RNA Pol IIが進み始めると、Elongationステップに進む事になる。
 
 もしキナーゼが無くてATPaseだけがあると、open complex stageには進むけれど、
 abortive transcriptsだけが行われ続ける。
-abortive transcriptionについては[バクテリアにおけるTranscriptionのInitiation](バクテリアにおけるTranscriptionのInitiation.md)を参照。
+abortive transcriptionについては[バクテリアにおけるTranscriptionのInitiation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranscription%E3%81%AEInitiation)を参照。
 
 なお、TF II Hによるリン酸化はCTDの特定の配列に対してのみ行われる。
 
@@ -107,7 +107,7 @@ PTEF bは以下を変更する（リン酸化する）
 
 ## GRO-Seqの結果を見る（Bidirectional Txn）
 
-GRO-Seqについては [Assays](Assays.md)と[Transcription入門](Transcription入門.md)を参照。ある時点での転写進行中のmRNAを調べる手法だった。
+GRO-Seqについては [Assays](Assays)と[Transcription入門](Transcription%E5%85%A5%E9%96%80)を参照。ある時点での転写進行中のmRNAを調べる手法だった。
 
 これを調べてみると、TSSから先が転写されていくのは良いとして、
 反対側のstrandも転写されているように見えた。これはプロモーターによるが、多くのプロモーターで見られるらしい。
@@ -141,4 +141,4 @@ northern blotやRNA-Seqでは転写した結果が比較的stableである必要
 
 ## 次: EukaryoticTranscriptionTermination
 
-[EukaryoticTranscriptionTermination](EukaryoticTranscriptionTermination.md)
+[EukaryoticTranscriptionTermination](EukaryoticTranscriptionTermination)

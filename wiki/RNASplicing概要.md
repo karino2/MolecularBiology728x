@@ -41,5 +41,5 @@ self splicing intronsのうち、group I とgroup IIは、この研究を通し�
 
 ## 各Splicingの詳細
 
-- [SelfSplicingIntrons](SelfSplicingIntrons.md)
-- [premRNAのsplicing](premRNAのsplicing.md)
+- [SelfSplicingIntrons](SelfSplicingIntrons)
+- [premRNAのsplicing](premRNA%E3%81%AEsplicing)

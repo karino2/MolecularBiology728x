@@ -345,4 +345,4 @@ mRNAはAとPの間の所で曲げられていて、どこがAに対応するコ�
 
 ## 次: TranslationのElongation
 
-[TranslationのElongation](TranslationのElongation.md)
+[TranslationのElongation](Translation%E3%81%AEElongation)

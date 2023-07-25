@@ -3,7 +3,7 @@ Splicingの基礎となる化学的な反応、cleavageとjoiningは基本的に
 だが、Splicingのサイクルの中ではATPを必要とする部分が何箇所かある。
 
 サイクルの中ではRNAのbase paringが起きたりそれが離れたりする場所があり、
-それらにはエネルギーを必要とするのは[premRNAのsplicing](premRNAのsplicing.md)で見た。
+それらにはエネルギーを必要とするのは[premRNAのsplicing](premRNA%E3%81%AEsplicing)で見た。
 
 ここではそのほかにATPを使ってfidelityを高める、proofreadingの役割を果たすケースを見ていく。
 
@@ -21,7 +21,7 @@ Proofreadingの具体例として、Prp5とPrp16というタンパク質の役�
 
 ### Prp5とU2のbranch siteへのリクルート
 
-Prp5はA complexの形成の所でU2がやってくるのを助けるタンパク質。A complexについては[22ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=21)あたりや[premRNAのsplicing](premRNAのsplicing.md)を参照。
+Prp5はA complexの形成の所でU2がやってくるのを助けるタンパク質。A complexについては[22ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=21)あたりや[premRNAのsplicing](premRNA%E3%81%AEsplicing)を参照。
 
 Prp5はU2とともにやってきて、U2がbranch siteとどのくらいよく相互作用しているかをチェックする。
 よく相互作用していたら真実のbranch site、いまいちな相互作用だったら誤解したニセのbranch siteと思われる。
@@ -88,4 +88,4 @@ k3はATPを消費するので逆に戻る事は無い。これはk2とk-2を行�
 
 ## 次: Alternative Splicing
 
-[AlternativeSplicing](AlternativeSplicing.md)
+[AlternativeSplicing](AlternativeSplicing)

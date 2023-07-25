@@ -1,4 +1,4 @@
-前: [Transcription入門](Transcription入門.md)
+前: [Transcription入門](Transcription%E5%85%A5%E9%96%80)
 
 ## バクテリアのRNAポリメラーゼの構造
 
@@ -103,12 +103,12 @@ UP Elementはシグマファクターでは無く、コアRNAPのαサブユニ�
 
 ## バクテリアプロモーターのマッピング
 
-やる事は[ReplicatorMapping](ReplicatorMapping.md)と似ている。
+やる事は[ReplicatorMapping](ReplicatorMapping)と似ている。
 
 以下の手順でマッピングする
 
 1. Transcriptの5'末端をマッピング（転写されたRNAの5'末端）  
-ほとんどのプロモーターがTSSの50 bp以内に存在しているのでこの情報が重要。[Transcription入門](Transcription入門.md)の「Primer Extension AssayでTSSを調べる」を参照。
+ほとんどのプロモーターがTSSの50 bp以内に存在しているのでこの情報が重要。[Transcription入門](Transcription%E5%85%A5%E9%96%80)の「Primer Extension AssayでTSSを調べる」を参照。
 2. Mutational map promoter seq  
 5'末端のupstream。前述のように-10や-35のあたり、その前後、Up elementのあたりなど
 
@@ -130,8 +130,8 @@ in vivoで使えるassayらしい。
 いろいろなプロモーターをこれで調べて比較する。
 同じレポーターを使っている限り、プロモーターの違い以外の要素は同じなので比較可能。
 
-[Assays](Assays.md)
+[Assays](Assays)
 
 ## 次: バクテリアにおけるTranscriptionのInitiation
 
-[バクテリアにおけるTranscriptionのInitiation](バクテリアにおけるTranscriptionのInitiation.md)
+[バクテリアにおけるTranscriptionのInitiation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranscription%E3%81%AEInitiation)

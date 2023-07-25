@@ -1,4 +1,4 @@
-前: [バクテリアにおけるTranscriptionのInitiation](バクテリアにおけるTranscriptionのInitiation.md)
+前: [バクテリアにおけるTranscriptionのInitiation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranscription%E3%81%AEInitiation)
 
 ## Elongation入門
 
@@ -59,7 +59,7 @@ RNAポリメラーゼではrNTPチャンネルの内部にとどまっている�
 普段はこの酵素が結合していなくて、stallするとなんらかの仕組みでやってきて結合するっぽい（よくわかっていない）。
 このGreBなどは普通合成されるRNAの端は届かなくて、Reverse Translocateしてきた時だけ届く位置にactive siteが配置される模様。
 
-DNAの[MismatchRepairのメカニズム](MismatchRepairのメカニズム.md)との比較で行くと、加水分解するのは同じだが、
+DNAの[MismatchRepairのメカニズム](MismatchRepair%E3%81%AE%E3%83%A1%E3%82%AB%E3%83%8B%E3%82%BA%E3%83%A0)との比較で行くと、加水分解するのは同じだが、
 DNAの方は同じタンパク質内にexonucleaseがあるが、transcriptionでは別のenzymeが存在する。
 
 ## Intrinsic Termination
@@ -100,5 +100,5 @@ Rho-Dependent Terminationの方がレアで、しかもいつtemrinateするか�
 
 ## 次：バクテリアにおけるTranscriptionのRegulation
 
-[バクテリアにおけるTranscriptionのRegulation](バクテリアにおけるTranscriptionのRegulation.md)
+[バクテリアにおけるTranscriptionのRegulation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranscription%E3%81%AERegulation)
 

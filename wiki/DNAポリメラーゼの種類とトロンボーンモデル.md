@@ -4,7 +4,7 @@
 
 | ポリメラーゼの種類 | exonuclease | subunit | processivity | 用途 |
 | ---- | ---- | ---- | ---- | ---- |
-| DNA Pol I | 5’ to 3’と3’ to 5’の両方 | 1つ | low (10〜100) | [岡崎フラグメントrepair](岡崎フラグメントrepair.md)用 |
+| DNA Pol I | 5’ to 3’と3’ to 5’の両方 | 1つ | low (10〜100) | [岡崎フラグメントrepair](%E5%B2%A1%E5%B4%8E%E3%83%95%E3%83%A9%E3%82%B0%E3%83%A1%E3%83%B3%E3%83%88repair)用 |
 | DNA Pol II | 3’ to 5’ (proofreading用） | 1つ | low | DNA repair用 |
 | DNA Pol IV, V | 無し | 1つ | low | bypass repair用らしい |
 | DNA III Core | 3’ to 5’&nbsp; | 3つ | low (10〜100） | 次を参照 |
@@ -13,7 +13,7 @@
 最初にArthur Kornbergが見つけたポリメラーゼはDNA Pol I。これは大量にある。
 
 3' to 5'のexonucleaseはproofreadingで一般的に使われる。
-5' to 3'はこれから合成しようとする部分の先にある末端を分解する訳だが、これが[岡崎フラグメントrepair](岡崎フラグメントrepair.md)でRNase Hがプライマーを分解した後の残りを取り除くのに使われる。
+5' to 3'はこれから合成しようとする部分の先にある末端を分解する訳だが、これが[岡崎フラグメントrepair](%E5%B2%A1%E5%B4%8E%E3%83%95%E3%83%A9%E3%82%B0%E3%83%A1%E3%83%B3%E3%83%88repair)でRNase Hがプライマーを分解した後の残りを取り除くのに使われる。
 
 なお5万bp以上のprocessivityは計測不能。
 
@@ -63,7 +63,7 @@ Holoenzymeは複数のタンパク質の集合体で、複数の酵素が関連�
         - この相互作用がholoenzyme全体をヘリカーゼのそばのちょうど良い位置に留める
 3. Lagging strandのポリメラーゼはprimerを延長していくが、それはフォークの進む向きとは反対
     - lagging strand側にはフォークから出てくるsingle stranded DNAが溜まっていく
-    - そこには[複製フォーク](複製フォーク.md)で述べたSSBが結合してこの単鎖が他にくっついたり自身と折れ曲がってくっつくのを防ぐ
+    - そこには[複製フォーク](%E8%A4%87%E8%A3%BD%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF)で述べたSSBが結合してこの単鎖が他にくっついたり自身と折れ曲がってくっつくのを防ぐ
 4. single strandedなDNAがkbくらいの量になると、プライマーゼがヘリカーゼと相互作用してprimerを合成する
 5. PTJが出来たと認識されて、PTJがデルタの所に、Sliding clampがやってきてPTJを覆う、という先の「DNAと結合する時のメカニズム」で述べた事が起こる
 6. 活動していなかったもう一つのDNAポリメラーゼがこのsliding clampとともに合成を始める

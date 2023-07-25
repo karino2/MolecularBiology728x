@@ -1,4 +1,4 @@
-[TranslationにまつわるAssay達](TranslationにまつわるAssay達.md)はTranslationの各ステップを調べるassayだった。
+[TranslationにまつわるAssay達](Translation%E3%81%AB%E3%81%BE%E3%81%A4%E3%82%8F%E3%82%8BAssay%E9%81%94)はTranslationの各ステップを調べるassayだった。
 こちらはどれだけ活発にTranslationが行われているかを調べるAssay。
 
 これはRegulationを調べるのに必要。これらは全てin vivo assay。
@@ -63,7 +63,7 @@ Spectrophotometryで見ると、80S (リボソーム一つ）、80Sが二つ、8
 各位置のmRNAに対してRT-PCRをして調べたいmRNAのreadのカウントを調べてPolysome Profilingのグラフと付き合わせる事で、目的のmRNAのreadがPolysomeの山の範囲にどのくらいあるかを特定する事で、
 目的のmRNAがtranslateされているかを判断出来る。
 
-RT-PCRについては[Assays](Assays.md)や[Transcription入門](Transcription入門.md)を参照。
+RT-PCRについては[Assays](Assays)や[Transcription入門](Transcription%E5%85%A5%E9%96%80)を参照。
 
 ただ後の動画ではQuantitative Real Time PCRと言っていて、クイズではqRT-PCRを選ばせるものがあった。
 qRT-PCRについては詳細は良くわからないが特定のmRNAの量を調べる手法っぽい。
@@ -123,7 +123,7 @@ mRNAの量もチェックする事。
 
 mRNAの総量は変わらないがPolysomeの数が大きく変わるなら、TranslationのRegulationが行われている証拠となる。
 
-[Translationの量を調べるAssay達](Translationの量を調べるAssay達.md)ではRT-PCRと組み合わせると言っていたが、この動画ではqRT-PCRと組みわせると言っている。どういう事だろう？
+[Translationの量を調べるAssay達](Translation%E3%81%AE%E9%87%8F%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8BAssay%E9%81%94)ではRT-PCRと組み合わせると言っていたが、この動画ではqRT-PCRと組みわせると言っている。どういう事だろう？
 qRT-PCRはQuantitative (real-time) Reverse Transcriptase PCRと注がついている。
 
 qRT-PCRがなんなのかについてはあまり説明が無いが、どうも特定のmRNAについてRT-PCRするような手法のようだ。
@@ -176,4 +176,4 @@ S. cerevisiaeで調べた結果が紹介されていて、注意深く行なっ�
 
 ## 次: バクテリアにおけるTranslationのRegulation
 
-[バクテリアにおけるTranslationのRegulation](バクテリアにおけるTranslationのRegulation.md)
+[バクテリアにおけるTranslationのRegulation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranslation%E3%81%AERegulation)

@@ -4,6 +4,8 @@
 
 C-terminal Domainのリン酸化という視点からPost Initiation Eventの制御を見直す（一部は前のセクションの内容の復習）
 
+RNA Pol IIのC-terminal Domainについては前のセクション[[EukaryoticTranscriptionのInitiationとElongation]]のCTDも参照のこと。
+
 ### Ser 5 Pi
 
 Serine-5のリン酸化。

@@ -25,7 +25,7 @@ mRNAはRNA Pol IIに転写されるので、一番複雑な制御がなされて
 ## EukaryoteのRNAポリメラーゼの構造の、バクテリアとの比較。
 
 バクテリアのRNAポリメラーゼと似た構成要素に、さらに追加でいくつかの要素がある。
-対応するバクテリアの構成要素については[バクテリアのTranscription入門](バクテリアのTranscription入門.md)や[バクテリアにおけるTranscriptionのInitiation](バクテリアにおけるTranscriptionのInitiation.md)を参照。
+対応するバクテリアの構成要素については[バクテリアのTranscription入門](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AETranscription%E5%85%A5%E9%96%80)や[バクテリアにおけるTranscriptionのInitiation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranscription%E3%81%AEInitiation)を参照。
 
 
 | 対応するバクテリアの | RNA Pol I | RNA Pol II | RNA Pol III |
@@ -48,7 +48,7 @@ mRNAはRNA Pol IIに転写されるので、一番複雑な制御がなされて
 
 ### シグマファクターに対応するもの
 
-バクテリアでは[バクテリアのTranscription入門](バクテリアのTranscription入門.md)で見たように、シグマファクターがプロモーターのspecificityを担う。
+バクテリアでは[バクテリアのTranscription入門](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AETranscription%E5%85%A5%E9%96%80)で見たように、シグマファクターがプロモーターのspecificityを担う。
 Eukaryoteでこれに対応するのは3〜6個のファクターが同じ役割を担う。
 
-[EukaryoteのDNAElements](EukaryoteのDNAElements.md)
+[EukaryoteのDNAElements](Eukaryote%E3%81%AEDNAElements)

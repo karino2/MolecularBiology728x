@@ -205,5 +205,5 @@ t=0より後には 20 micro molarのuracilを加えて観測する、という�
 
 ページを分ける。
 
-- [バクテリアのmRNADecay](バクテリアのmRNADecay.md)
-- [EukaryoteのmRNADecay](EukaryoteのmRNADecay.md)
+- [バクテリアのmRNADecay](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AEmRNADecay)
+- [EukaryoteのmRNADecay](Eukaryote%E3%81%AEmRNADecay)

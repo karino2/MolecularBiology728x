@@ -1,4 +1,4 @@
-DNAヘリカーゼが[複製フォーク](複製フォーク.md)を進めていくと、フォークの前方のよじれはどんどんきつくなっていく。
+DNAヘリカーゼが[複製フォーク](%E8%A4%87%E8%A3%BD%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF)を進めていくと、フォークの前方のよじれはどんどんきつくなっていく。
 どこかでほどかないといけない。
 
 DNAのよじれを一旦ちぎって戻すのがTopoisomerase。
@@ -30,7 +30,7 @@ topoisomeraseはoverwounded DNAをunwindして、underwounded DNAをrewindする
 topoisomeraseはDNAを切り離して、他の鎖を越えて再結合する。
 長縄跳びを飛ぶような感じ。
 
-切り離すのは[endonuclease](endonuclease.md)と似た機構。
+切り離すのは[endonuclease](endonuclease)と似た機構。
 
 topoisomeraseには２種類ある。
 

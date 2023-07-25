@@ -9,7 +9,7 @@ Repair(修復)には幾つかのケースがある。
 
 今回は複製エラーについてを見ていく。
 
-[DNAポリメラーゼ](DNAポリメラーゼ.md)の「Proofreading Exonucleaseによる修正」も参照の事。
+[DNAポリメラーゼ](DNA%E3%83%9D%E3%83%AA%E3%83%A1%E3%83%A9%E3%83%BC%E3%82%BC)の「Proofreading Exonucleaseによる修正」も参照の事。
 
 ### 損傷の修復の一般的な手順
 
@@ -17,7 +17,7 @@ Repair(修復)には幾つかのケースがある。
 2. 損傷をカットする
 3. 再合成する
 
-これらの手順は[岡崎フラグメントrepair](岡崎フラグメントrepair.md)と似ている。
+これらの手順は[岡崎フラグメントrepair](%E5%B2%A1%E5%B4%8E%E3%83%95%E3%83%A9%E3%82%B0%E3%83%A1%E3%83%B3%E3%83%88repair)と似ている。
 岡﨑フラグメントではRNAがdamagedであり、それをRNaseやexoでカットして、再合成していた。
 
 この手順を一般にExcision repairと呼ぶ。損傷部をexciseして再合成する。

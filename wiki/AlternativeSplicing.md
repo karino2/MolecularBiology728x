@@ -1,4 +1,4 @@
-前: [SplicingProofreading](SplicingProofreading.md)
+前: [SplicingProofreading](SplicingProofreading)
 
 - constitutive ... 本質的な、構造性の
 - isoform ... 機能的に似ていてアミノ酸配列も似ているタンパク質同士を呼ぶ呼称。
@@ -35,7 +35,7 @@ mRNAが核から核外に輸送されるのは、mature mRNAになってから�
 
 ## RT-PCRでalternative splicingを調べる
 
-[Assays](Assays.md)
+[Assays](Assays)
 
 現代ではnorthern blotよりはRT-PCRを使う方が多くの上方が得られる。
 
@@ -64,7 +64,7 @@ PCRの効率などはシーケンスによって違ったりもするので、�
 
 ## RNA-seqでalternative splicingを調べる
 
-[Assays](Assays.md)
+[Assays](Assays)
 
 RNA-seqを使ってalternative splicingを調べる事も良く行われる。
 
@@ -217,4 +217,4 @@ long formでは14, 15がsplicingでつながるが、short formでは14, 14A, 15
 
 ## 次: Splicing Regulation
 
-[SplicingRegulation](SplicingRegulation.md)
+[SplicingRegulation](SplicingRegulation)

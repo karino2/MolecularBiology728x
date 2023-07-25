@@ -92,7 +92,7 @@ puromycinはこのため、peptidyl transferaseの活動量を計測するのに
 Translationでは様々なステップでGTPの加水分解が挟まっているので、
 GTP-analogで加水分解しなかったりしづらかったりするものをつかうことで、途中の段階で止める事が出来る。
 
-例えば[TranslationのInitiation](TranslationのInitiation.md)を調べようと思ったとすると、IF2のリリースの手前で止める為にGTP-analogが使える。
+例えば[TranslationのInitiation](Translation%E3%81%AEInitiation)を調べようと思ったとすると、IF2のリリースの手前で止める為にGTP-analogが使える。
 
 GTP-γ-SとGMP-PCPがよく使われる。
 

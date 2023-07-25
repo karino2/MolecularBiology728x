@@ -1,4 +1,4 @@
-ヒストンやヌクレオソームについては[クロマチン、ヒストン、ヌクレオソーム](クロマチン、ヒストン、ヌクレオソーム.md)も参照。
+ヒストンやヌクレオソームについては[クロマチン、ヒストン、ヌクレオソーム](%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%81%E3%83%B3%E3%80%81%E3%83%92%E3%82%B9%E3%83%88%E3%83%B3%E3%80%81%E3%83%8C%E3%82%AF%E3%83%AC%E3%82%AA%E3%82%BD%E3%83%BC%E3%83%A0)も参照。
 
 ## 転写におけるヌクレオソーム入門
 
@@ -61,7 +61,7 @@ TSSよりも上流の所には逆にnucleosome-freeな領域がある。
 1. ヒストンoctamerに結合
 2. dsDNA Translocases
 
-translocaseは[RecombinationalRepair](RecombinationalRepair.md)のRuvBでも出てきた。
+translocaseは[RecombinationalRepair](RecombinationalRepair)のRuvBでも出てきた。
 
 [13ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=12)
 
@@ -109,4 +109,4 @@ nucleosome free regionsの隣接した所に頻繁に見られる。どういう
 
 ## 次
 
-[HistoneModificationによる転写制御](HistoneModificationによる転写制御.md)
+[HistoneModificationによる転写制御](HistoneModification%E3%81%AB%E3%82%88%E3%82%8B%E8%BB%A2%E5%86%99%E5%88%B6%E5%BE%A1)

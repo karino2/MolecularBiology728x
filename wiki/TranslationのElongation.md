@@ -1,4 +1,4 @@
-前: [Translationの基本と登場人物](Translationの基本と登場人物.md)
+前: [Translationの基本と登場人物](Translation%E3%81%AE%E5%9F%BA%E6%9C%AC%E3%81%A8%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9)
 
 - accommodate 適合する
 - ratchet 歯止め
@@ -208,4 +208,4 @@ specificityの確保とeventの順番を制御するのに使われている。
 
 ## 次: TranslationのInitiation
 
-[TranslationのInitiation](TranslationのInitiation.md)
+[TranslationのInitiation](Translation%E3%81%AEInitiation)

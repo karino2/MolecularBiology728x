@@ -1,4 +1,4 @@
-前: [バクテリアにおけるTranscriptionのRegulation](バクテリアにおけるTranscriptionのRegulation.md)
+前: [バクテリアにおけるTranscriptionのRegulation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranscription%E3%81%AERegulation)
 
 ## Reaction Coordinate Diagram
 

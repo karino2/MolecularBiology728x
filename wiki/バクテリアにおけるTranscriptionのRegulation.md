@@ -1,4 +1,4 @@
-前：[バクテリアにおけるTranscriptionのElongation](バクテリアにおけるTranscriptionのElongation.md)
+前：[バクテリアにおけるTranscriptionのElongation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranscription%E3%81%AEElongation)
 
 クイズの単語はここに書いておく。
 
@@ -63,4 +63,4 @@ MerRが-10の距離と向きを改善する事で正しくOpen Complex Formが�
 
 ## 次: BiologicalReactionsとRates
 
-[BiologicalReactionsとRates](BiologicalReactionsとRates.md)
+[BiologicalReactionsとRates](BiologicalReactions%E3%81%A8Rates)

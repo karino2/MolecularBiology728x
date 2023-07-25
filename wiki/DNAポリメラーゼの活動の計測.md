@@ -14,7 +14,7 @@ DNAポリメラーゼの活動の計測には以下のような手法がある
 - Incorporation assay
 - Primer extension assay
 
-[Assays](Assays.md)
+[Assays](Assays)
 
 ## Incorporation assay
 
@@ -26,7 +26,7 @@ DNAポリメラーゼの活動の計測には以下のような手法がある
 ### 1. Primer template junctionを作成する
 
 M13というファージを使う。
-これはssDNAの円環のDNAで、5000 baseの長さ。 ＞ [ゲノムのオーダー](ゲノムのオーダー.md)
+これはssDNAの円環のDNAで、5000 baseの長さ。 ＞ [ゲノムのオーダー](%E3%82%B2%E3%83%8E%E3%83%A0%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%80%E3%83%BC)
 
 まず20〜25 base pairのprimerを合成。これはネットで注文すると翌日には50baseくらいの長さのprimerは届くらしい。
 
@@ -51,7 +51,7 @@ ssDNAは一本でも塩基同士の水素結合で折り曲がるらしい。熱
 **蛍光ラベル**
 
 蛍光ラベルはだいたいはthymidine analogが使われる、つまり塩基に付与される。
-thymidineはチミンの塩基の名前＞[ヌクレオチド](ヌクレオチド.md)
+thymidineはチミンの塩基の名前＞[ヌクレオチド](%E3%83%8C%E3%82%AF%E3%83%AC%E3%82%AA%E3%83%81%E3%83%89)
 
 メチル基がありさえすれば付与出来るらしい。
 
@@ -118,7 +118,7 @@ DNAとdNTPを分離するのに使われる、古くからあるやり方。
 NaOHや尿素がふたたびannealすることを防いでくれるので、生成物だけを分離することが出来る。
 
 これらを加えたゲルを denaturing gel、これらを加えたゲルを使った電気泳動をdenaturing gel electrophoresisというらしい。＞
-[DNAのdenaturing](DNAのdenaturing.md)
+[DNAのdenaturing](DNA%E3%81%AEdenaturing)
 
 電気泳動をする時は、ラベルを識別するか、ethidium bromideで着色する。
 ethidium bromideはDNAならなんでも着色出来る物質。EtBrと略されることも。

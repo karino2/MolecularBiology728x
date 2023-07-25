@@ -46,7 +46,7 @@
 
 ## Incorporation Assay
 
-[DNAポリメラーゼの活動の計測](DNAポリメラーゼの活動の計測.md)と同様のassay。
+[DNAポリメラーゼの活動の計測](DNA%E3%83%9D%E3%83%AA%E3%83%A1%E3%83%A9%E3%83%BC%E3%82%BC%E3%81%AE%E6%B4%BB%E5%8B%95%E3%81%AE%E8%A8%88%E6%B8%AC)と同様のassay。
 ラベルとしてはrNTPのうちrUTPを使う事が多い。
 
 生産物を分離する方法はDNAポリメラーゼの時と同様にFilter BindingかGel Electrophoresisを使う。
@@ -69,7 +69,7 @@ denaturing gelとしてはたくさんの尿素をゲルに含めるのが手頃
 
 ## Primer Extension AssayでTSSを調べる
 
-[DNAポリメラーゼの活動の計測](DNAポリメラーゼの活動の計測.md)と同じようなassayだが、目的も使う道具も違う。今回はTranscription Start Sitesを調べるのに使う。
+[DNAポリメラーゼの活動の計測](DNA%E3%83%9D%E3%83%AA%E3%83%A1%E3%83%A9%E3%83%BC%E3%82%BC%E3%81%AE%E6%B4%BB%E5%8B%95%E3%81%AE%E8%A8%88%E6%B8%AC)と同じようなassayだが、目的も使う道具も違う。今回はTranscription Start Sitesを調べるのに使う。
 
 [3ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=2)
 
@@ -117,7 +117,7 @@ Reverse Transcriptase PCR。略してRT PCR。ただしこれはReal Time PCRと
 これでReverse Transcriptaseでどちらか片方のDNA片がextend出来てcDNAが作れて、このcDNAをもう片方のDNAをprimerとしてPCR出来る。
 
 
-[Assays](Assays.md)
+[Assays](Assays)
 
 ### Real Time PCR
 
@@ -139,7 +139,7 @@ Deep sequencingを使って細胞全体について調べる。
 
 これで存在しているmRNAの量が測れる。
 
-Deep Sequencingについては[Originを見つける3つのassay](Originを見つける3つのassay.md)の「Nascent Okazaki Fragment Mapping」も参照。
+Deep Sequencingについては[Originを見つける3つのassay](Origin%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B3%E3%81%A4%E3%81%AEassay)の「Nascent Okazaki Fragment Mapping」も参照。
 同じようにbinningしてそのbinの中で開始しているフラグメントの数を数える。
 
 | 利点 | 欠点 |
@@ -193,4 +193,4 @@ eukaryoticの細胞の多くのプロモーターはRNAポリメラーゼを両�
 
 ## 次：バクテリアのTranscription入門
 
-[バクテリアのTranscription入門](バクテリアのTranscription入門.md)
+[バクテリアのTranscription入門](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AETranscription%E5%85%A5%E9%96%80)

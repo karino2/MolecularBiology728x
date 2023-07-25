@@ -1,4 +1,4 @@
-前: [EukaryoticTranscriptionTermination](EukaryoticTranscriptionTermination.md)
+前: [EukaryoticTranscriptionTermination](EukaryoticTranscriptionTermination)
 
 - phosphatase ... ホスファターゼ。脱リン酸化酵素の事。
 
@@ -36,7 +36,7 @@ SELEX: Systematic Evolution of Ligands by EXponential enrichment
 
 多くのbinding siteは10bpとかそれ以下程度。ランダムの範囲を狭くすれば全通りに近いオリゴヌクレオチドを得られる確率が上がる。
 
-[Assays](Assays.md)
+[Assays](Assays)
 
 ## DNA Binding ProteinsのTranscription Activating Domains
 
@@ -71,12 +71,12 @@ Mediatorは20以上のタンパク質からなり、たくさんの相互作用�
 2. General Txn Factors  
 通常は弱められたプロモーターで起きる（例：TFIIBがtranscription factorを動員する場合は、プロモーターにはBREが無い場合、など）  
 ー＞Transcription FactorがRate limiting stepを緩和するには緩和すべきRate limiting stepがある必要がある
-3. PTEFb ー＞ Paused Pol IIのリリースを助ける（PTEFbは[EukaryoticTranscriptionのInitiationとElongation](EukaryoticTranscriptionのInitiationとElongation.md)の「Promoter Proximal Pausing Event」も参照の事）
-4. Chromatin Modifying Factors（[HistoneModificationnによる転写制御](HistoneModificationnによる転写制御.md)も参照のこと）  
+3. PTEFb ー＞ Paused Pol IIのリリースを助ける（PTEFbは[EukaryoticTranscriptionのInitiationとElongation](EukaryoticTranscription%E3%81%AEInitiation%E3%81%A8Elongation)の「Promoter Proximal Pausing Event」も参照の事）
+4. Chromatin Modifying Factors（[HistoneModificationnによる転写制御](HistoneModificationn%E3%81%AB%E3%82%88%E3%82%8B%E8%BB%A2%E5%86%99%E5%88%B6%E5%BE%A1)も参照のこと）  
 例：最初にリンカーregionに結合するタンパク質がHATを動員して30nmファイバーの構造を開いて10nmファイバーの構造にし、そしてアクセス可能になったヌクレオソームあたりの領域に次のタンパク質が結合してNucleosome Remodeling Complexを動員し、これが隣のヌクレオソームをずらす事で３つ目のbinding siteがアクセス可能になって、そこに結合したタンパク質が上記1〜3のどれかに働きかける、など
 
 
-TFIIBやBREは、[16ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=15)や[EukaryoteのDNAElements](EukaryoteのDNAElements.md)を参照。
+TFIIBやBREは、[16ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x2.html#lg=1&slide=15)や[EukaryoteのDNAElements](Eukaryote%E3%81%AEDNAElements)を参照。
 
 ## Repressiveな転写制御の例
 

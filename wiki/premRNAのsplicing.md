@@ -1,4 +1,4 @@
-前: [SelfSplicingIntrons](SelfSplicingIntrons.md)
+前: [SelfSplicingIntrons](SelfSplicingIntrons)
 
 ## pre-mRNA splicingのメカニズム
 
@@ -137,7 +137,7 @@ U1とRNAの結合を見ると、conservativeなregionの配列とbase paringし�
 
 Ψ（Psi）はpseudouridine residueで、アデニンとペアリングしやすいとか。
 pseudouridineはpost transcriptional modificationで修飾されて出てくる。
-tRNAなどそのほかのRNAでも良く見られるpost transcriptional modification＞[Translationの基本と登場人物](Translationの基本と登場人物.md)
+tRNAなどそのほかのRNAでも良く見られるpost transcriptional modification＞[Translationの基本と登場人物](Translation%E3%81%AE%E5%9F%BA%E6%9C%AC%E3%81%A8%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9)
 
 U1とpre-mRNAのcomplementarityがsplicingにとって必要かどうかなどは幾つかの実験で試す事が出来る
 

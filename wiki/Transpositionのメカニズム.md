@@ -24,18 +24,18 @@ DNAは一般には様々な機構により保護されて不変に保たれる�
 
 ### Homologous Recombinationの復習
 
-Homologous RecombinationはPart 1の[RecombinationalRepair](RecombinationalRepair.md)で詳しく扱ったが、これ少し角度を変えてもう一度見直したい。
+Homologous RecombinationはPart 1の[RecombinationalRepair](RecombinationalRepair)で詳しく扱ったが、これ少し角度を変えてもう一度見直したい。
 
 Homologousとはほとんど同じ配列、という意味。いくつか少し異なる部分はありそれが異なるallelesとなる訳だが、
 ほとんどは同じものと考えられるペア。
 
-Homologous Recombinationは、[RecombinationalRepair](RecombinationalRepair.md)ではdsDNAの損傷の修復機構として見たが、
+Homologous Recombinationは、[RecombinationalRepair](RecombinationalRepair)ではdsDNAの損傷の修復機構として見たが、
 その他にも減数分裂（meiosis）でも行われる。
 
 Homologous RecombinationではDouble Holliday Junctionの解決というのがあって、これにはpatch（ABとabは保たれる）とcross over（aB, Abの組み合わせになる）の２つがあったが、
 減数分裂の遺伝という観点ではこの２つは大きな違いとなる。（cross overの方がgeneのreassortmentが良く起こると表現されていた、reassortment of genesで遺伝子の混ぜ合わせ、とか）
 
-[細胞分裂の復習](細胞分裂の復習.md)も参照のこと。
+[細胞分裂の復習](%E7%B4%B0%E8%83%9E%E5%88%86%E8%A3%82%E3%81%AE%E5%BE%A9%E7%BF%92)も参照のこと。
 
 減数分裂（Meiosis）では、まず通常の細胞分裂と同様にDNAの複製が行われて、
 そのあとInterphaseでHomologous Recombinationが起き、そのあとMetaphaseとAnaphase（合わせてMeiosis I）が起きて、Recombinationが起きたsister chromosomesが分離される。
@@ -193,4 +193,4 @@ retrovirusではこのcDNAがカプセルに入って細胞から出ていくが
 
 ## 次: Transposition関連のAssay達
 
-[Transposition関連のAssay達](Transposition関連のAssay達.md)
+[Transposition関連のAssay達](Transposition%E9%96%A2%E9%80%A3%E3%81%AEAssay%E9%81%94)

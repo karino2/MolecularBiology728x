@@ -1,4 +1,4 @@
-前: [Originを見つける3つのassay](Originを見つける3つのassay.md)
+前: [Originを見つける3つのassay](Origin%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B3%E3%81%A4%E3%81%AEassay)
 
 originと比較すると、replicatorの方が難しい。
 

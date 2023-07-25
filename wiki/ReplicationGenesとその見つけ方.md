@@ -40,7 +40,7 @@ fractionationの手順
 
 これで大雑把な候補は絞れるが、より細かく絞っていくのはキリが無い。
 
-[Assays](Assays.md)
+[Assays](Assays)
 
 ## DNA複製に関わるタンパク質のGenetic screenに求められる事
 
@@ -146,5 +146,5 @@ Specific Activityは以下を参照の事。 [ProteinPurification #Specific Acti
 
 ## E. coliにおける、複製の始動
 
-[複製の始動](複製の始動.md)
+[複製の始動](%E8%A4%87%E8%A3%BD%E3%81%AE%E5%A7%8B%E5%8B%95)
 

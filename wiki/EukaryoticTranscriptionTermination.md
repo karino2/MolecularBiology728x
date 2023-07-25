@@ -1,8 +1,10 @@
-前: [EukaryoticTranscriptionのInitiationとElongation](EukaryoticTranscriptionのInitiationとElongation.md)
+前: [EukaryoticTranscriptionのInitiationとElongation](EukaryoticTranscription%E3%81%AEInitiation%E3%81%A8Elongation)
 
 ## C-terminal Domainのリン酸化によるPost Initiation Eventの制御
 
 C-terminal Domainのリン酸化という視点からPost Initiation Eventの制御を見直す（一部は前のセクションの内容の復習）
+
+RNA Pol IIのC-terminal Domainについては前のセクション[EukaryoticTranscriptionのInitiationとElongation](EukaryoticTranscription%E3%81%AEInitiation%E3%81%A8Elongation)のCTDも参照のこと。
 
 ### Ser 5 Pi
 
@@ -84,7 +86,7 @@ mRNAが切断されると、残りのRNAはcapされてない5'末端を持つ�
 - CTDのSer-2 Piに依存して動員される（Ser-2 Piされてない時はRat1は配置されていない）
 
 このRat 1が高いProcessivityでRNAを分解していく事で、RNA Pol IIのアクティブサイトからRNAを引き出して分解する事になる。
-この[バクテリアにおけるTranscriptionのElongation](バクテリアにおけるTranscriptionのElongation.md)の「Rho-Dependent Termination」と似た仕組みで転写が終了する。
+この[バクテリアにおけるTranscriptionのElongation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranscription%E3%81%AEElongation)の「Rho-Dependent Termination」と似た仕組みで転写が終了する。
 （RNAを引き出すとDNAがreannealingされる事でRNA Pol IIが離れていく）
 
 RNA Pol IIが離れるとどこかのタイミングでCTDのリン酸化が解除される（次回のMediatorの動員のために）。
@@ -132,7 +134,7 @@ FACTはH2A/H2B ヘテロダイマーをヌクレオソームから取り除く�
 なお、このH2A/H2Bが取り除かれて別のものが来るかもしれない事は、多くのHistone ModificationがH3, H4を対象としているのと整合的である。
 転写でH2A/H2Bの修正による情報は失われてしまいやすいので。
 
-なお、[クロマチン、ヒストン、ヌクレオソーム](クロマチン、ヒストン、ヌクレオソーム.md)にあるように、ヒストンは通常Histone Octamerで、2つの H2A/H2B/H3/H4から構成されている。
+なお、[クロマチン、ヒストン、ヌクレオソーム](%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%81%E3%83%B3%E3%80%81%E3%83%92%E3%82%B9%E3%83%88%E3%83%B3%E3%80%81%E3%83%8C%E3%82%AF%E3%83%AC%E3%82%AA%E3%82%BD%E3%83%BC%E3%83%A0)にあるように、ヒストンは通常Histone Octamerで、2つの H2A/H2B/H3/H4から構成されている。
 
 ## RNA Pol IIの転写のRate-Limiting Steps
 
@@ -177,4 +179,4 @@ DNA Binding Domainとあるタンパク質をくっつけて、Activation Domain
 
 ## 次: EukaryoticTranscriptionのDNABindingRegulators
 
-[EukaryoticTranscriptionのDNABindingRegulators](EukaryoticTranscriptionのDNABindingRegulators.md)
+[EukaryoticTranscriptionのDNABindingRegulators](EukaryoticTranscription%E3%81%AEDNABindingRegulators)

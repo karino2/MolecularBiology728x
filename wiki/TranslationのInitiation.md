@@ -1,4 +1,4 @@
-前: [TranslationのElongation](TranslationのElongation.md)
+前: [TranslationのElongation](Translation%E3%81%AEElongation)
 
 - UTR ... UnTranslated Region
 
@@ -57,7 +57,7 @@ RBSには16SのrRNAのCCUCC配列が結合する。
 この位置がPサイトのそばになる。
 Pサイトに配置されてるfMetのtRNAがこのAUGの場所を引き寄せる。
 
-[Translationの基本と登場人物](Translationの基本と登場人物.md)参照。
+[Translationの基本と登場人物](Translation%E3%81%AE%E5%9F%BA%E6%9C%AC%E3%81%A8%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9)参照。
 
 ### 50Sのリクルートと結合の強化
 
@@ -246,4 +246,4 @@ DAP 5はeIF4Gの一部と似た形をしている。eIF4Eと結合する部分�
 
 ## 次: TranslationのTermination
 
-[TranslationのTermination](TranslationのTermination.md)
+[TranslationのTermination](Translation%E3%81%AETermination)

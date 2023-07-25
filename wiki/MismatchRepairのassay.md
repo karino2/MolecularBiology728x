@@ -127,7 +127,7 @@ Methyl directedとほとんど同じだが、片方にmethylatedじゃなくて�
 MMのあるcircularなdsDNAに対してMMR proteinを入れてカットされるかを調べる。
 methyl directedでもnick directedでも出来る。
 
-Indirect end labeling法と同じような事をする。Indirect end labelingは[複製の開始に関わるassay達](複製の開始に関わるassay達.md)を参照。
+Indirect end labeling法と同じような事をする。Indirect end labelingは[複製の開始に関わるassay達](%E8%A4%87%E8%A3%BD%E3%81%AE%E9%96%8B%E5%A7%8B%E3%81%AB%E9%96%A2%E3%82%8F%E3%82%8Bassay%E9%81%94)を参照。
 
 今回は少し状況は簡単で、nickの場所がある程度予想出来る。
 MMの一番近くのMethylatedされている所にnickが入ると思われるので、そこに合わせたprimerをannealすれば良い。

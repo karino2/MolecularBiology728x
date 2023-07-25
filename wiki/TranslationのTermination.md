@@ -1,4 +1,4 @@
-前: [TranslationのInitiation](TranslationのInitiation.md)
+前: [TranslationのInitiation](Translation%E3%81%AEInitiation)
 
 ## Termination
 
@@ -36,7 +36,7 @@ peptide hydrolysisを促進する。この配列を取り除くとこの機能�
 これがRibosomeにアミノ酸では無く水を持ってこさせてペプチドのnucleophileとして使わせる。
 これが形成されたペプチドを加水分解してtRNAから切り離す。
 
-この反応はRibosomeのconservedな配列が関わっているようで、これを変異させると行われなくなる（かつて[TranslationのElongation](TranslationのElongation.md)の「ペプチド結合形成のメカニズム」でpeptidyl transferaseを調べた時に影響がなかった所はここで使われている事が判明）。
+この反応はRibosomeのconservedな配列が関わっているようで、これを変異させると行われなくなる（かつて[TranslationのElongation](Translation%E3%81%AEElongation)の「ペプチド結合形成のメカニズム」でpeptidyl transferaseを調べた時に影響がなかった所はここで使われている事が判明）。
 
 ### バクテリアのTerminationとRibosome Recycling
 
@@ -80,4 +80,4 @@ EukaryoteのmRNAは、片方にeIF4E, G, Aがついていて、反対側の端�
 
 ## 次: TranslationにまつわるAssay達
 
-[TranslationにまつわるAssay達](TranslationにまつわるAssay達.md)
+[TranslationにまつわるAssay達](Translation%E3%81%AB%E3%81%BE%E3%81%A4%E3%82%8F%E3%82%8BAssay%E9%81%94)

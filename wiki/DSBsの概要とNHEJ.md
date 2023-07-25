@@ -19,7 +19,7 @@ DSBsの修復の機構には大きく以下の２つのカテゴリがある
 - non-homologous end joining (NHEJ)
 - recombinational repair
 
-以下ではNHEJについて見ていき、recombinational repairについては[RecombinationalRepair](RecombinationalRepair.md)で見ていく。
+以下ではNHEJについて見ていき、recombinational repairについては[RecombinationalRepair](RecombinationalRepair)で見ていく。
 
 ## double-stranded DNA breaks (DSBs )
 

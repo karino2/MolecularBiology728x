@@ -1,4 +1,4 @@
-前: [EukaryoteのRNAポリメラーゼ](EukaryoteのRNAポリメラーゼ.md)
+前: [EukaryoteのRNAポリメラーゼ](Eukaryote%E3%81%AERNA%E3%83%9D%E3%83%AA%E3%83%A1%E3%83%A9%E3%83%BC%E3%82%BC)
 
 ## RNA Pol IIプロモーターの構造
 
@@ -147,7 +147,7 @@ Open Chromatin Statesの場所を調べたいと思えば、核を持ってき�
 
 ### MNase Seqとの使い分け
 
-DNaseは[endonuclease](endonuclease.md)で、MNaseはendonucleaseかつexonuclease。MNaseの方がヌクレオソームギリギリまでDNAを分解していくので、
+DNaseは[endonuclease](endonuclease)で、MNaseはendonucleaseかつexonuclease。MNaseの方がヌクレオソームギリギリまでDNAを分解していくので、
 ヌクレオソームの位置を調べるのに向いている。一方DNaseはもっと小さなタンパク質 binding siteを調べる事が出来る。
 
 ## Chromosome Conformation Capture (3C)
@@ -234,4 +234,4 @@ ChIA PET: Chromatin Interaction Analysis using Paired End Tag sequencing
 
 ## 次: EukaryoticTranscriptionのInitiationとElongation
 
-[EukaryoticTranscriptionのInitiationとElongation](EukaryoticTranscriptionのInitiationとElongation.md)
+[EukaryoticTranscriptionのInitiationとElongation](EukaryoticTranscription%E3%81%AEInitiation%E3%81%A8Elongation)

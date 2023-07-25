@@ -1,4 +1,4 @@
-前: [バクテリアにおけるTranslationのRegulation](バクテリアにおけるTranslationのRegulation.md)
+前: [バクテリアにおけるTranslationのRegulation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranslation%E3%81%AERegulation)
 
 - akin to〜 〜と同種の
 
@@ -17,7 +17,7 @@ EukaryoticでもgeneによってTEはかなり違いがある。
 
 Translationの制御に関わる所を中心に、Initiationのステップを簡単に見直す。
 
-大きく、以下の4つの段階があるのだった（[TranslationのInitiation](TranslationのInitiation.md)を参照)
+大きく、以下の4つの段階があるのだった（[TranslationのInitiation](Translation%E3%81%AEInitiation)を参照)
 
 - ステップ1: Small SubunitにeIFとMet-tRNAがロードされる（43S Pre Initiation Complexを形成）
 - ステップ2: 43S PICにmRNAが動員される
@@ -171,4 +171,4 @@ GCN2がeIF2をリン酸化するとeIF2BがGEFとして機能できなくなっ�
 
 ## Translation Optimizationについてはバクテリアの方で
 
-動画の並び順としてはここにTranslation Optimizationがあったけれど、内容的にバクテリアなので[バクテリアにおけるTranslationのRegulation](バクテリアにおけるTranslationのRegulation.md)に書く。
+動画の並び順としてはここにTranslation Optimizationがあったけれど、内容的にバクテリアなので[バクテリアにおけるTranslationのRegulation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranslation%E3%81%AERegulation)に書く。

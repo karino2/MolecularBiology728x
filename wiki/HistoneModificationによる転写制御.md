@@ -1,6 +1,6 @@
-前: [EukaryoticTranscriptionとヌクレオソーム](EukaryoticTranscriptionとヌクレオソーム.md)
+前: [EukaryoticTranscriptionとヌクレオソーム](EukaryoticTranscription%E3%81%A8%E3%83%8C%E3%82%AF%E3%83%AC%E3%82%AA%E3%82%BD%E3%83%BC%E3%83%A0)
 
-ヒストンやヌクレオソームについては[クロマチン、ヒストン、ヌクレオソーム](クロマチン、ヒストン、ヌクレオソーム.md)も参照。
+ヒストンやヌクレオソームについては[クロマチン、ヒストン、ヌクレオソーム](%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%81%E3%83%B3%E3%80%81%E3%83%92%E3%82%B9%E3%83%88%E3%83%B3%E3%80%81%E3%83%8C%E3%82%AF%E3%83%AC%E3%82%AA%E3%82%BD%E3%83%BC%E3%83%A0)も参照。
 
 ## Histone Modifying Enzymes
 
@@ -12,7 +12,7 @@ Ubiquitinについては[UbiquitinationとDegradation - CellBiology706x](https:/
 
 小さなものとしては、アセチル基やメチル基などが主でこちらが主流。
 
-これらは多くはヒストンのunstructured N-terminal tailに付加される。（つまりヒストンのN-terminal tailはunstructuredで外に出ている、[クロマチン、ヒストン、ヌクレオソーム](クロマチン、ヒストン、ヌクレオソーム.md)を参照）。（ただし例外的な数ではあるがtailじゃなくてヒストンコアに修正を行う酵素も存在する）
+これらは多くはヒストンのunstructured N-terminal tailに付加される。（つまりヒストンのN-terminal tailはunstructuredで外に出ている、[クロマチン、ヒストン、ヌクレオソーム](%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%81%E3%83%B3%E3%80%81%E3%83%92%E3%82%B9%E3%83%88%E3%83%B3%E3%80%81%E3%83%8C%E3%82%AF%E3%83%AC%E3%82%AA%E3%82%BD%E3%83%BC%E3%83%A0)を参照）。（ただし例外的な数ではあるがtailじゃなくてヒストンコアに修正を行う酵素も存在する）
 
 これらのtailは多くはとても正に荷電されていて、DNAと相互作用している。
 そしてmodificationはこれらのうちのlysinesやargininesを対象にする事が多く、
@@ -102,7 +102,7 @@ HATといっても一種類じゃなくてたくさんの種類のHATがあり�
 先に述べたsmall domainたちは、より大きなタンパク質やタンパク質complexの一部となっている。
 これらのタンパク質が持っている性質が、間接的なHistone Modificationの影響となる。
 
-多くはHATやHDAc、HMTなどや、ヌクレオソーム remodeling complexなど。Nucleosome Remodeling Complexについては[EukaryoticTranscriptionとヌクレオソーム](EukaryoticTranscriptionとヌクレオソーム.md)を参照。
+多くはHATやHDAc、HMTなどや、ヌクレオソーム remodeling complexなど。Nucleosome Remodeling Complexについては[EukaryoticTranscriptionとヌクレオソーム](EukaryoticTranscription%E3%81%A8%E3%83%8C%E3%82%AF%E3%83%AC%E3%82%AA%E3%82%BD%E3%83%BC%E3%83%A0)を参照。
 
 ### HDAcの例
 
@@ -117,7 +117,7 @@ HATといっても一種類じゃなくてたくさんの種類のHATがあり�
 あるHATにはbromodomainがあって、特定のアセチル化を検出するとこのHATがやってきて、周辺のlysine（K）をアセチル化して、
 さらに隣接するヌクレオソームのヒストンまでアセチル化するものがある。
 
-DNAの複製時には、[クロマチン、ヒストン、ヌクレオソーム](クロマチン、ヒストン、ヌクレオソーム.md)でも述べたように、H3/H4 tetramerは半分が元のstrandから来たものが使われるが、この時にたくさんアセチル化されている領域を再現する為に使われるメカニズム。
+DNAの複製時には、[クロマチン、ヒストン、ヌクレオソーム](%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%81%E3%83%B3%E3%80%81%E3%83%92%E3%82%B9%E3%83%88%E3%83%B3%E3%80%81%E3%83%8C%E3%82%AF%E3%83%AC%E3%82%AA%E3%82%BD%E3%83%BC%E3%83%A0)でも述べたように、H3/H4 tetramerは半分が元のstrandから来たものが使われるが、この時にたくさんアセチル化されている領域を再現する為に使われるメカニズム。
 
 ### 転写のactivatorのメカニズムを考える
 
@@ -142,7 +142,7 @@ activatorが皆ヌクレオソームになっている部分に直接結合出�
 これはbromodomainを持っている。
 つまりアセチル化されている場所を認識する。
 
-sigma factorについては[バクテリアのTranscription入門](バクテリアのTranscription入門.md)や[バクテリアにおけるTranscriptionのRegulation](バクテリアにおけるTranscriptionのRegulation.md)を参照。
+sigma factorについては[バクテリアのTranscription入門](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AETranscription%E5%85%A5%E9%96%80)や[バクテリアにおけるTranscriptionのRegulation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranscription%E3%81%AERegulation)を参照。
 
 その他、ヌクレオソーム Remodeling Complexもbromodomainやchromodomainを持つものがある。
 
@@ -161,7 +161,7 @@ sigma factorについては[バクテリアのTranscription入門](バクテリ�
 
 ## ヌクレオソームの位置
 
-TSSの手前にはヌクレオソームフリーな領域がある、という話だった。の[EukaryoticTranscriptionとヌクレオソーム](EukaryoticTranscriptionとヌクレオソーム.md)の「MNase-seqとヌクレオソームとTSS」を参照。
+TSSの手前にはヌクレオソームフリーな領域がある、という話だった。の[EukaryoticTranscriptionとヌクレオソーム](EukaryoticTranscription%E3%81%A8%E3%83%8C%E3%82%AF%E3%83%AC%E3%82%AA%E3%82%BD%E3%83%BC%E3%83%A0)の「MNase-seqとヌクレオソームとTSS」を参照。
 
 ### ヌクレオソームはどこに配置されるか？
 
@@ -199,7 +199,7 @@ DNA Bound Proteinはヌクレオソームと結合しているDNAの領域には
 ### Histone Modifying EnzymesのAssay
 
 特定のModificationを検出する抗体を作り出して調べる。
-抗体があればChIPなりChIP-Seqなり出来て、抗体の結合した場所がわかる。[Assays](Assays.md)
+抗体があればChIPなりChIP-Seqなり出来て、抗体の結合した場所がわかる。[Assays](Assays)
 
 全modificationを知る事だけではあまり意味は無く、
 InducerなりTranscription Factorなりをオン-オフした時にmodificationがどう変わるかを調べるのが普通。
@@ -210,7 +210,7 @@ InducerなりTranscription Factorなりをオン-オフした時にmodification�
 
 - circadian ... 24時間周期の。circadian rhythmで日内リズムとか概日リズム。
 
-これはすでに見た、MNase-seqで調べる事が出来る。＞[EukaryoticTranscriptionとヌクレオソーム](EukaryoticTranscriptionとヌクレオソーム.md)
+これはすでに見た、MNase-seqで調べる事が出来る。＞[EukaryoticTranscriptionとヌクレオソーム](EukaryoticTranscription%E3%81%A8%E3%83%8C%E3%82%AF%E3%83%AC%E3%82%AA%E3%82%BD%E3%83%BC%E3%83%A0)
 
 これもHistone Modifying Enzymesの時と同様に、inducerやactivatorを加える前と後を調べて差分を見る。
 

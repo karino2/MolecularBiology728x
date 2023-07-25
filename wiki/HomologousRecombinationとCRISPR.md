@@ -7,7 +7,7 @@
 
 ## Homologous Recombination概要
 
-Homologous Recombination自体はPart 1の[RecombinationalRepair](RecombinationalRepair.md)でもやった。内容的にかぶる所もあるので向こうも参照の事。
+Homologous Recombination自体はPart 1の[RecombinationalRepair](RecombinationalRepair)でもやった。内容的にかぶる所もあるので向こうも参照の事。
 
 Homologous Recombinationには大きく２つの役割がある
 
@@ -48,7 +48,7 @@ Spo11というタンパク質がある。
 
 ### バクテリアとEukaryotesの比較
 
-バクテリアについては[RecombinationalRepair](RecombinationalRepair.md)で見た。ここでは対応するタンパク質のEukaryotesのものを見てみよう。
+バクテリアについては[RecombinationalRepair](RecombinationalRepair)で見た。ここでは対応するタンパク質のEukaryotesのものを見てみよう。
 
 |  | E. coli | eukaryote |
 | ---- | ---- | ---- |
@@ -67,7 +67,7 @@ EukaryotesのHolliday junction resolutionでは、どちらのタンパク質が
 
 ## 細胞分裂の復習
 
-[細胞分裂の復習](細胞分裂の復習.md)
+[細胞分裂の復習](%E7%B4%B0%E8%83%9E%E5%88%86%E8%A3%82%E3%81%AE%E5%BE%A9%E7%BF%92)
 
 ## Meiotic Recombination
 
@@ -252,7 +252,7 @@ guide RNAがターゲットのシーケンスと一致する。tracr RNAとguide
 ### CRISPR/Cas9 の用途
 
 最初は、単にカットを入れる目的で使われていた。
-そうするとNHEJで修正されるので（[DSBsの概要とNHEJ](DSBsの概要とNHEJ.md)参照）、いくつかのntが削除される事になる。
+そうするとNHEJで修正されるので（[DSBsの概要とNHEJ](DSBs%E3%81%AE%E6%A6%82%E8%A6%81%E3%81%A8NHEJ)参照）、いくつかのntが削除される事になる。
 coding exonをターゲットにすれば、ここより下流はtruncation mutationされる事になる。
 
 よりコントロールされたmutationを目指して、二箇所のカットを入れる事で間の領域をまるまる削除するという事も行われていた。

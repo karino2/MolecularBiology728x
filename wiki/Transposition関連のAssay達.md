@@ -1,4 +1,4 @@
-前: [Transpositionのメカニズム](Transpositionのメカニズム.md)
+前: [Transpositionのメカニズム](Transposition%E3%81%AE%E3%83%A1%E3%82%AB%E3%83%8B%E3%82%BA%E3%83%A0)
 
 - variegate まだらにする、縞模様にする
 

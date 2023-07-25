@@ -14,7 +14,7 @@ E.coliは`5*10^6 bp`で出来ている。1000個体に一つ程度のミス。E.
 
 人間のゲノムは`3*10^9 bp`。3回の細胞分裂で一回ミスする。細胞一つに1mのDNAが入っている。体全体で90 millionマイルで太陽に届き、一生で光年のオーダーになる。
 
-[ゲノムのオーダー](ゲノムのオーダー.md)
+[ゲノムのオーダー](%E3%82%B2%E3%83%8E%E3%83%A0%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%80%E3%83%BC)
 
 ### 化学的な側面
 
@@ -134,7 +134,7 @@ tautomer formationのせいで起こる。
 ### ExonucleaseとProofreading Exonuclease
 
 - ExonucleaseはDNAの片端からdegrade（分解）する
-    - 制限酵素である[endonuclease](endonuclease.md)がDNAの途中の部分をカットするのに対し、exonucleaseはDNAの端をカットする
+    - 制限酵素である[endonuclease](endonuclease)がDNAの途中の部分をカットするのに対し、exonucleaseはDNAの端をカットする
 - Proofreading exonucleaseは3'ー＞5'の方向に機能する
 
 通常このexonucleaseはポリメラーゼと同じポリペプチド内に存在する
@@ -153,6 +153,6 @@ tautomer formationのせいで起こる。
 proofreadingにより、だいたい100倍くらいのオーダーで正確になる＞ `10^7bp`に一回程度の誤りになる
 
 残りの`10^3`は別の修正機構で達成されている。
-[ゲノムのオーダー](ゲノムのオーダー.md)も参照。
+[ゲノムのオーダー](%E3%82%B2%E3%83%8E%E3%83%A0%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%80%E3%83%BC)も参照。
 
 このproofreadingは端にしか機能しないので、ひとたび誤った状態で合成が進んでしまうと、もうこのproofreadingは機能せず合成が進んでしまう。

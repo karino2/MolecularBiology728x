@@ -1,6 +1,6 @@
 ## ProkaryoticとEukaryoticの複製フォークの比較
 
-[DNAポリメラーゼの種類とトロンボーンモデル](DNAポリメラーゼの種類とトロンボーンモデル.md)では主にE. coliの仕組みを見てきた。
+[DNAポリメラーゼの種類とトロンボーンモデル](DNA%E3%83%9D%E3%83%AA%E3%83%A1%E3%83%A9%E3%83%BC%E3%82%BC%E3%81%AE%E7%A8%AE%E9%A1%9E%E3%81%A8%E3%83%88%E3%83%AD%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%B3%E3%83%A2%E3%83%87%E3%83%AB)では主にE. coliの仕組みを見てきた。
 ここではEukaryoticとの比較をする。
 
 | |  バクテリア(E. coli) | Eukariotic (イースト菌) |
@@ -43,7 +43,7 @@ Originは複製の開始位置であって、Replicatorはプロモーターに�
 
 ## 細胞分裂
 
-[細胞分裂の復習](細胞分裂の復習.md)
+[細胞分裂の復習](%E7%B4%B0%E8%83%9E%E5%88%86%E8%A3%82%E3%81%AE%E5%BE%A9%E7%BF%92)
 
 ## 様々な生物のOriginの比較
 
@@ -66,9 +66,9 @@ S-phaseの初期にinitiateされるorigin、中期にinitiateされるorigin、
 
 ## Originを見つける3つのassay
 
-[Originを見つける3つのassay](Originを見つける3つのassay.md)
+[Originを見つける3つのassay](Origin%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B3%E3%81%A4%E3%81%AEassay)
 
 ## Replicator Mapping
 
-[ReplicatorMapping](ReplicatorMapping.md)
+[ReplicatorMapping](ReplicatorMapping)
 

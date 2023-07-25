@@ -1,4 +1,4 @@
-前: [Translationの量を調べるAssay達](Translationの量を調べるAssay達.md)
+前: [Translationの量を調べるAssay達](Translation%E3%81%AE%E9%87%8F%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8BAssay%E9%81%94)
 
 - steric 立体の
 - conniption fit ヒステリー発作
@@ -25,7 +25,7 @@ mRNAを特定の場所に向けるとともに、その場所にactivatorを集�
 
 ## バクテリアのInitiationステップの復習
 
-[TranslationのInitiation](TranslationのInitiation.md)でみた内容のうち、制御という側面から重要になる点を視野に入れて簡単に30S Initiation Complexの形成のステップを見直す。
+[TranslationのInitiation](Translation%E3%81%AEInitiation)でみた内容のうち、制御という側面から重要になる点を視野に入れて簡単に30S Initiation Complexの形成のステップを見直す。
 
 1. IF3が30S（RibosomeのSmall Subunit）と結合
 2. IF1が30Sと結合
@@ -137,7 +137,7 @@ GGU : GGC : GGA : GGG = 0.34 : 0.40 : 0.11 : 0.15
 
 の頻度で見られる（比は合計すると1になるようにしている）。
 
-Wobble PairとしてはGGUとGGCは同じ（Wobble Pairについては[Translationの基本と登場人物](Translationの基本と登場人物.md)を参照）で、
+Wobble PairとしてはGGUとGGCは同じ（Wobble Pairについては[Translationの基本と登場人物](Translation%E3%81%AE%E5%9F%BA%E6%9C%AC%E3%81%A8%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9)を参照）で、
 GGAとGGGが同じアンチコドンとなっているので、それらでまとめてみると75% : 25%くらいの比率になっている。
 
 さらにそれぞれのtRNAの豊富さを調べてみると、この比率になっている。
@@ -156,4 +156,4 @@ GGAとGGGが同じアンチコドンとなっているので、それらでま�
 
 ## 次: EukaryoticTranslationalRegulation
 
-[EukaryoticTranslationalRegulation](EukaryoticTranslationalRegulation.md)
+[EukaryoticTranslationalRegulation](EukaryoticTranslationalRegulation)
