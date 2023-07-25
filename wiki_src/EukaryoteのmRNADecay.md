@@ -107,11 +107,11 @@ poly-A tailはどのmRNAでも共通に存在するので通常のPCRよりspeci
 
 Decappingするenzymeも二種類ある。
 
-1. DCP1-DCP2 ... full-lengthもmRNAに作用する
+1. DCP1-DCP2 ... full-lengthもmRNAに作用する。ディキャップ-1 ディキャップ-2と読んでいた。
 2. DCPS ... scavenging decapping enzyme。capのついているoligoにだけ作用する。exosomeなどが分解した残りなどを担当。
 
 
-### PABPとDecapping
+### DeadenylationがDecappingのenzymeを動員するメカニズム
 
 ここまでDeadenylationがdecappingを始めると言ってきたが、そのメカニズムを。
 Decappingが始まる前のmRNAは典型的には以下のような状態になっている。
@@ -119,3 +119,29 @@ Decappingが始まる前のmRNAは典型的には以下のような状態にな�
 [34ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=33)
 
 ここで 4E, 4G, 4Aについては[[TranslationのInitiation]]のEukaryotic Initiationを参照の事。そこからリンクしてある[ノート10ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=9)も参照。
+
+活発にtranslateされているmRNAでは、普通は4E, 4Gなどはついたままになっている。
+4Eはcap binding proteinだった。
+
+そして通常のmRNAのpoly-A tailのPABPはEIF4Gと結合して輪っかを形成しているのだった。
+
+ここでDeadenylatioが起こるとPABPが結合できなくなってreleaseされ、そうするとこのEIF4Gとの結合も無くなる。
+また、PABPが無くなると動員されるタンパク質がある。
+これらのタンパク質は生物種によって名前が違うが、とりあえずイースト菌の名前で以下説明する。
+
+poly-A tailが短くなると、Pat1, Lsm1-7, Dhh1と呼ばれるタンパク質がmRNAの3'側に結合する。
+Pat1に関しては、PABPが存在しないという事では無く、poly-A tailが短い、というのを識別して結合している模様。
+他のタンパク質はまだ良くわかってない。
+
+これらのタンパク質はtranslationの開始を抑制する（48S PICの動員を抑制する）。
+その結果4Eや4GがmRNAからリリースされやすくなる。
+
+4Eや4Gが外れると、これら（Pat1など）がdecapping enzyme(DCP1-DCP2など）を動員する。
+これがdecappingを行う。
+
+### Translateの頻度とDecappingの頻度
+
+Translateが頻繁に行われていると4E, 4Gが離れにくくなり、translateが減ると4E, 4Gが離れやすくなる。
+
+- Translateが増加 ... 4E, 4Gが安定して結合、decappingが減少
+- Translateが減少 ... 4E, 4Gが離れやすくなり、decappingが増加
