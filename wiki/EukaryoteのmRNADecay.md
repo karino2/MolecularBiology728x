@@ -163,3 +163,24 @@ rRNAやtRNAはとてもstableで長生きな事が知られている。
 一方で変異させた18Sだと随分と薄くなる。（半減期は96 min）
 
 つまり、リボソームとして機能しているか機能していないかでdegradeされるかどうかが決まっている模様。
+
+### 核（および核小体）でのrRNAのdegradation
+
+核（nucleus）には仁とか核小体とか言われる部分（nucleolus）があり、ここでリボソームの組み立てが行われている。
+これはrRNAをエンコードしているDNAのそばに配置されて、このDNAは幾つものコピーが比較的狭い領域に集まっている。
+
+このrRNAをリボソームに組み立てるところで機能しているかが判別されて、機能してない時はdegradeされている模様。
+
+核小体の中でリボソームを組み立てる時に、misfoldedだったり機能してなかったりした場合はcytoplasmに放出される前にdegradeされる。
+TRAMPと呼ばれるタンパク質複合体の中にpoly-A polymeraseがあり、これが3'末端にpoly-A tailを付加してRNA exosomeがdegradeするようになる。
+
+だが、このチェックをすり抜けるとcytosplasmに放出されてしまう。上記の18Sの変異のようにすごく小さいものだと核小体の中では判明せずに細胞質に放出されてしまう。
+
+### 細胞質でのrRNAのdegradation
+
+cytoplasmに放出されてしまった機能しないrRNAをdegradeするメカニズムがある。
+
+1. ribosomal proteinのubiquitinylationと、その後のproteasomeによる分解が起きる
+2. foldしていたproteinが無くなる結果、rRNAがunfoldされる
+3. unfoldされるとどうにかしてRNA exosomeにdegradeされる（何がタグになっているかは良くわかってない）
+
