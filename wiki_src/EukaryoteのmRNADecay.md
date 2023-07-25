@@ -13,9 +13,13 @@ mRNAがすぐに分解されないのは、5'末端と3'末端それぞれに仕
 5' capは[[EukaryoticTranscriptionTermination]]の「C-terminal Domainのリン酸化」に少し登場していた。
 これら２つがdegradationのenzymeをブロックする。
 
+クイズではm7Gppp capとも書かれていた。
+
 ### Eukaryoteのdecay概要
 
 バクテリアとの違いに着目して簡単に概要を見る。
+
+[32ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=31)
 
 1. deadenylaseによるpoly-A tailの除去（150〜200程度のAが12未満とかに）
 2. 5'側cappingのdecappingが起こる
@@ -39,6 +43,8 @@ decappingで5'側から分解するケースでも必ずその前にdeadenylatio
 このステップでpoly-A binding protein（頭文字でPABPとも呼ばれる）が全てリリースされるのが重要。
 PABPのリリースがdecapping をアクティベートする。
 
+PABPの存在がこのステップを遅くして、これがdegradationのrate limiting stepとして分解の速度を調整する。
+
 ### ステップ2: 5'のdecapping
 
 PABPがリリースが5' capのdecappingをstimulateする。
@@ -50,9 +56,25 @@ PABPがリリースが5' capのdecappingをstimulateする。
 
 uncapな5'側からは、Xrn 5' to 3' exoが分解していく。これは単独のタンパク質。（あとでXrn1と言っているが種類があるのか同じものなのか）
 
-### どう抑制されているかの関係
+### どう抑制されているかの関係（保護のメカニズム）
 
 PABPがexosomeをinhibitする。またsecondary structureもinhibitする。
 
 5' cappingがXrn1をinhibitする。
 
+## Eukaryotic Deadenylases
+
+最初のステップとなるdeadenylationを行う酵素を見ていく。
+Eukaryoteには複数のDeadenylaseがある。
+抑制や活性されるメカニズムに違いがある。
+
+- CCR4-Not ... PABPによって抑制される
+- Pan2-Pan3 ... PABPによってstimulateされる（constitutive turnover rateを決定）
+- PARN ... PABPによって抑制されるが、5' capによってstimulateされる
+
+constitutiveとはいつも起こっているという意味で、なにかの刺激が無くとも発生している通常のなにかを表すらしい。
+
+CCR4-Notは動員されて使われる類のenzymeで、micro RNAsなどに使われたりする。
+残り２つはいつも偏在している類のenzyme（constitutive）。
+
+これらのenzymeが、RNA binding proteinによって動員されて使われる事もある。
