@@ -145,3 +145,21 @@ Translateが頻繁に行われていると4E, 4Gが離れにくくなり、trans
 
 - Translateが増加 ... 4E, 4Gが安定して結合、decappingが減少
 - Translateが減少 ... 4E, 4Gが離れやすくなり、decappingが増加
+
+## stableなRNAのdecay
+
+このWikiName的にはmRNAとなっているが、ついでにmRNA以外のRNAについても最後に簡単に触れておく。
+rRNAやtRNAはとてもstableで長生きな事が知られている。
+
+### リボソームの寿命を調べる実験
+
+通常のリボソームの18Sと、それを変異させた1492 mutant 18Sを比較する。
+
+18SがtRNAとbase pairする時のminor grooveと水素結合するのがこの1492と1493のAらしいので、
+1492を変異させるとこの18Sを含んだリボソームはリボソームとして機能しなくなる。
+
+両者をラベルづけして時間とともにnorthern blotすると、wile typeでは4.5時間程度のtime pointでは全く変化が無い。（半減期は計測不能）
+
+一方で変異させた18Sだと随分と薄くなる。（半減期は96 min）
+
+つまり、リボソームとして機能しているか機能していないかでdegradeされるかどうかが決まっている模様。
