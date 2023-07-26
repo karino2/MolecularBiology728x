@@ -83,7 +83,7 @@ DNAの損傷には以下の２種類があり、
 ### Unit: Bacterial Mechanism of Transcription
 
 - [バクテリアにおけるTranscriptionのInitiation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranscription%E3%81%AEInitiation)
-- [バクテリアにおけるTranscriptionのElongation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranscription%E3%81%AEElongation)
+- [バクテリアにおけるTranscriptionのElongation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranscription%E3%81%AEElongation) Terminationもここに入っている
 - [バクテリアにおけるTranscriptionのRegulation](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BTranscription%E3%81%AERegulation)
 - [BiologicalReactionsとRates](BiologicalReactions%E3%81%A8Rates)
 
@@ -162,3 +162,7 @@ DNAの損傷には以下の２種類があり、
 - [RNATurnover入門](RNATurnover%E5%85%A5%E9%96%80)
 - [バクテリアのmRNADecay](%E3%83%90%E3%82%AF%E3%83%86%E3%83%AA%E3%82%A2%E3%81%AEmRNADecay)
 - [EukaryoteのmRNADecay](Eukaryote%E3%81%AEmRNADecay)
+
+### Unit: RNA Turnover II
+
+- [その他のRNADecay](%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AERNADecay)

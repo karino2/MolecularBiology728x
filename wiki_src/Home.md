@@ -83,7 +83,7 @@ DNAの損傷には以下の２種類があり、
 ### Unit: Bacterial Mechanism of Transcription
 
 - [[バクテリアにおけるTranscriptionのInitiation]]
-- [[バクテリアにおけるTranscriptionのElongation]]
+- [[バクテリアにおけるTranscriptionのElongation]] Terminationもここに入っている
 - [[バクテリアにおけるTranscriptionのRegulation]]
 - [[BiologicalReactionsとRates]]
 
@@ -162,3 +162,7 @@ DNAの損傷には以下の２種類があり、
 - [[RNATurnover入門]]
 - [[バクテリアのmRNADecay]]
 - [[EukaryoteのmRNADecay]]
+
+### Unit: RNA Turnover II
+
+- [[その他のRNADecay]]
