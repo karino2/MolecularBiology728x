@@ -79,7 +79,7 @@ CCR4-Notは動員されて使われる類のenzymeで、micro RNAsなどに使�
 
 これらのenzymeが、RNA binding proteinによって動員されて使われる事もある。
 
-## poly-A tailの長さの計測
+## poly-A tailの長さの計測（G-tailing）
 
 poly-A tailのdeadenylationが重要なステップである事を学んだので、その長さを計測したい、となる。
 そのための手順は以下のようになる。
@@ -151,6 +151,8 @@ Translateが頻繁に行われていると4E, 4Gが離れにくくなり、trans
 このWikiName的にはmRNAとなっているが、ついでにmRNA以外のRNAについても最後に簡単に触れておく。
 rRNAやtRNAはとてもstableで長生きな事が知られている。
 
+クイズによるとバクテリアも似たような仕組みっぽい？
+
 ### リボソームの寿命を調べる実験
 
 通常のリボソームの18Sと、それを変異させた1492 mutant 18Sを比較する。
@@ -184,3 +186,11 @@ cytoplasmに放出されてしまった機能しないrRNAをdegradeするメカ
 2. foldしていたproteinが無くなる結果、rRNAがunfoldされる
 3. unfoldされるとどうにかしてRNA exosomeにdegradeされる（何がタグになっているかは良くわかってない）
 
+### tRNAのDecay
+
+tRNAもTRAMP complexが関わる。
+TRAMP complexの中のTrf4と呼ばれるタンパク質が、tRNAが「正しくmodifyされていない」と判定すると、polyadenylationする。（Aをたくさんくっつける）
+
+するとexosomeが分解する。
+
+正しいmodifyとはpseudouridinylationとかdihydroxy unidinylationとかのtRNAに必要なmodificationの事。

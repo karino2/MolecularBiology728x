@@ -79,7 +79,7 @@ Basal Levelではなく、あるmRNAのTranslationをどうinhibitしたりす�
 
 これはPolar Effectと呼ばれる。upstreamのgeneがturn offされると、downstreamのgeneもturn offされるから。
 
-### Polar Effectを用いたRibosomal Proteinsの制御の例
+### Polar Effectを用いたRibosomal Proteinsの制御の例（1と2の複合したケース）
 
 Ribosomal Proteinsは、rRNAと合わせてリボソームを形成するものだが、
 rRNAがなければこのタンパク質をTranslateするのは無駄である。
