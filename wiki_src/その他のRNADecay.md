@@ -224,8 +224,33 @@ suppressor tRNAはストップコドンとマッチしてなにかのアミノ�
 ### NMDのメカニズム
 
 1. mRNAのPTCをどう認識するか？
+    - terminationのsiteが3'-UTRから遠いとterminationが遅くなるので、正常なものと区別出来る
 
-termination siteではリボソームのAサイトにeRF1とeRF3が
+termination siteではリボソームのAサイトにeRF1とeRF3があるのだった。
 [[TranslationのTermination]]のEukaryoteを参照。
 
-どうも、リボソームがtermination siteに来た時に、
+[36ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=35)
+
+このeRF3がどうにかしてpoly-A binding proteinとの距離を認識出来るらしい。
+メカニズムは良くわからないがpoly-A binding proteinを無くすとterminationが起こりにくくなるのは確か。
+
+だからtermination siteがpoly-A tailと正常な距離であれば普通にterminationされ、この距離が異常に長ければterminationはとても遅くなる。
+
+なお、mRNAは以前も書いたように（[34ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=33)）
+円環になっているので、すごくupstreamでもpoly-A tailには近くなる。
+そしてuORFなどでstop codonがすごくupstream側にある場合も、terminationは通常の速さで行われる。
+だからpoly-A tailとの距離だけが重要でどちら側かは重要では無さそう。
+
+そしてtemrinationがゆっくりになっている間に、UPF1がeRF3と結合し、このUPF1がさらにSMG1と結合する。
+これがさらにUPF2, UPF3との結合を促進し、これらが結合した状態になり、それがexon junction complexと結合する。
+この状態をDECID complexと呼ぶらしい。
+
+なお、その前の段階でEJCとUPF2, UPF3が結合しているというモデルが考えられていて、これはSURF complexと呼ばれるらしい。
+つまりSURF complexがUPF1側と結合するとDECID complexとなる。
+
+脊椎動物ではこのEJCを使ったメカニズムが使われている。ハエとかイースト菌では無視されているらしい。
+
+ハエとかイースト菌では3' UTRモデルと言われる違うモデルが提唱されていて、
+これはtermination siteからpoly A tailまでの間にUPF1が並んでいて、terminationがされないリボソームのeRF3と相互作用して、
+この状態がstabilizeされる。
+こうしてPTCが識別される。
