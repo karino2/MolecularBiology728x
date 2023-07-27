@@ -220,3 +220,12 @@ suppressor tRNAはストップコドンとマッチしてなにかのアミノ�
 そのmRNAはNMDされた。
 
 なお、UPF2やUPF3でも同じ結果となった。
+
+### NMDのメカニズム
+
+1. mRNAのPTCをどう認識するか？
+
+termination siteではリボソームのAサイトにeRF1とeRF3が
+[[TranslationのTermination]]のEukaryoteを参照。
+
+どうも、リボソームがtermination siteに来た時に、
