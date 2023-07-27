@@ -126,7 +126,7 @@ Trpの豊富さによってこの形状が変わる事で、terminationの条件
 
 このメカニズムは転写の途中で翻訳が始まっていないと機能しない。（ケースCになるのでterminateされてしまう）
 
-実際、cycloheximideがあるところでこの実験をやるとこの状態になって全くtrpオペロンが転写されない。
+実際、cyclohexamideがあるところでこの実験をやるとこの状態になって全くtrpオペロンが転写されない。
 
 これを防ぐために、どうも図中のリージョン2に、RNA Polのポーズサイトがあって、そこでRNA Polが止まるっぽい。
 そして翻訳が進む事でRNAをひっぱる事でRNAの転写が進む、みたいな事が置きている模様（ただし良く化学的なメカニズムはわかってない）。
@@ -152,11 +152,71 @@ NMDが一番良く理解されている。NSDとNGDの区別は当初思って�
 
 ## Nonsense-Mediated Decay
 
-まずは一番良く理解されているNonsense-Mediated Decayから。
+まずは一番良く理解されているNonsense-Mediated Decayから。略称NMD。
 
 ### Nonsense-Mediated Decayの発見の歴史
 
 最初に発見された現象は、beta thalassemiaという遺伝病の研究をしている時だった。
 βグロビンが無いという病気。
 
+遺伝子に変異があると、βグロビンのタンパク質が生成されないのは当然として、なぜかmRNAまで生成されなくなる、という事を発見した。
+point mutationな事は突き止めたので、なぜpoint mutationがmRNA自体をなくしてしまうのかは謎だった。（70年代）
 
+そのあとゲノムのシーケンスが出来るようになって、wild typeがCAGのところで、UAGやUAAになる変異の時にはmRNAレベルが大きく下がるという事を発見した。（80年代）
+なお、GAGへの変異ではそうした事は起こらない。
+
+つまりwile typeとは違うところにstop codonが生まれるとmRNAレベルが下がる模様。
+
+次に判明したのは、これは翻訳に依存している、という事。
+cyclohexamideを入れると、premature termination codon(PTC)が含まれている変異でもmRNAレベルは通常通りになる、という事が見つかる。（90年代）
+
+その後に判明したのは、PTCがintronとの相対的な位置関係に意味がある、という事。
+多くのケースで最後のintronは3' UTR側には無くて、最後はexonで終わっていて、この最後のexonのどこかにストップコドンがある（coding regionが最後のexonに掛かる）。
+PTCは最後のintronより手前にあるかどうかで判定されているようだ、と判明。（90年代）
+
+さらに最後のintronをカットすると、PTCがmature mRNAの中では同じ位置になってもmRNAが安定するようになる。
+さらにPTCがintronのexon側の端（splice junction）の55 ntよりexonに近いとNMDは起こらない事も発見される。
+
+真核生物なので、splicingは核の中で起こるのに翻訳は細胞質で起こる。つまり、、、どういう事なのだろう？となった。
+
+そしてexon junction complex（EJC）というタンパク質（RNP）が発見される。これらはsplicingの時に使われて、
+終わった後にexon junctionに残ったままになる。
+
+これの発見の実験は正直良く分からなかったが、説明を書いておく。
+
+まずpremature mRNAのintronのupstream側 splice junctionにphotoreactive crosslinkerを、downstream側のsplice junctionにradioactive PO4をつける。
+そしてintronが無いexon1-exon2の配列のmRNAにも同じように両者をつける。
+
+これらを入れたcell extractにsplicingを許したりしてSDS PAGEでタンパク質を測ると、spliceしたmRNAだけはタンパク質が複数見つかり、
+spliceしてないpremature mRNAやexon1-exon2配列を直接作ったものにはタンパク質はついていなかった。
+
+直接作ったものにbindしないのだから配列依存で結合するタンパク質という訳では無さそう。
+
+そのあといろいろな実験で、exon-exon junctionの25nt upstreamにこれらのタンパク質が結合している事がわかった。
+
+クイズで、exon1, 2, 3があった時に、exon1のjunctionから55nt以内にPTCがあってもNMDされないらしい。exon2-exon3の間のEJCは残るのでは？
+
+以上から、EJCは翻訳されるとmRNAから取り除かれるので、これの有無で判定されているのでは、と予想される。
+
+次にイースト菌のgenetic screeningでUPF1, UPF2, UPF3と呼ばれるタンパク質が発見された。
+これはhistidine合成のgeneにPTCを追加したりして実験された。
+
+suppressor tRNAを追加して実験を行った。
+suppressor tRNAはストップコドンとマッチしてなにかのアミノ酸を運ぶtRNA。
+
+以上を使って、以下のような設定を作った
+
+- 通常の状態ではNMDが起きてhistidineの無い環境では生きれない
+- NMDをなくせば、histidineの無い環境でも生きられる
+
+この結果、NMDのためにはUPF1, UPF2, UPF3が必要だという事を突き止めた。
+
+そのあと、C. elegans（線虫）ではSMG1〜SMG9というタンパク質が同じような役割をしていると突き止めた。
+さらに研究が進み、SMG2〜4がUPF1〜3に対応している事が判明。
+
+さらに、このUPF1〜3はいろんな真核生物で見られる（highly conserved）な事が分かる。
+
+そこでUPF1に適当なbinding domainをくっつけて、そこらへんのmRNAに結合させる実験を行ったところ、
+そのmRNAはNMDされた。
+
+なお、UPF2やUPF3でも同じ結果となった。
