@@ -1,13 +1,66 @@
-これまで通常のケースは以下で見てきた。
+これまで通常のmRNAのケースは以下で見てきた。
 
 - [[バクテリアのmRNADecay]]
 - [[EukaryoteのmRNADecay]]
 
 ここではその他の特殊だったり雑多なケースをいろいろ見ていく。
 
+## stableなRNAのdecay
+
+（これは前のUnitの最後だったが、おさまり的にこちらの方がいいと思うのでこちらに入れた）
+
+これまではmRNAを見てきたが、次にrRNAとtRNAについても簡単に見ていく。
+rRNAやtRNAはとてもstableで長生きな事が知られている。
+
+クイズによるとバクテリアも似たような仕組みっぽい？
+
+### リボソームの寿命を調べる実験
+
+通常のリボソームの18Sと、それを変異させた1492 mutant 18Sを比較する。
+
+18SがtRNAとbase pairする時のminor grooveと水素結合するのがこの1492と1493のAらしいので、
+1492を変異させるとこの18Sを含んだリボソームはリボソームとして機能しなくなる。
+
+両者をラベルづけして時間とともにnorthern blotすると、wile typeでは4.5時間程度のtime pointでは全く変化が無い。（半減期は計測不能）
+
+一方で変異させた18Sだと随分と薄くなる。（半減期は96 min）
+
+つまり、リボソームとして機能しているか機能していないかでdegradeされるかどうかが決まっている模様。
+
+### 核（および核小体）でのrRNAのdegradation
+
+核（nucleus）には仁とか核小体とか言われる部分（nucleolus）があり、ここでリボソームの組み立てが行われている。
+これはrRNAをエンコードしているDNAのそばに配置されて、このDNAは幾つものコピーが比較的狭い領域に集まっている。
+
+このrRNAをリボソームに組み立てるところで機能しているかが判別されて、機能してない時はdegradeされている模様。
+
+核小体の中でリボソームを組み立てる時に、misfoldedだったり機能してなかったりした場合はcytoplasmに放出される前にdegradeされる。
+TRAMPと呼ばれるタンパク質複合体の中にpoly-A polymeraseがあり、これが3'末端にpoly-A tailを付加してRNA exosomeがdegradeするようになる。
+
+だが、このチェックをすり抜けるとcytosplasmに放出されてしまう。上記の18Sの変異のようにすごく小さいものだと核小体の中では判明せずに細胞質に放出されてしまう。
+
+### 細胞質でのrRNAのdegradation
+
+cytoplasmに放出されてしまった機能しないrRNAをdegradeするメカニズムがある。
+
+1. ribosomal proteinのubiquitinylationと、その後のproteasomeによる分解が起きる
+2. foldしていたproteinが無くなる結果、rRNAがunfoldされる
+3. unfoldされるとどうにかしてRNA exosomeにdegradeされる（何がタグになっているかは良くわかってない）
+
+### tRNAのDecay
+
+tRNAもTRAMP complexが関わる。
+TRAMP complexの中のTrf4と呼ばれるタンパク質が、tRNAが「正しくmodifyされていない」と判定すると、polyadenylationする。（Aをたくさんくっつける）
+
+するとexosomeが分解する。
+
+正しいmodifyとはpseudouridinylationとかdihydroxy unidinylationとかのtRNAに必要なmodificationの事。
+
 ## Ribosomeを検出器として使う例
 
-[[バクテリアにおけるTranslationのRegulation]]でoperonの後ろのsecondary structureをリボソームが解除する例や、
+翻訳と転写が絡み合って制御が行われる例がある。ここではそうした例のうち、Ribosomeを検出器として使うような例を見ていく。
+
+これまでも、[[バクテリアにおけるTranslationのRegulation]]でoperonの後ろのsecondary structureをリボソームが解除する例や、
 [[EukaryoticTranslationalRegulation]]のGCN4の例などで、AAがどれだけ豊富にあるかを検出するケースを見た。
 
 ここではtranscriptional attenuationと呼ばれるケースを見る。これはバクテリアだけで見られる現象。
