@@ -130,3 +130,33 @@ Trpの豊富さによってこの形状が変わる事で、terminationの条件
 
 これを防ぐために、どうも図中のリージョン2に、RNA Polのポーズサイトがあって、そこでRNA Polが止まるっぽい。
 そして翻訳が進む事でRNAをひっぱる事でRNAの転写が進む、みたいな事が置きている模様（ただし良く化学的なメカニズムはわかってない）。
+
+## 翻訳によるmRNAサーベイランス
+
+翻訳に関わるメカニズムで、mRNAの異常を検知してdegradeする仕組みがある。
+
+| mRNAサーベイランスのメカニズム | 検出されるmRNAの欠陥 |
+| ---- | ---- |
+| nonsense-mediated decay (NMD) | premature termination codon(PTC) |
+| nonstop decay(NSD) | termination codonの不在 |
+| no-go decay(NGD) | リボソームのストール |
+
+NMDが一番良く理解されている。NSDとNGDの区別は当初思っていたほどはっきりしたものでは無さそうという事がわかってきている。
+
+翻訳により欠陥が検出されると以下の事が起こる。
+
+1. 翻訳によりmRNAの欠陥が検出される
+2. mRNAのdecayを起こす
+3. リボソームをリサイクルする
+4. 生成されているペプチドをリリースするかdegradeする
+
+## Nonsense-Mediated Decay
+
+まずは一番良く理解されているNonsense-Mediated Decayから。
+
+### Nonsense-Mediated Decayの発見の歴史
+
+最初に発見された現象は、beta thalassemiaという遺伝病の研究をしている時だった。
+βグロビンが無いという病気。
+
+
