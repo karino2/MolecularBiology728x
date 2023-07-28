@@ -245,8 +245,8 @@ termination siteではリボソームのAサイトにeRF1とeRF3があるのだ�
 これがさらにUPF2, UPF3との結合を促進し、これらが結合した状態になり、それがexon junction complexと結合する。
 この状態をDECID complexと呼ぶらしい。
 
-なお、その前の段階でEJCとUPF2, UPF3が結合しているというモデルが考えられていて、これはSURF complexと呼ばれるらしい。
-つまりSURF complexがUPF1側と結合するとDECID complexとなる。
+なお、その前の段階でEJCとUPF2, UPF3が結合していて、これはSURF complexと呼ばれるらしい。
+つまりSURF complexがUPF1側と結合するとDECID complexとなる。（[36ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=35)参照）
 
 脊椎動物ではこのEJCを使ったメカニズムが使われている。ハエとかイースト菌では無視されているらしい。
 
@@ -254,3 +254,31 @@ termination siteではリボソームのAサイトにeRF1とeRF3があるのだ�
 これはtermination siteからpoly A tailまでの間にUPF1が並んでいて、terminationがされないリボソームのeRF3と相互作用して、
 この状態がstabilizeされる。
 こうしてPTCが識別される。
+
+### DECID complexからRibosome Recycling
+
+DECID complexが形成されて、UPF1とUPF2が相互作用するようになると、いろいろな事が起こる。
+
+**ステップ1**
+
+まずUPF1のhelicaseとしての機能がアクティベートされる。ただこれが何に使われるのかは良くわかってない。
+機能としては5' to 3' helicase。
+
+また、SMG1のキナーゼとしての機能がアクティベートされる（キナーゼはリン酸化する酵素だった）。
+正確にはもともとSMG1, 8, 9の３つがくっついていたのが、ここで8と9がreleaseされて、これがinhibitorなのでSMG1がアクティベートされる。
+これはUPF1をリン酸化する。
+
+さらに、この同じステップでeRF1, 3がリリースされて、RIbosomeもmRNAからリリースされる。メカニズムは謎。
+だが、特殊なrelease factorを必要としない事はわかっているので、なんらかの方法で通常のterminationが起こっているのではないか、と予想されている。
+
+**ステップ2**
+
+リン酸化したUPF1とSMG6が相互作用し、SMG6はendonucleaseとしての機能を持つようになる。
+
+SMG6によりカットされれば、5'側はpoly-A tailが無いのでexosomeにより分解される。
+3'側は5' capが無いのでXRN1により分解される。
+
+また、リン酸化したUPF1はさらにSMG5, 7と相互作用し、これらがCCR-Notを動員する。
+これは通常のdegradeでも使われるdeadenylaseだった。[EukaryoteのmRNADecay](Eukaryote%E3%81%AEmRNADecay)の「Eukaryotic Deadenylases」参照。
+
+ここからは通常のdegradationと同様、deadenylateされるとdecappingが始まり、分解が進む。
