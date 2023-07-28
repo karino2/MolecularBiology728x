@@ -320,14 +320,55 @@ SMG5はexosomeを動員しているっぽい？XRN1がどうやってやって�
 イースト菌はどちらも、どれがendonucleaseなのかなどはわかってない。そもそも発芽イーストはendonucleaseが存在するのかもわかってない。
 イースト菌にはSMG6相当のものが無い、というのは多くの研究者を悩ませる謎となっている。
 
-## Nonstop-MediatedとNo-go DecayのmRNA識別
+## Nonstop-MediatedとNo-Go DecayのmRNA識別
 
 nonstop decay(NSD)とno go decay(NGD)は発見された時はすごく違うメカニズムのように見えたが、研究が進むととても似ていると思われるようになった。
 
 nonstopもno goも、リボソームのAサイトが空である事を認識する、というのがキーになっている。
 
+### No Goのケース
+
 no goは、強いsecondary structureがあるなどでリボソームがそれ以上進めなくなるようなケース。
 リボソームが止まるとAサイトが空になり、
 その空のAサイトをDom34とHbs1と呼ばれるタンパク質が認識する。Dom34はeRF1に似ていて、Hbs1はeRF3に似ている。
 
+[37ページ](https://karino2.github.io/ImageGallery/MolecularBiology728x3.html#lg=1&slide=36)
+
+eRF1, eRF3はリリースファクターだった。
+また、これらはEF TuとtRNAのミミックでもあった。
+EF TuやeRF3やHbs1は、リボソームのfactor binding centerと相互作用してGTPを加水分解する。
+
+EF-Tuについては[TranslationのElongation](Translation%E3%81%AEElongation)を参照。
+
+### Nonstopのケース
+
+リボソームの翻訳した先がstop codon無しで終わっているケース。
+
+例えばSMG6がカットした場合にupstream側にあるリボソームはこのケース。一番端まで翻訳が進み、端まで到達してしまう。
+このケースでもAサイトが空になる。
+
+このケースでもNo Goと同様にDom34とHbs1に認識される場合もあるが、
+それ以外にこのケースだと、Ski7と呼ばれるタンパク質が認識する場合もある。
+
+ただしSki7の場合、Hbs1, eRF3, EF Tuに似ていて、Translation GTPaseとして機能していると思われる。
+おそらくそれに対応するeRF1側に相当するタンパク質も存在していそうなものだが、まだ見つかっていない。
+別のメカニズムなのかどこかにあるのか。
+
+とにかくSki7をknock outするとNSDに問題が起こる事はわかっている。
+
+### リボソームがストールする他のケース（でもNo Go Decayが起こる）
+
+合成されるポリペプチドによってはリボソームがストールする場合がある。
+
+リボソームのexit channelはRNAで出来ているのでとても負に帯電している。
+だから合成されるポリペプチドがたくさん正に帯電していると、くっついて止まってしまう。
+
+この場合でも途中でリボソームが止まり、Aサイトが空き、No Go Decayが起こる。
+（その後にStop Codonがあるケースで起きるのでNo Go  Decayとなる）
+
+このケースの亜種として、翻訳がpoly-A tailまで行ってしまう、というのがある。
+AAAはlysineなので、lysineがペプチドに連続していくが、lysineは正に荷電しているので、
+同様にリボソームが途中で止まる。
+だいたいlysineが6個から7個つながるとexit channelとくっついてしまって翻訳が止まる。
+この場合はNonstop-Mediated Decayが発動する。
 
