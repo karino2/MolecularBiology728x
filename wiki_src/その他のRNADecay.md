@@ -372,3 +372,52 @@ AAAはlysineなので、lysineがペプチドに連続していくが、lysine�
 だいたいlysineが6個から7個つながるとexit channelとくっついてしまって翻訳が止まる。
 この場合はNonstop-Mediated Decayが発動する。
 
+## NSDとNGDのmRNAのDecay, リボソームリサイクル、ペプチドの分解
+
+異常の検知が出来たので、次にその後の処理。
+まずはmRNAのdegradationのメカニズムから見ていく。
+
+### NSDとNGDでのmRNAのdegradation
+
+Dom34やSki7はexosomeと相互作用し、分解していく。
+このexosomeの中にはRRP44と呼ばれるタンパク質があってこれがnucleaseとしての機能を持っているが、
+これには２つのactive siteがあって、一つは想像される通りexonucleaseだが、もう一つはendonucleaseのアクティブサイトを持っている。
+
+exosomeは普段のRNA Decayでは3' to 5' exonucleaseとして機能しているのでexonucleaseのアクティブサイトだけで十分そうなものだが、
+No goとNonstopのケースではendonucleaseのサイトの方が使われて、endonucleaseの機能としてmRNAの真ん中がカットされる。
+
+なお、厳密にはSki 7がexosomeをrecruiteするのはかなり明確に判明しているが、Dom34はいろいろな事をやっているため、あまり明確に判明はしていない（がそうだと思われている）。
+
+mRNAがカットされれば通常のdecayのメカニズムで分解される（5'側は3'末端がpoly-A tailが無いのでexosomeに分解され、3'側はXRN1に分解され、poly-A tailが無いのでdecappingされ、うんぬん）。
+
+### NSDとNGDでのリボソームのリサイクル
+
+Dom34とHbs1は（Rli1とともに）、リボソームのリリースの役割を持っている。
+Rli1については[[TranslationのTermination]]を参照（Rli 1とスペースが入っているので検索する時は注意）。
+Rli1は通常のtranslation terminationでのリボソームのリリースで使われるもので、Large subunitなどを切り離すのだった。
+
+eRF1とeRF3はRli1と協力してリボソームのサブユニットのリリースを行っていた。
+これと同様にDom34とHbs1もRli1と協力してリボソームの60Sと40Sの分離を行い、
+これがmRNAとEサイトのtRNAのリリースを引き起こす（PサイトのtRNAはまだ残っているのに注意）。
+この時にDom34とHbs1もリリースされると思われる。
+
+Dom34は他にも様々なシチュエーションで似たような事をやっている。ストップコドンが無くてre-initiationされてしまったリボソームを蹴り出したりとか。
+変にリボソームとmRNAがくっついてしまったものを切り離す、というのがDom34の役割の模様。
+
+### NSDとNGDでのペプチドの分解
+
+Dom34は、eRF1が持っていたペプチドの加水分解の機能（eRF1のGGQ motif）を持っていないため、
+Large subunitがリリースされた時、PサイトにtRNAとペプチドが残ったままになる。
+
+これをどうにかするのがLtn1と呼ばれるタンパク質。
+Ltn1はubiquitin ligase。
+
+Ltn1は、60S サブユニットにポリペプチドがついていて、しかも40Sがついていない状態を発見すると、
+Ltn1は(Rqc1, Tae2タンパク質とともにRqc complexを形成し）、ポリペプチドにubiquitinを付加していく（ubiquitinylates）。
+
+すると、Cdc48がそれを認識してポリペプチドを60Sから引き出す（tRNAも一緒にひっついて引き出される）。
+これはClpXと似たような働きをする。
+
+そうして引き出されたポリペプチドはUbiquitinがついているから通常のproteasome dependent degradationのメカニズムのターゲットとなり、proteasomeに分解される。
+
+ポリペプチドが引き出された60Sはたぶん再利用されるんじゃないかなぁ、と思っているが良くわかっていない。
