@@ -166,3 +166,7 @@ DNAの損傷には以下の２種類があり、
 ### Unit: RNA Turnover II
 
 - [その他のRNADecay](%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AERNADecay)
+
+### 感想ブログ
+
+- [728x Molecular BiologyのPart3を全部終えた！ - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/07/28/728x_part3_complete.html)
