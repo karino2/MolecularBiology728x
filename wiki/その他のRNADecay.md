@@ -221,10 +221,15 @@ suppressor tRNAはストップコドンとマッチしてなにかのアミノ�
 
 なお、UPF2やUPF3でも同じ結果となった。
 
-### NMDのメカニズム
+### NMDがmRNAのPTCを認識する仕組み
+
+NMDの仕組みを考えると以下のステップが必要となる
 
 1. mRNAのPTCをどう認識するか？
     - terminationのsiteが3'-UTRから遠いとterminationが遅くなるので、正常なものと区別出来る
+2. mRNAを分解し、リボソームをリリースし、作り途中のペプチドもリリース（そして出来たら分解も）する
+
+ここでは最初のmRNAのPTCの認識について見ていく。
 
 termination siteではリボソームのAサイトにeRF1とeRF3があるのだった。
 [TranslationのTermination](Translation%E3%81%AETermination)のEukaryoteを参照。
@@ -255,7 +260,7 @@ termination siteではリボソームのAサイトにeRF1とeRF3があるのだ�
 この状態がstabilizeされる。
 こうしてPTCが識別される。
 
-### DECID complexからRibosome Recycling
+### 脊椎動物のRibosome RecyclingやmRNA Decayの仕組み（DECID complexからRibosome Recyclingまで）
 
 DECID complexが形成されて、UPF1とUPF2が相互作用するようになると、いろいろな事が起こる。
 
@@ -273,7 +278,7 @@ DECID complexが形成されて、UPF1とUPF2が相互作用するようにな�
 
 **ステップ2**
 
-リン酸化したUPF1とSMG6が相互作用し、SMG6はendonucleaseとしての機能を持つようになる。
+リン酸化したUPF1とSMG6が相互作用し（あとの動画を見るとリン酸化したUPF1がSMG5, 6、７を引き付けるっぽい）、SMG6はendonucleaseとしての機能を持つようになる。
 
 SMG6によりカットされれば、5'側はpoly-A tailが無いのでexosomeにより分解される。
 3'側は5' capが無いのでXRN1により分解される。
@@ -282,3 +287,47 @@ SMG6によりカットされれば、5'側はpoly-A tailが無いのでexosome�
 これは通常のdegradeでも使われるdeadenylaseだった。[EukaryoteのmRNADecay](Eukaryote%E3%81%AEmRNADecay)の「Eukaryotic Deadenylases」参照。
 
 ここからは通常のdegradationと同様、deadenylateされるとdecappingが始まり、分解が進む。
+
+カットだけでも十分なところにdeadenylateとdecappingが起こるので、このmRNAはすぐに分解される。
+分解されずに残る要素としては、このカットより上側で翻訳途中のリボソームの存在。
+これはnon-stop decayにより処理される。
+
+### ハエやイースト菌のRibosome RecyclingやmRNA Decayの仕組み（はよくわかってない）
+
+脊椎動物以外について、何がわかって何がわかっていないのかを簡単に見ていく。
+おもにS. cervisiae（発芽イースト）、S. pombe（分裂イースト）、D. melanogaster（ショウジョウバエ）の話。
+
+発芽イーストと分裂イーストは進化系統ではすごい昔に分かれたもので、かなり違う生き物となっている。
+発芽イーストと人間の違いくらいには、発芽イーストと分裂イーストは違うとか。
+
+**mRNAのPTCの識別でわかっている事、わかっていない事**
+
+S. cervisiaeは、mRNAにHrp1というファクターが結合して、これがUPF2, UPF3と結合する。
+Hrp1がどこにどう結合するかとかはいまいち良くわかっていない。
+とにかくこのUPF2, UPF3がeRF3側のUPF1と相互作用するっぽい。
+
+S. pombeはもっと良くわかってない。unspliced intronがシグナルになっているっぽいという事だけがわかっている。
+
+D. melanogasterはfaux 3' UTR modelと言われる仕組みと名付けられていて、
+これはUPF1とpoly-A binding proteinの距離を識別するだけの模様。
+exon-exon junctionが無くても（intronをそもそも無くしても）NMDする。
+
+**識別したあとの過程でわかっている事、わかっていない事**
+
+D. melanogasterは脊椎動物と似ている。SMG1がUPF1をリン酸化し、SMG5, SMG6がやってきて、SMG6がendonucleaseとして機能し、
+SMG5はexosomeを動員しているっぽい？XRN1がどうやってやってくるのかは良くわかってない。
+
+イースト菌はどちらも、どれがendonucleaseなのかなどはわかってない。そもそも発芽イーストはendonucleaseが存在するのかもわかってない。
+イースト菌にはSMG6相当のものが無い、というのは多くの研究者を悩ませる謎となっている。
+
+## Nonstop-MediatedとNo-go DecayのmRNA識別
+
+nonstop decay(NSD)とno go decay(NGD)は発見された時はすごく違うメカニズムのように見えたが、研究が進むととても似ていると思われるようになった。
+
+nonstopもno goも、リボソームのAサイトが空である事を認識する、というのがキーになっている。
+
+no goは、強いsecondary structureがあるなどでリボソームがそれ以上進めなくなるようなケース。
+リボソームが止まるとAサイトが空になり、
+その空のAサイトをDom34とHbs1と呼ばれるタンパク質が認識する。Dom34はeRF1に似ていて、Hbs1はeRF3に似ている。
+
+
