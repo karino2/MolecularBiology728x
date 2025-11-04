@@ -3,5 +3,5 @@
 SCRIPTS_DIR=$(dirname $0)
 
 cd $SCRIPTS_DIR
-./copy.sh
+./copy.sh $1
 ./conv.sh
